@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 
-import withMuiTheme from './theme/withMuiTheme'
+import withMuiTheme from '~theme/withMuiTheme'
 import Layout from './layout'
 
 export const App = () => (

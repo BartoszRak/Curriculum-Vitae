@@ -1,20 +1,13 @@
 export default {
+  palette: {
+    type: 'dark',
+  },
   typography: {
-    body2: {
-      fontWeight: 'bold',
-    },
     button: {
       textTransform: 'none',
     },
     fontFamily: 'Arial, sans-serif',
-    subheading: {
-      color: 'inherit',
-    },
-    subtitle1: {
-      color: 'inherit',
-      fontSize: 'inherit',
-      fontWeight: 'inherit',
-    },
+    fontSize: 15,
     useNextVariants: true,
   },
 }

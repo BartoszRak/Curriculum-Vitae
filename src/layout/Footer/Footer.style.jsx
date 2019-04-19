@@ -1,5 +1,9 @@
-export default () => ({
+export default ({ spacing, palette }) => ({
   root: {
-    border: '1px solid green',
+    background: palette.primary.main,
+    padding: spacing.unit * 2,
   },
+  text: {
+    textAlign: 'center',
+  }
 })
