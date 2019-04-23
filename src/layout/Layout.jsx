@@ -13,6 +13,7 @@ import style from './Layout.style'
 
 export const Layout = ({ classes }) => (
   <React.Fragment>
+    <Sidebar />
     <div className={classes.root}>
       <Greeting />
       <Switch>

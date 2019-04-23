@@ -2,6 +2,7 @@
 
 exports[`global: Layout should render as expected 1`] = `
 <Fragment>
+  <Sidebar />
   <div>
     <GreetingMock />
     <SwitchMock>
