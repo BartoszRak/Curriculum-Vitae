@@ -1,6 +1,6 @@
 export default () => ({
   root: {
-    border: '1px solid red',
+    justifyContent: 'flex-start',
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
