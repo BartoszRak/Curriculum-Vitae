@@ -1,13 +1,21 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { withStyles } from '@material-ui/core'
 
-export class Home extends React.Component {
-  render() {
-    return (
-      <div>
-        home
-      </div>
-    )
-  }
+import ProjectsList from './ProjectsList'
+
+import style from './Home.style'
+
+export function Home({ classes }) {
+  return (
+    <div className={classes.root}>
+      <ProjectsList />
+    </div>
+  )
 }
 
-export default Home
+Home.propTypes = {
+  classes: PropTypes.object,
+}
+
+export default withStyles(style)(Home)
