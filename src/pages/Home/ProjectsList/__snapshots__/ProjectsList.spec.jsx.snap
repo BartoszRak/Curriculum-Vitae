@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: ProjectsList should render as expected 1`] = `
+<div>
+  <div
+    key="Mocked project name1"
+  >
+    <ProjectTileMock
+      image="https://i1.jbzdy.pl/contents/2019/04/9eb447906f482d41acbcf4bf344321bc.jpg"
+      name="Mocked project name1"
+      url="https://pl.lipsum.com/"
+    />
+  </div>
+  <div
+    key="Mocked project name2"
+  >
+    <ProjectTileMock
+      image="https://i1.jbzdy.pl/contents/2019/04/9eb447906f482d41acbcf4bf344321bc.jpg"
+      name="Mocked project name2"
+      url="https://pl.lipsum.com/"
+    />
+  </div>
+  <div
+    key="Mocked project name3"
+  >
+    <ProjectTileMock
+      image="https://i1.jbzdy.pl/contents/2019/04/9eb447906f482d41acbcf4bf344321bc.jpg"
+      name="Mocked project name3"
+      url="https://pl.lipsum.com/"
+    />
+  </div>
+</div>
+`;
