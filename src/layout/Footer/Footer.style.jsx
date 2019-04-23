@@ -5,5 +5,5 @@ export default ({ spacing, palette }) => ({
   },
   text: {
     textAlign: 'center',
-  }
+  },
 })

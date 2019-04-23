@@ -5,17 +5,22 @@ import { withStyles } from '@material-ui/core/styles'
 
 import style from './Layout.style'
 import Footer from './Footer'
+import Sidebar from './Sidebar'
+import Greeting from './Greeting'
 
-import Home from '../pages/Home'
+import Home from '~pages/Home'
 
 export const Layout = ({ classes }) => (
-  <div className={classes.root}>
-    <Switch>
-      <Route component={Home} to="/" />
-      <Redirect from="*" to="/" />
-    </Switch>
-    <Footer />
-  </div>
+  <React.Fragment>
+    <div className={classes.root}>
+      <Greeting />
+      <Switch>
+        <Route component={Home} to="/" />
+        <Redirect from="*" to="/" />
+      </Switch>
+      <Footer />
+    </div>
+  </React.Fragment>
 )
 
 Layout.propTypes = {

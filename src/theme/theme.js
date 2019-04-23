@@ -1,6 +1,6 @@
 export default {
   palette: {
-    type: 'dark',
+    type: 'light',
   },
   typography: {
     button: {
