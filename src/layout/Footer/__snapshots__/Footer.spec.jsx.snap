@@ -2,6 +2,11 @@
 
 exports[`global: Footer should render as expected 1`] = `
 <div>
-  Footer
+  <WithStyles(Typography)
+    variant="body2"
+  >
+    © All copyrights reserved 2019-
+    2019
+  </WithStyles(Typography)>
 </div>
 `;

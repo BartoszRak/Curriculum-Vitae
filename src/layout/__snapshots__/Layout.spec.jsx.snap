@@ -1,17 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`global: Layout should render as expected 1`] = `
-<div>
-  <SwitchMock>
-    <RouteMock
-      component={[Function]}
-      to="/"
-    />
-    <RedirectMock
-      from="*"
-      to="/"
-    />
-  </SwitchMock>
-  <WithStyles(Footer) />
-</div>
+<Fragment>
+  <div>
+    <GreetingMock />
+    <SwitchMock>
+      <RouteMock
+        component="HomeMock"
+        to="/"
+      />
+      <RedirectMock
+        from="*"
+        to="/"
+      />
+    </SwitchMock>
+    <FooterMock />
+  </div>
+</Fragment>
 `;

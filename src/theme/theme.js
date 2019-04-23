@@ -6,7 +6,7 @@ export default {
     button: {
       textTransform: 'none',
     },
-    fontFamily: 'Arial, sans-serif',
+    fontFamily: 'Poppins, sans-serif',
     fontSize: 15,
     useNextVariants: true,
   },

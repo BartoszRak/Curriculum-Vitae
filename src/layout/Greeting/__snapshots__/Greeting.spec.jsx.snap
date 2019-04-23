@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: Greeting should render as expected 1`] = `
+<div
+  style={
+    Object {
+      "backgroundImage": "url(landscape-mountains-nature-dark.jpg)",
+    }
+  }
+>
+  <TypographyMock
+    variant="h1"
+  >
+    Bartosz Rak
+  </TypographyMock>
+  <TypographyMock
+    variant="h2"
+  >
+    Front-end developer
+  </TypographyMock>
+</div>
+`;
