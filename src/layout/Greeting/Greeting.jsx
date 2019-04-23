@@ -1,8 +1,8 @@
 import React from 'react'
-import { withStyles } from '@material-ui/core'
+import { withStyles, Typography } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import backgroundURL from '~assets/images/landscape-mountains-nature.jpg'
+import backgroundURL from '~assets/images/landscape-mountains-nature-dark.jpg'
 import style from './Greeting.style'
 
 export function Greeting({ classes }) {
@@ -13,7 +13,12 @@ export function Greeting({ classes }) {
         backgroundImage: `url(${backgroundURL})`,
       }}
     >
-      Hello
+      <Typography variant="h1">
+      Bartosz Rak
+      </Typography>
+      <Typography variant="h2">
+      Front-end developer
+      </Typography>
     </div>
   )
 }
