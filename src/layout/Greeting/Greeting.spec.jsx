@@ -1,22 +1,18 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import { Layout } from './Layout'
-
-jest.mock('~pages/Home', () => 'HomeMock')
-jest.mock('./Greeting', () => 'GreetingMock')
-jest.mock('./Footer', () => 'FooterMock')
+import { Greeting } from './Greeting'
 
 const initComponent = overrides => {
   const mockProps = {
     classes: {},
   }
   const mockMethods = {}
-  const wrapper = shallow(<Layout {...mockProps} {...mockMethods} {...overrides} />)
+  const wrapper = shallow(<Greeting {...mockProps} {...mockMethods} {...overrides} />)
   return { mockProps, wrapper }
 }
 
-describe('global: Layout', () => {
+describe('global: Greeting', () => {
   it('renders without crashing', () => {
     const { wrapper } = initComponent()
     expect(wrapper).toBeTruthy()

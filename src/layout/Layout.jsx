@@ -3,12 +3,13 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 
-import style from './Layout.style'
 import Footer from './Footer'
 import Sidebar from './Sidebar'
 import Greeting from './Greeting'
 
 import Home from '~pages/Home'
+
+import style from './Layout.style'
 
 export const Layout = ({ classes }) => (
   <React.Fragment>
