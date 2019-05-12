@@ -1,4 +1,4 @@
-export default () => ({
+export default ({ palette, shadows }) => ({
   root: {
     alignItems: 'center',
     backgroundAttachment: 'fixed',
@@ -9,8 +9,12 @@ export default () => ({
   },
   subtitle: {
     textAlign: 'center',
+    color: palette.primary.contrastText,
+    textShadow: shadows[24],
   },
   title: {
     textAlign: 'center',
+    color: palette.primary.contrastText,
+    textShadow: shadows[24],
   },
 })

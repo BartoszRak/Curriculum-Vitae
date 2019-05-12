@@ -11,6 +11,10 @@ code {
     monospace;
 }
 
+* {
+  transition: 0.25s ease;
+}
+
 @font-face {
   font-family: 'Poppins';
   src: url('./assets/fonts/Poppins-ExtraLight.ttf') format('truetype');
