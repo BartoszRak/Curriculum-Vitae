@@ -6,7 +6,7 @@ exports[`global: ProjectsList should render as expected 1`] = `
     key="React Awesome Boilerplate"
   >
     <ProjectTileMock
-      description="Carefully designed react boilerplate repositorium that gives you fast and smooth start!"
+      description="Carefully designed react boilerplate repositorium that gives you fast and smooth start! "
       image="forest-sunny-green.jpg"
       name="React Awesome Boilerplate"
       url="https://github.com/BartoszRak/React-Awesome-Boilerplate"

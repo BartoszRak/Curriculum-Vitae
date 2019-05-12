@@ -6,23 +6,24 @@ import ProjectTile from './ProjectTile'
 
 import style from './ProjectsList.style'
 
-import ForestImage from '../../../assets/images/projects/forest-sunny-green.jpg'
-import CoastImage from '../../../assets/images/projects/coast-sunny.jpg'
+import ForestImage from '~assets/images/projects/forest-sunny-green.jpg'
+import CoastImage from '~assets/images/projects/coast-sunny.jpg'
+
+const projects = [
+  {
+    image: ForestImage,
+    name: 'React Awesome Boilerplate',
+    description: 'Carefully designed react boilerplate repositorium that gives you fast and smooth start! ',
+    url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
+  }, {
+    image: CoastImage,
+    name: 'Mx',
+    description: 'Matrices computing library.',
+    url: 'https://github.com/BartoszRak/Mx',
+  }, 
+]
 
 export function ProjectsList({ classes }) {
-  const projects = [
-    {
-      image: ForestImage,
-      name: 'React Awesome Boilerplate',
-      description: 'Carefully designed react boilerplate repositorium that gives you fast and smooth start!',
-      url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
-    }, {
-      image: CoastImage,
-      name: 'Mx',
-      description: 'Matrices computing library.',
-      url: 'https://github.com/BartoszRak/Mx',
-    }, 
-  ]
 
   return (
     <div className={classes.root}>

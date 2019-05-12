@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 
 import Footer from './Footer'
-import Sidebar from './Sidebar'
+import Navigation from './Navigation'
 import Greeting from './Greeting'
 
 import Home from '~pages/Home'
@@ -13,7 +13,7 @@ import style from './Layout.style'
 
 export const Layout = ({ classes }) => (
   <React.Fragment>
-    <Sidebar />
+    <Navigation />
     <div className={classes.root}>
       <Greeting />
       <Switch>

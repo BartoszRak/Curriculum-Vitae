@@ -1,8 +1,10 @@
 import React from 'react'
-import { withStyles, Typography } from '@material-ui/core'
+import { withStyles, Typography, Avatar } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import backgroundURL from '~assets/images/landscape-mountains-nature-dark.jpg'
+import backgroundUrl from '~assets/images/landscape-mountains-nature-dark.jpg'
+import avatarUrl from '~assets/images/instagram-photo.jpg'
+
 import style from './Greeting.style'
 
 export function Greeting({ classes }) {
@@ -10,9 +12,10 @@ export function Greeting({ classes }) {
     <div
       className={classes.root}
       style={{
-        backgroundImage: `url(${backgroundURL})`,
+        backgroundImage: `url(${backgroundUrl})`,
       }}
     >
+      <Avatar className={classes.avatar} src={avatarUrl} />
       <Typography variant="h1" className={classes.title}>
       Bartosz Rak
       </Typography>
