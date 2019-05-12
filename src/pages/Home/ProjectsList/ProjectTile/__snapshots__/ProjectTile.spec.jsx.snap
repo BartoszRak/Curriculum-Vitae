@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: ProjectTile should render as expected 1`] = `
+<a
+  href="http://testurl.com"
+  target="_blank"
+>
+  <PaperMock>
+    <div
+      style={
+        Object {
+          "backgroundImage": "url(http://testImage.com/url)",
+        }
+      }
+    />
+    <div>
+      <TypographyMock
+        variant="h1"
+      >
+        Example title
+      </TypographyMock>
+      <TypographyMock
+        variant="body1"
+      >
+        Some example description
+      </TypographyMock>
+    </div>
+  </PaperMock>
+</a>
+`;

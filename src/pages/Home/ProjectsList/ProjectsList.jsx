@@ -6,32 +6,34 @@ import ProjectTile from './ProjectTile'
 
 import style from './ProjectsList.style'
 
+import ForestImage from '../../../assets/images/projects/forest-sunny-green.jpg'
+import CoastImage from '../../../assets/images/projects/coast-sunny.jpg'
+
 export function ProjectsList({ classes }) {
   const projects = [
     {
-      image: 'https://i1.jbzdy.pl/contents/2019/04/9eb447906f482d41acbcf4bf344321bc.jpg',
-      name: 'Mocked project name1',
-      url: 'https://pl.lipsum.com/',
+      image: ForestImage,
+      name: 'React Awesome Boilerplate',
+      description: 'Carefully designed react boilerplate repositorium that gives you fast and smooth start!',
+      url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
     }, {
-      image: 'https://i1.jbzdy.pl/contents/2019/04/9eb447906f482d41acbcf4bf344321bc.jpg',
-      name: 'Mocked project name2',
-      url: 'https://pl.lipsum.com/',
-    }, {
-      image: 'https://i1.jbzdy.pl/contents/2019/04/9eb447906f482d41acbcf4bf344321bc.jpg',
-      name: 'Mocked project name3',
-      url: 'https://pl.lipsum.com/',
-    },
+      image: CoastImage,
+      name: 'Mx',
+      description: 'Matrices computing library.',
+      url: 'https://github.com/BartoszRak/Mx',
+    }, 
   ]
 
   return (
     <div className={classes.root}>
       {projects.map(project => {
-        const { name, url, image } = project
+        const { description, name, url, image } = project
         return (
           <div className={classes.cardHolder} key={name}>
             <ProjectTile
               image={image}
               name={name}
+              description={description}
               url={url}
             />
           </div>

@@ -3,14 +3,14 @@ import { grey, blueGrey } from '@material-ui/core/colors'
 export default {
   palette: {
     primary: {
-      dark: grey[900],
-      light: grey[700],
-      main: grey[800],
+      dark: '#050505',
+      light: '#222222',
+      main: '#111111',
     },
     secondary: {
-      dark: blueGrey[900],
-      light: blueGrey[700],
-      main: blueGrey[800],
+      dark: '#eeeeee',
+      light: '#fafafa',
+      main: '#e5e5e5',
     },
     type: 'dark',
   },

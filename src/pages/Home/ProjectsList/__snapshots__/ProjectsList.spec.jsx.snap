@@ -3,30 +3,23 @@
 exports[`global: ProjectsList should render as expected 1`] = `
 <div>
   <div
-    key="Mocked project name1"
+    key="React Awesome Boilerplate"
   >
     <ProjectTileMock
-      image="https://i1.jbzdy.pl/contents/2019/04/9eb447906f482d41acbcf4bf344321bc.jpg"
-      name="Mocked project name1"
-      url="https://pl.lipsum.com/"
+      description="Carefully designed react boilerplate repositorium that gives you fast and smooth start!"
+      image="forest-sunny-green.jpg"
+      name="React Awesome Boilerplate"
+      url="https://github.com/BartoszRak/React-Awesome-Boilerplate"
     />
   </div>
   <div
-    key="Mocked project name2"
+    key="Mx"
   >
     <ProjectTileMock
-      image="https://i1.jbzdy.pl/contents/2019/04/9eb447906f482d41acbcf4bf344321bc.jpg"
-      name="Mocked project name2"
-      url="https://pl.lipsum.com/"
-    />
-  </div>
-  <div
-    key="Mocked project name3"
-  >
-    <ProjectTileMock
-      image="https://i1.jbzdy.pl/contents/2019/04/9eb447906f482d41acbcf4bf344321bc.jpg"
-      name="Mocked project name3"
-      url="https://pl.lipsum.com/"
+      description="Matrices computing library."
+      image="coast-sunny.jpg"
+      name="Mx"
+      url="https://github.com/BartoszRak/Mx"
     />
   </div>
 </div>
