@@ -7,4 +7,10 @@ export default () => ({
     height: '100vh',
     justifyContent: 'center',
   },
+  subtitle: {
+    textAlign: 'center',
+  },
+  title: {
+    textAlign: 'center',
+  },
 })

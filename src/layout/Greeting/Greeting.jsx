@@ -13,10 +13,10 @@ export function Greeting({ classes }) {
         backgroundImage: `url(${backgroundURL})`,
       }}
     >
-      <Typography variant="h1">
+      <Typography variant="h1" className={classes.title}>
       Bartosz Rak
       </Typography>
-      <Typography variant="h2">
+      <Typography variant="h2" className={classes.subtitle}>
       Front-end developer
       </Typography>
     </div>
