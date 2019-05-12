@@ -12,8 +12,10 @@ export function ProjectTile({
   image,
 }) {
   return (
-    <a href={url} className={classes.linkWrapper} target="_blank">
-      <Paper className={classes.root}>
+    <a href={url} className={classes.root} target="_blank">
+      <Paper classes={{
+        root: classes.paper,
+      }}>
         <div
           className={classes.background}
           style={{

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: Navigation should render as expected 1`] = `
+<AppBarMock
+  classes={
+    Object {
+      "root": undefined,
+    }
+  }
+  position="fixed"
+>
+  <ToolbarMock>
+    <ButtonMock
+      classes={
+        Object {
+          "label": undefined,
+          "root": undefined,
+        }
+      }
+      key="Projects"
+      onClick={[Function]}
+    >
+      Projects
+    </ButtonMock>
+    <ButtonMock
+      classes={
+        Object {
+          "label": undefined,
+          "root": undefined,
+        }
+      }
+      key="About me"
+      onClick={[Function]}
+    >
+      About me
+    </ButtonMock>
+  </ToolbarMock>
+</AppBarMock>
+`;

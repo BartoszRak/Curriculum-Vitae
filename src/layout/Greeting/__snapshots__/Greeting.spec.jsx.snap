@@ -8,6 +8,9 @@ exports[`global: Greeting should render as expected 1`] = `
     }
   }
 >
+  <AvatarMock
+    src="instagram-photo.jpg"
+  />
   <TypographyMock
     variant="h1"
   >

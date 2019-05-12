@@ -5,7 +5,13 @@ exports[`global: ProjectTile should render as expected 1`] = `
   href="http://testurl.com"
   target="_blank"
 >
-  <PaperMock>
+  <PaperMock
+    classes={
+      Object {
+        "root": undefined,
+      }
+    }
+  >
     <div
       style={
         Object {

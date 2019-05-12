@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { withStyles } from '@material-ui/core'
 
-import ProjectsList from './ProjectsList'
+import Projects from './Projects'
 
 import style from './Home.style'
 
@@ -15,7 +15,7 @@ export function Home({ classes }) {
       <div className={classNames(classes.holder, classes.projectsHolder)} style={{
       backgroundImage: `url(${MountainsBlurImage})`,
     }}>
-        <ProjectsList />      
+        <Projects />      
       </div>
     </div>
   )
