@@ -23,7 +23,7 @@ export default ({ breakpoints, spacing }) => ({
     },
     [breakpoints.up('xl')]: {
       width: '25%',
-      height: 450,
+      height: 400,
     },
   },
   root: {
@@ -31,6 +31,5 @@ export default ({ breakpoints, spacing }) => ({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'flex-start',
-    margin: '75px 0',
   },
 })
