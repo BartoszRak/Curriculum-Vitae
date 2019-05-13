@@ -12,10 +12,13 @@ import MountainsBlurImage from '../../assets/images/landscape-mountains-nature-d
 export function Home({ classes }) {
   return (
     <div className={classes.root}>
-      <div className={classNames(classes.holder, classes.projectsHolder)} style={{
-      backgroundImage: `url(${MountainsBlurImage})`,
-    }}>
-        <Projects />      
+      <div
+        className={classNames(classes.holder, classes.projectsHolder)}
+        style={{
+          backgroundImage: `url(${MountainsBlurImage})`,
+        }}
+      >
+        <Projects />
       </div>
     </div>
   )

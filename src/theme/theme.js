@@ -1,4 +1,4 @@
-import { grey, blueGrey } from '@material-ui/core/colors'
+import { blueGrey } from '@material-ui/core/colors'
 
 export default {
   palette: {

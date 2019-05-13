@@ -3,14 +3,13 @@ export default ({ spacing }) => ({
     marginRight: spacing.unit * 4,
   },
   buttonLabel: {
-    fontWeight: 'normal',
     fontSize: '1rem',
+    fontWeight: 'normal',
   },
   root: {
-    boxShadow: 'none',
-    padding: spacing.unit * 2,
     background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0)100%)',
+    boxShadow: 'none',
     margin: 0,
-    padding: 0,
+    padding: spacing.unit * 2,
   }
 })

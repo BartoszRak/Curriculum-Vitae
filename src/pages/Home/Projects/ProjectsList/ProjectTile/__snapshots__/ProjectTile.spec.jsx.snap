@@ -3,6 +3,7 @@
 exports[`global: ProjectTile should render as expected 1`] = `
 <a
   href="http://testurl.com"
+  rel="noopener noreferrer"
   target="_blank"
 >
   <PaperMock
