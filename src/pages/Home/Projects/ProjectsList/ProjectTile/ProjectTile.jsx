@@ -5,17 +5,15 @@ import { withStyles, Paper, Typography } from '@material-ui/core'
 import style from './ProjectTile.style'
 
 export function ProjectTile({
-  classes,
-  description,
-  name,
-  url,
-  image,
+  classes, description, name, url, image,
 }) {
   return (
-    <a href={url} className={classes.root} target="_blank">
-      <Paper classes={{
-        root: classes.paper,
-      }}>
+    <a className={classes.root} href={url} rel="noopener noreferrer" target="_blank">
+      <Paper
+        classes={{
+          root: classes.paper,
+        }}
+      >
         <div
           className={classes.background}
           style={{
