@@ -11,30 +11,33 @@ import CoastImage from '~assets/images/projects/coast-sunny.jpg'
 
 const projects = [
   {
+    description:
+      'Carefully designed react boilerplate repositorium that gives you fast and smooth start! ',
     image: ForestImage,
     name: 'React Awesome Boilerplate',
-    description: 'Carefully designed react boilerplate repositorium that gives you fast and smooth start! ',
     url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
-  }, {
+  },
+  {
+    description: 'Matrices computing library.',
     image: CoastImage,
     name: 'Mx',
-    description: 'Matrices computing library.',
     url: 'https://github.com/BartoszRak/Mx',
-  }, 
+  },
 ]
 
 export function ProjectsList({ classes }) {
-
   return (
     <div className={classes.root}>
       {projects.map(project => {
-        const { description, name, url, image } = project
+        const {
+          description, name, url, image,
+        } = project
         return (
           <div className={classes.cardHolder} key={name}>
             <ProjectTile
+              description={description}
               image={image}
               name={name}
-              description={description}
               url={url}
             />
           </div>
