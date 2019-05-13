@@ -8,7 +8,7 @@ exports[`global: Projects should render as expected 1`] = `
     color="secondary"
     variant="h1"
   >
-    What I made?
+    What have I created?
   </TypographyMock>
   <ProjectsListMock />
 </div>

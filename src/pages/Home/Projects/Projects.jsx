@@ -7,18 +7,18 @@ import ProjectsList from './ProjectsList'
 import styles from './Projects.style'
 
 export function Projects({ classes }) {
-    return (
-        <div className={classes.root} id="projects">
-            <Typography variant="h1" color="secondary" className={classes.title}>
-                What I made?
-            </Typography>
-            <ProjectsList />
-        </div>
-    )
+  return (
+    <div className={classes.root} id="projects">
+      <Typography className={classes.title} color="secondary" variant="h1">
+        What have I created?
+      </Typography>
+      <ProjectsList />
+    </div>
+  )
 }
 
 Projects.propTypes = {
-    classes: PropTypes.object,
+  classes: PropTypes.object,
 }
 
 export default withStyles(styles)(Projects)

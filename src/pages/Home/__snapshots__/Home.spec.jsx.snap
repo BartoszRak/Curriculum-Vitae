@@ -2,6 +2,7 @@
 
 exports[`global: Home should render as expected 1`] = `
 <div>
+  <DividerMock />
   <div
     className=""
     style={
@@ -11,6 +12,11 @@ exports[`global: Home should render as expected 1`] = `
     }
   >
     <ProjectsMock />
+  </div>
+  <div
+    className=""
+  >
+    <BioMock />
   </div>
 </div>
 `;
