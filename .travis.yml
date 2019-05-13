@@ -4,8 +4,7 @@ node_js:
 script:
 - yarn
 - yarn test
-- echo $TEST_VAR
-- yarn build
+- REACT_APP_STAGE=development yarn build
 cache:
   directories:
   - node_modules
