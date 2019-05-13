@@ -47,6 +47,7 @@ export function Navigation({ classes }) {
               label: classes.buttonLabel,
               root: classes.button,
             }}
+            color="secondary"
             key={route.name}
             onClick={() => scrollTo(route.elementId)}
           >

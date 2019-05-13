@@ -2,7 +2,6 @@
 
 exports[`global: Home should render as expected 1`] = `
 <div>
-  <DividerMock />
   <div
     className=""
     style={

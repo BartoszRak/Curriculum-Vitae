@@ -17,5 +17,6 @@ exports[`global: Layout should render as expected 1`] = `
     </SwitchMock>
     <FooterMock />
   </div>
+  <div />
 </Fragment>
 `;

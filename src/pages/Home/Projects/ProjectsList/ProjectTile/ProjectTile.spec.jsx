@@ -8,8 +8,8 @@ const initComponent = overrides => {
     classes: {},
     url: 'http://testurl.com',
     name: 'Example title',
-    image: 'http://testImage.com/url',
     description: 'Some example description',
+    tags: ['exampleTag1', 'exampleTag2', 'exampleTag3'],
   }
   const mockMethods = {}
   const wrapper = shallow(<ProjectTile {...mockProps} {...mockMethods} {...overrides} />)

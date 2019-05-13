@@ -8,12 +8,11 @@ import Bio from './Bio'
 
 import style from './Home.style'
 
-import MountainsBlurImage from '../../assets/images/landscape-mountains-nature-dark-blur.jpg'
+import MountainsBlurImage from '~assets/images/landscape-mountains-nature-dark-blur.jpg'
 
 export function Home({ classes }) {
   return (
     <div className={classes.root}>
-      <Divider className={classes.divider} />
       <div
         className={classNames(classes.holder, classes.projectsHolder)}
         style={{

@@ -22,6 +22,7 @@ export const Layout = ({ classes }) => (
       </Switch>
       <Footer />
     </div>
+    <div className={classes.bottomShadow} />
   </React.Fragment>
 )
 

@@ -7,7 +7,7 @@ export default ({ spacing }) => ({
     fontWeight: 'normal',
   },
   root: {
-    background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0)100%)',
+    background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0)100%)',
     boxShadow: 'none',
     margin: 0,
     padding: spacing.unit * 2,

@@ -10,7 +10,7 @@ export function Projects({ classes }) {
   return (
     <div className={classes.root} id="projects">
       <Typography className={classes.title} color="secondary" variant="h1">
-        What have I created?
+        What have I created? 😎
       </Typography>
       <ProjectsList />
     </div>
