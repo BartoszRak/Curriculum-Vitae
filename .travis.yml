@@ -4,6 +4,7 @@ node_js:
 script:
 - yarn
 - yarn test
+- echo $TEST_VAR
 - yarn build
 cache:
   directories:
@@ -13,7 +14,6 @@ before_install:
 deploy:
   skip_cleanup: true
   provider: firebase
-  token:
-    secure: fptbS0pezxzN0C6yk6XfzWtDCi8lqgUASP62yyhoinQbCci3xvwAG528tGB02HbmZFZv2hAEzOp+mlrsWLe8lQ5UTu7SJR4JBEh+dO3ld8uXf3gYrQB/yXkUOzVtKiHDBmuB2Xsd6Iu2763Qw//UCUUFBwCDBsHKq/OYKJjl6HremMyKHmEg/OPE4qp6Wu1zsKSgU5kX+/hFKh8Pi5ZVvewHwS2hDJ97iUAJseqCL0vBiehT6JJasy8xChn3pKJJE0SQEVkGs8MdrinStSJmoZrZpmcbSOGdNt71oaLsp33c1sloXw78mIJ2If0CxbO7LlqB4W7zpGFYG02SbBnr7Jn4FavCqTy9xiwey8emhgw+k2F0MjCn/nTs6MDBgicipAK32nfA2EUgZBKPgZX2oa+STLMqmOULnvDKBGaPcNAGiqDMbSItWz7OBxyPg4PICS+QYgWLON6NIU3aTXTpCP1lhntg0QiobeelfZa+qXiy9FfaFGO5m8SW0f2scexCJ+LiNnsI3xsVI0zw9nWPL6Y8kwbSq9SfqWNy10pDjaBz3PdmXlIqJI/5/v/NX26Lcl+BxbN9O2x+iDp+UXrTJ9maSbBtBKH5CYuPMXiJtOmupxTsX3NxKAgtN57mflBeXkaOdEiu2pjs8iwQ4GYR1quDaPmUbRy4Oe5HjeT3XlI=
+  token: $FIREBASE_API_KEY
   on:
     branch: dev
