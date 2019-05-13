@@ -6,22 +6,19 @@ import ProjectTile from './ProjectTile'
 
 import style from './ProjectsList.style'
 
-import ForestImage from '~assets/images/projects/forest-sunny-green.jpg'
-import CoastImage from '~assets/images/projects/coast-sunny.jpg'
-
 const projects = [
   {
     description:
       'Carefully designed react boilerplate repositorium that gives you fast and smooth start! ',
-    image: ForestImage,
     name: 'React Awesome Boilerplate',
     url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
+    tags: ['React', 'Rematch', 'Redux'],
   },
   {
     description: 'Matrices computing library.',
-    image: CoastImage,
     name: 'Mx',
     url: 'https://github.com/BartoszRak/Mx',
+    tags: ['Typescript'],
   },
 ]
 
@@ -30,17 +27,16 @@ export function ProjectsList({ classes }) {
     <div className={classes.root}>
       {projects.map(project => {
         const {
-          description, name, url, image,
+          description, name, url, tags,
         } = project
         return (
-          <div className={classes.cardHolder} key={name}>
-            <ProjectTile
-              description={description}
-              image={image}
-              name={name}
-              url={url}
-            />
-          </div>
+          <ProjectTile
+            description={description}
+            key={name}
+            name={name}
+            tags={tags}
+            url={url}
+          />
         )
       })}
     </div>

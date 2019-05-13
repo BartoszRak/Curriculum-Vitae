@@ -1,5 +1,5 @@
-export default ({ breakpoints }) => ({
-  cardHolder: {
+export default ({ breakpoints, spacing }) => ({
+  /*cardHolder: {
     alignItems: 'stretch',
     display: 'flex',
     height: 350,
@@ -21,11 +21,19 @@ export default ({ breakpoints }) => ({
       height: 400,
       width: '25%',
     },
-  },
+  },*/
   root: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'flex-start',
+    display: 'block',
+    columnGap: 20,
+    marginTop: 40,
+    [breakpoints.up('lg')]: {
+      columnCount: 4,
+    },
+    [breakpoints.up('md')]: {
+      columnCount: 3,
+    },
+    [breakpoints.down('md')]: {
+      columnCount: 2,
+    },
   },
 })

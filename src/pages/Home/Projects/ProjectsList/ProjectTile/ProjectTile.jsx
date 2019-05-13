@@ -5,7 +5,7 @@ import { withStyles, Paper, Typography } from '@material-ui/core'
 import style from './ProjectTile.style'
 
 export function ProjectTile({
-  classes, description, name, url, image,
+  classes, description, name, url, tags,
 }) {
   return (
     <a className={classes.root} href={url} rel="noopener noreferrer" target="_blank">
@@ -14,20 +14,17 @@ export function ProjectTile({
           root: classes.paper,
         }}
       >
-        <div
-          className={classes.background}
-          style={{
-            backgroundImage: `url(${image})`,
-          }}
-        />
-        <div className={classes.contentWrapper}>
-          <Typography className={classes.title} variant="h1">
-            {name}
-          </Typography>
-          <Typography className={classes.description} variant="body1">
-            {description}
-          </Typography>
-        </div>
+        <Typography className={classes.title} variant="h1">
+          {name}
+        </Typography>
+        <Typography className={classes.description} variant="body1">
+          {description}
+        </Typography>
+        <div className={classes.tags}>
+          {tags.map(tag => (
+            <Typography className={classes.tag} key={tag} variant="h6">{tag}</Typography>
+          ))}
+        </div> 
       </Paper>
     </a>
   )
@@ -36,13 +33,14 @@ export function ProjectTile({
 ProjectTile.propTypes = {
   classes: PropTypes.object,
   description: PropTypes.string,
-  image: PropTypes.string,
   name: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string),
   url: PropTypes.string.isRequired,
 }
 
 ProjectTile.defaultProps = {
   description: '',
+  tags: [],
 }
 
 export default withStyles(style)(ProjectTile)

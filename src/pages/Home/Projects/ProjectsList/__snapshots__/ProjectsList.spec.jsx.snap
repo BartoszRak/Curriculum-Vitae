@@ -2,25 +2,29 @@
 
 exports[`global: ProjectsList should render as expected 1`] = `
 <div>
-  <div
+  <ProjectTileMock
+    description="Carefully designed react boilerplate repositorium that gives you fast and smooth start! "
     key="React Awesome Boilerplate"
-  >
-    <ProjectTileMock
-      description="Carefully designed react boilerplate repositorium that gives you fast and smooth start! "
-      image="forest-sunny-green.jpg"
-      name="React Awesome Boilerplate"
-      url="https://github.com/BartoszRak/React-Awesome-Boilerplate"
-    />
-  </div>
-  <div
+    name="React Awesome Boilerplate"
+    tags={
+      Array [
+        "React",
+        "Rematch",
+        "Redux",
+      ]
+    }
+    url="https://github.com/BartoszRak/React-Awesome-Boilerplate"
+  />
+  <ProjectTileMock
+    description="Matrices computing library."
     key="Mx"
-  >
-    <ProjectTileMock
-      description="Matrices computing library."
-      image="coast-sunny.jpg"
-      name="Mx"
-      url="https://github.com/BartoszRak/Mx"
-    />
-  </div>
+    name="Mx"
+    tags={
+      Array [
+        "Typescript",
+      ]
+    }
+    url="https://github.com/BartoszRak/Mx"
+  />
 </div>
 `;

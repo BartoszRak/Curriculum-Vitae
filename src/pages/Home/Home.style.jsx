@@ -7,7 +7,12 @@ export default ({ palette, spacing }) => ({
     height: spacing.unit * 2.5,
   },
   holder: {
-    padding: '50px 15%',
+    padding: '0 15%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    minHeight: '100vh',
   },
   projectsHolder: {
     backgroundAttachment: 'fixed',

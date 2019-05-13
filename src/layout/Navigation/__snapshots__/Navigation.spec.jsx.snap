@@ -17,6 +17,7 @@ exports[`global: Navigation should render as expected 1`] = `
           "root": undefined,
         }
       }
+      color="secondary"
       key="Projects"
       onClick={[Function]}
     >
@@ -29,6 +30,7 @@ exports[`global: Navigation should render as expected 1`] = `
           "root": undefined,
         }
       }
+      color="secondary"
       key="About me"
       onClick={[Function]}
     >

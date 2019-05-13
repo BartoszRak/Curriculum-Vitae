@@ -13,23 +13,34 @@ exports[`global: ProjectTile should render as expected 1`] = `
       }
     }
   >
-    <div
-      style={
-        Object {
-          "backgroundImage": "url(http://testImage.com/url)",
-        }
-      }
-    />
+    <TypographyMock
+      variant="h1"
+    >
+      Example title
+    </TypographyMock>
+    <TypographyMock
+      variant="body1"
+    >
+      Some example description
+    </TypographyMock>
     <div>
       <TypographyMock
-        variant="h1"
+        key="exampleTag1"
+        variant="h6"
       >
-        Example title
+        exampleTag1
       </TypographyMock>
       <TypographyMock
-        variant="body1"
+        key="exampleTag2"
+        variant="h6"
       >
-        Some example description
+        exampleTag2
+      </TypographyMock>
+      <TypographyMock
+        key="exampleTag3"
+        variant="h6"
+      >
+        exampleTag3
       </TypographyMock>
     </div>
   </PaperMock>
