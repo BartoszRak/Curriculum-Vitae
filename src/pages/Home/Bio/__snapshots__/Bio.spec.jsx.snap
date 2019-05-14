@@ -7,29 +7,89 @@ exports[`global: Bio should render as expected 1`] = `
   <TypographyMock
     variant="h1"
   >
-    Wait, wait... but who Am I? 
+    Wait, wait... but who Am I?
     <span
       aria-hidden={true}
     >
       🙄
     </span>
   </TypographyMock>
-  <TypographyMock
-    variant="h2"
-  >
-    Unbrainless human
-  </TypographyMock>
-  <DividerMock />
-  <TypographyMock
-    variant="body1"
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </TypographyMock>
-  <br />
-  <TypographyMock
-    variant="body1"
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </TypographyMock>
+  <div>
+    <div>
+      <TypographyMock
+        variant="h2"
+      >
+        Unbrainless human
+      </TypographyMock>
+      <DividerMock />
+      <TypographyMock
+        variant="h4"
+      >
+        How I treat life? Let me introduce myself with short description...
+      </TypographyMock>
+      <br />
+      <TypographyMock
+        variant="body1"
+      >
+        I am enthusiastic about basing our life decisions on intelligence, experience, and logic. I always consider everything to go through the optimized way.
+      </TypographyMock>
+      <br />
+      <TypographyMock
+        variant="body1"
+      >
+        I treat everything - even the hardest issues and life problems - always as solvable.
+      </TypographyMock>
+    </div>
+    <div>
+      <TypographyMock
+        variant="h2"
+      >
+        Freak as well
+      </TypographyMock>
+      <DividerMock />
+      <TypographyMock
+        variant="h4"
+      >
+        How did it start?
+      </TypographyMock>
+      <br />
+      <TypographyMock
+        variant="body1"
+      >
+        About 2 years ago I started my journey by creating simple websites. After a few months, I dived into programming and now I am big fun of it. It looks like I started being freak as well.
+      </TypographyMock>
+      <br />
+      <TypographyMock
+        variant="body1"
+      >
+        It happens sometimes I make a night spending it on coding and delivering my ideas into reality.
+      </TypographyMock>
+    </div>
+    <div>
+      <TypographyMock
+        variant="h2"
+      >
+        Evolution
+      </TypographyMock>
+      <DividerMock />
+      <TypographyMock
+        variant="h4"
+      >
+        What about future, ideas and plans?
+      </TypographyMock>
+      <br />
+      <TypographyMock
+        variant="body1"
+      >
+        For today when I look to the past, I learned so many things, but still, there are thousands of technologies and the language that I want to try and learn.
+      </TypographyMock>
+      <br />
+      <TypographyMock
+        variant="body1"
+      >
+        In case of that, I do not stop engaging everything that interests me. I expand my knowledge and grow my skills to be a better and more accurate developer.
+      </TypographyMock>
+    </div>
+  </div>
 </div>
 `;

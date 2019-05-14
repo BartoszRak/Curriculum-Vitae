@@ -11,14 +11,14 @@ const projects = [
     description:
       'Carefully designed react boilerplate repositorium that gives you fast and smooth start! ',
     name: 'React Awesome Boilerplate',
-    url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
     tags: ['React', 'Rematch', 'Redux'],
+    url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
   },
   {
     description: 'Matrices computing library.',
     name: 'Mx',
-    url: 'https://github.com/BartoszRak/Mx',
     tags: ['Typescript'],
+    url: 'https://github.com/BartoszRak/Mx',
   },
 ]
 

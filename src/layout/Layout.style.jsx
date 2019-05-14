@@ -11,6 +11,7 @@ export default ({ palette, spacing }) => ({
   information: {
     background: palette.error.main,
     color: palette.secondary.main,
+    margin: spacing.unit * 1,
     padding: spacing.unit * 1.5,
     position: 'fixed',
     right: 0,
