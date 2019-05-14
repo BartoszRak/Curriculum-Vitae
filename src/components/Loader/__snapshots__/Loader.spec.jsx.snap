@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: Loader rendering should render as expected 1`] = `
+<div
+  className=""
+>
+  <LinearProgressMock
+    classes={
+      Object {
+        "root": undefined,
+      }
+    }
+  />
+  <LinearProgressMock
+    classes={
+      Object {
+        "root": undefined,
+      }
+    }
+    variant="query"
+  />
+  <LinearProgressMock
+    classes={
+      Object {
+        "root": undefined,
+      }
+    }
+  />
+  <LinearProgressMock
+    classes={
+      Object {
+        "root": undefined,
+      }
+    }
+    variant="query"
+  />
+</div>
+`;
+
+exports[`global: Loader rendering should render as expected when not loading 1`] = `
+<div
+  id="testChildren"
+>
+  Test children
+</div>
+`;
