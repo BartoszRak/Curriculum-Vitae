@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {
-  withStyles, AppBar, Toolbar, Button,
-} from '@material-ui/core'
+import { withStyles, AppBar, Toolbar, Button } from '@material-ui/core'
 
 import { useScrollTo } from '~hooks'
 
@@ -19,12 +17,9 @@ const routes = [
   },
 ]
 
-
-
 export function Navigation({ classes }) {
-
   const { scrollTo } = useScrollTo()
-  
+
   return (
     <AppBar
       classes={{

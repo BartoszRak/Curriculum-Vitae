@@ -2,24 +2,26 @@ import { useCallback } from 'react'
 import anime from 'animejs'
 
 function useScrollTo() {
-    const scrollTo = useCallback(identifier => {
-        const scrollElement = window.document.scrollingElement || window.document.body || window.document.documentElement
-        const element = window.document.querySelector(identifier)
+  const scrollTo = useCallback(identifier => {
+    const scrollElement = window.document.scrollingElement
+      || window.document.body
+      || window.document.documentElement
+    const element = window.document.querySelector(identifier)
 
-        if (!element) return
+    if (!element) return
 
-        const boundingRect = element.getBoundingClientRect()
-        anime({
-            duration: 500,
-            easing: 'easeInOutQuad',
-            scrollTop: boundingRect.top,
-            targets: scrollElement,
-        })
-    }, [])
+    const boundingRect = element.getBoundingClientRect()
+    anime({
+      duration: 500,
+      easing: 'easeInOutQuad',
+      scrollTop: boundingRect.top,
+      targets: scrollElement,
+    })
+  }, [])
 
-    return {
-        scrollTo,
-    }
+  return {
+    scrollTo,
+  }
 }
 
 export default useScrollTo
