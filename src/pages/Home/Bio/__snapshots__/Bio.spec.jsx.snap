@@ -7,7 +7,12 @@ exports[`global: Bio should render as expected 1`] = `
   <TypographyMock
     variant="h1"
   >
-    Wait, wait... but who Am I? 🙄
+    Wait, wait... but who Am I? 
+    <span
+      aria-hidden={true}
+    >
+      🙄
+    </span>
   </TypographyMock>
   <TypographyMock
     variant="h2"

@@ -20,7 +20,7 @@ export function Greeting({ classes }) {
       Bartosz Rak
       </Typography>
       <Typography variant="h2" className={classes.subtitle}>
-      Front-end developer
+      Front-end developer <span aria-hidden>😁</span>
       </Typography>
     </div>
   )
