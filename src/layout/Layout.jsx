@@ -23,6 +23,9 @@ export const Layout = ({ classes }) => (
       <Footer />
     </div>
     <div className={classes.bottomShadow} />
+    <div className={classes.information}>
+      Site under construction
+    </div>
   </React.Fragment>
 )
 

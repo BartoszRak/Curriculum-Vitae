@@ -18,5 +18,8 @@ exports[`global: Layout should render as expected 1`] = `
     <FooterMock />
   </div>
   <div />
+  <div>
+    Site under construction
+  </div>
 </Fragment>
 `;
