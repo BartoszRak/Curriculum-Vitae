@@ -19,7 +19,12 @@ exports[`global: Greeting should render as expected 1`] = `
   <TypographyMock
     variant="h2"
   >
-    Front-end developer
+    Front-end developer 
+    <span
+      aria-hidden={true}
+    >
+      😁
+    </span>
   </TypographyMock>
 </div>
 `;

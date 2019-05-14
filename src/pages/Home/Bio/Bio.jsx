@@ -8,7 +8,7 @@ export function Bio({ classes }) {
   return (
     <div className={classes.root} id="bio">
       <Typography className={classes.title} variant="h1">
-        Wait, wait... but who Am I? 🙄
+        Wait, wait... but who Am I? <span aria-hidden>🙄</span>
       </Typography>
       <Typography className={classes.subtitle} variant="h2">
         Unbrainless human

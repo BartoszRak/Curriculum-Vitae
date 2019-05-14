@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import anime from 'animejs'
 import {
   withStyles, AppBar, Toolbar, Button,
 } from '@material-ui/core'
+
+import { useScrollTo } from '~hooks'
+
 import style from './Navigation.style'
 
 const routes = [
@@ -17,22 +19,12 @@ const routes = [
   },
 ]
 
-export function Navigation({ classes }) {
-  function scrollTo(identifier) {
-    const scrollElement = window.document.scrollingElement
-      || window.document.body
-      || window.document.documentElement
-    const element = window.document.querySelector(identifier)
-    if (!element) return
-    const boundingRect = element.getBoundingClientRect()
-    anime({
-      duration: 500,
-      easing: 'easeInOutQuad',
-      scrollTop: boundingRect.top,
-      targets: scrollElement,
-    })
-  }
 
+
+export function Navigation({ classes }) {
+
+  const { scrollTo } = useScrollTo()
+  
   return (
     <AppBar
       classes={{
