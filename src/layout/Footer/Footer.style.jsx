@@ -1,6 +1,6 @@
 export default ({ spacing, palette }) => ({
   root: {
-    background: palette.primary.main,
+    background: palette.secondary.main,
     padding: spacing.unit * 2,
   },
   text: {
