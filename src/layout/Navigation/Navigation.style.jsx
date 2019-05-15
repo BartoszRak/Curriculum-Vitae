@@ -1,10 +1,14 @@
 export default ({ spacing }) => ({
   button: {
+    '&:hover': {
+      background: 'rgba(0, 0, 0, 0.05)',
+    },
     marginRight: spacing.unit * 4,
   },
   buttonLabel: {
     fontSize: '1rem',
     fontWeight: 'normal',
+    textShadow: '0 0 5px rgba(0, 0, 0, 0.8)',
   },
   root: {
     background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0)100%)',
