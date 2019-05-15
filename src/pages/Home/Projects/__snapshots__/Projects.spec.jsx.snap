@@ -8,13 +8,48 @@ exports[`global: Projects should render as expected 1`] = `
     color="secondary"
     variant="h1"
   >
-    What have I created? 
+    What have I created?
     <span
       aria-hidden={true}
     >
       😎
     </span>
   </TypographyMock>
-  <ProjectsListMock />
+  <ProjectsListMock
+    data={
+      Array [
+        Object {
+          "description": "Carefully designed react boilerplate repositorium that gives you fast and smooth start! ",
+          "name": "React Awesome Boilerplate",
+          "tags": Array [
+            Object {
+              "name": "React",
+              "url": "https://reactjs.org/",
+            },
+            Object {
+              "name": "Redux",
+              "url": "https://redux.js.org/",
+            },
+            Object {
+              "name": "Rematch",
+              "url": "https://github.com/rematch/rematch",
+            },
+          ],
+          "url": "https://github.com/BartoszRak/React-Awesome-Boilerplate",
+        },
+        Object {
+          "description": "Matrices computing library.",
+          "name": "Mx",
+          "tags": Array [
+            Object {
+              "name": "TypeScript",
+              "url": "https://www.typescriptlang.org/",
+            },
+          ],
+          "url": "https://github.com/BartoszRak/Mx",
+        },
+      ]
+    }
+  />
 </div>
 `;
