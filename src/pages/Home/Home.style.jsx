@@ -7,14 +7,17 @@ export default ({ palette, spacing }) => ({
     height: spacing.unit * 2.5,
   },
   holder: {
-    padding: '0 15%',
-    display: 'flex',
-    justifyContent: 'center',
     alignItems: 'center',
+    display: 'flex',
     flexDirection: 'column',
+    justifyContent: 'center',
     minHeight: '100vh',
+    padding: '0 15%',
   },
   projectsHolder: {
+    backgroundAttachment: 'fixed',
+  },
+  skillsHolder: {
     backgroundAttachment: 'fixed',
   },
   root: {

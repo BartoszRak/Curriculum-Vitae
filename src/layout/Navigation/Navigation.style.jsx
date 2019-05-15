@@ -1,4 +1,4 @@
-export default ({ spacing }) => ({
+export default ({ palette, spacing }) => ({
   button: {
     '&:hover': {
       background: 'rgba(0, 0, 0, 0.05)',
@@ -6,6 +6,7 @@ export default ({ spacing }) => ({
     marginRight: spacing.unit * 4,
   },
   buttonLabel: {
+    color: palette.secondary.light,
     fontSize: '1rem',
     fontWeight: 'normal',
     textShadow: '0 0 5px rgba(0, 0, 0, 0.8)',

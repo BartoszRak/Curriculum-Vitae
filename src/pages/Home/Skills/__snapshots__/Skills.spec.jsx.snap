@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: Skills should render as expected 1`] = `
+<div
+  id="skills"
+>
+  skills
+</div>
+`;

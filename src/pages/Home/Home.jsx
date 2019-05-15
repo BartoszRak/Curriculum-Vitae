@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core'
 
 import Projects from './Projects'
 import Bio from './Bio'
+import Skills from './Skills'
 
 import style from './Home.style'
 
@@ -25,6 +26,14 @@ export function Home({ classes }) {
         className={classNames(classes.holder, classes.bioHolder)}
       >
         <Bio />
+      </div>
+      <div
+        className={classNames(classes.holder, classes.skillsHolder)}
+        style={{
+          backgroundImage: `url(${MountainsBlurImage})`,
+        }}
+      >
+        <Skills />
       </div>
     </div>
   )
