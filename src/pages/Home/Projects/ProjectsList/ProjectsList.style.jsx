@@ -6,11 +6,14 @@ export default ({ breakpoints }) => ({
     [breakpoints.up('lg')]: {
       columnCount: 4,
     },
-    [breakpoints.up('md')]: {
+    [breakpoints.down('md')]: {
       columnCount: 3,
     },
-    [breakpoints.down('md')]: {
+    [breakpoints.down('sm')]: {
       columnCount: 2,
+    },
+    [breakpoints.down('sm')]: {
+      columnCount: 1,
     },
   },
 })
