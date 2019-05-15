@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: SkillsList should render as expected 1`] = `
+<div
+  className=""
+>
+  <TypographyMock
+    className=""
+    color="secondary"
+    key="testName1"
+    variant="h5"
+  >
+    testName1
+  </TypographyMock>
+  <TypographyMock
+    className=""
+    color="secondary"
+    key="testName2"
+    variant="h5"
+  >
+    testName2
+  </TypographyMock>
+  <TypographyMock
+    className=""
+    color="secondary"
+    key="testName3"
+    variant="h5"
+  >
+    testName3
+  </TypographyMock>
+  <TypographyMock
+    className=""
+    color="secondary"
+    variant="h5"
+  >
+    3
+  </TypographyMock>
+</div>
+`;

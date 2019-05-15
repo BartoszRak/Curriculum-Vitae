@@ -25,22 +25,16 @@ exports[`global: ProjectTile should render as expected 1`] = `
     </TypographyMock>
     <div>
       <TypographyMock
-        key="exampleTag1"
+        key="testName1"
         variant="h6"
       >
-        exampleTag1
+        testName1
       </TypographyMock>
       <TypographyMock
-        key="exampleTag2"
+        key="testName2"
         variant="h6"
       >
-        exampleTag2
-      </TypographyMock>
-      <TypographyMock
-        key="exampleTag3"
-        variant="h6"
-      >
-        exampleTag3
+        testName2
       </TypographyMock>
     </div>
   </PaperMock>

@@ -8,9 +8,18 @@ exports[`global: ProjectsList should render as expected 1`] = `
     name="React Awesome Boilerplate"
     tags={
       Array [
-        "React",
-        "Rematch",
-        "Redux",
+        Object {
+          "name": "React",
+          "url": "https://reactjs.org/",
+        },
+        Object {
+          "name": "Redux",
+          "url": "https://redux.js.org/",
+        },
+        Object {
+          "name": "Rematch",
+          "url": "https://github.com/rematch/rematch",
+        },
       ]
     }
     url="https://github.com/BartoszRak/React-Awesome-Boilerplate"
@@ -21,7 +30,10 @@ exports[`global: ProjectsList should render as expected 1`] = `
     name="Mx"
     tags={
       Array [
-        "Typescript",
+        Object {
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org/",
+        },
       ]
     }
     url="https://github.com/BartoszRak/Mx"
