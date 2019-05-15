@@ -3,30 +3,13 @@ import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core'
 
 import ProjectTile from './ProjectTile'
-import technologiesMap from '~utils/technologiesMaps'
 
 import style from './ProjectsList.style'
 
-const projects = [
-  {
-    description:
-      'Carefully designed react boilerplate repositorium that gives you fast and smooth start! ',
-    name: 'React Awesome Boilerplate',
-    tags: [technologiesMap.react, technologiesMap.redux, technologiesMap.rematch],
-    url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
-  },
-  {
-    description: 'Matrices computing library.',
-    name: 'Mx',
-    tags: [technologiesMap.typescript],
-    url: 'https://github.com/BartoszRak/Mx',
-  },
-]
-
-export function ProjectsList({ classes }) {
+export function ProjectsList({ classes, data }) {
   return (
     <div className={classes.root}>
-      {projects.map(project => {
+      {data.map(project => {
         const {
           description, name, url, tags,
         } = project
@@ -46,6 +29,10 @@ export function ProjectsList({ classes }) {
 
 ProjectsList.propTypes = {
   classes: PropTypes.object,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    url: PropTypes.string,
+  }))
 }
 
 export default withStyles(style)(ProjectsList)

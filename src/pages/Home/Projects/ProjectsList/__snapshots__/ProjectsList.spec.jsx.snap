@@ -3,40 +3,16 @@
 exports[`global: ProjectsList should render as expected 1`] = `
 <div>
   <ProjectTileMock
-    description="Carefully designed react boilerplate repositorium that gives you fast and smooth start! "
-    key="React Awesome Boilerplate"
-    name="React Awesome Boilerplate"
+    description="Test description1"
+    key="testName1"
+    name="testName1"
     tags={
-      Array [
-        Object {
-          "name": "React",
-          "url": "https://reactjs.org/",
-        },
-        Object {
-          "name": "Redux",
-          "url": "https://redux.js.org/",
-        },
-        Object {
-          "name": "Rematch",
-          "url": "https://github.com/rematch/rematch",
-        },
-      ]
+      Object {
+        "name": "testTag",
+        "url": "testTagUrl",
+      }
     }
-    url="https://github.com/BartoszRak/React-Awesome-Boilerplate"
-  />
-  <ProjectTileMock
-    description="Matrices computing library."
-    key="Mx"
-    name="Mx"
-    tags={
-      Array [
-        Object {
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/",
-        },
-      ]
-    }
-    url="https://github.com/BartoszRak/Mx"
+    url="https://testurl.com"
   />
 </div>
 `;

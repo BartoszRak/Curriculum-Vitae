@@ -8,6 +8,17 @@ jest.mock('./ProjectTile', () => 'ProjectTileMock')
 const initComponent = overrides => {
   const mockProps = {
     classes: {},
+    data: [
+      {
+        description: 'Test description1',
+        name: 'testName1',
+        tags: {
+          name: 'testTag',
+          url: 'testTagUrl',
+        },
+        url: 'https://testurl.com',
+      },
+    ]
   }
   const mockMethods = {}
   const wrapper = shallow(<ProjectsList {...mockProps} {...mockMethods} {...overrides} />)
