@@ -11,10 +11,12 @@ function useScrollTo() {
     if (!element) return
 
     const boundingRect = element.getBoundingClientRect()
+    console.log(boundingRect.top)
+    console.log(window.pageYOffset)
     anime({
       duration: 500,
       easing: 'easeInOutQuad',
-      scrollTop: boundingRect.top,
+      scrollTop: boundingRect.top + window.pageYOffset,
       targets: scrollElement,
     })
   }, [])

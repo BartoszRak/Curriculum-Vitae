@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withStyles, AppBar, Toolbar, Button } from '@material-ui/core'
+import {
+  withStyles, AppBar, Toolbar, Button,
+} from '@material-ui/core'
 
 import { useScrollTo } from '~hooks'
 
