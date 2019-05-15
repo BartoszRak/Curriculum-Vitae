@@ -4,6 +4,7 @@ export default ({ breakpoints, palette, spacing }) => ({
   },
   root: {
     margin: '50px 0',
+    width: '100%',
   },
   subtitle: {
     borderLeft: `4px solid ${palette.primary.main}`,
@@ -18,16 +19,10 @@ export default ({ breakpoints, palette, spacing }) => ({
   },
   tilesHolder: {
     columnGap: 80,
-    [breakpoints.up('lg')]: {
-      columnCount: 4,
-    },
-    [breakpoints.down('lg')]: {
+    [breakpoints.up('md')]: {
       columnCount: 3,
     },
     [breakpoints.down('md')]: {
-      columnCount: 2,
-    },
-    [breakpoints.down('sm')]: {
       columnCount: 1,
     },
   },

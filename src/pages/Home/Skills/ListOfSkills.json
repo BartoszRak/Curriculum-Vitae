@@ -1,0 +1,99 @@
+[
+  {
+    "name": "React",
+    "advancement": 0
+  }, {
+    "name": "Javascript",
+    "advancement": 0
+  }, {
+    "name": "Material UI",
+    "advancement": 0
+  }, {
+    "name": "Scss/Sass",
+    "advancement": 0
+  }, {
+    "name": "Axios",
+    "advancement": 0
+  }, {
+    "name": "Firebase",
+    "advancement": 0
+  }, {
+    "name": "TypeScript",
+    "advancement": 0
+  }, {
+    "name": "Rematch",
+    "advancement": 0
+  }, {
+    "name": "Redux",
+    "advancement": 0
+  }, {
+    "name": ".Jss",
+    "advancement": 0
+  }, {
+    "name": "Immutable",
+    "advancement": 0
+  }, {
+    "name": "Git",
+    "advancement": 0
+  }, {
+    "name": "Formik",
+    "advancement": 0
+  }, {
+    "name": "HTML",
+    "advancement": 0
+  }, {
+    "name": "CSS",
+    "advancement": 0
+  }, {
+    "name": "Rest API",
+    "advancement": 0
+  }, {
+    "name": "Travis CI",
+    "advancement": 1
+  }, {
+    "name": "Keycloak",
+    "advancement": 1
+  }, {
+    "name": "Webpack",
+    "advancement": 1
+  }, {
+    "name": "Express.js",
+    "advancement": 1
+  }, {
+    "name": "Next.js",
+    "advancement": 1
+  }, {
+    "name": "GraphQL",
+    "advancement": 1
+  }, {
+    "name": "jQuery",
+    "advancement": 1
+  }, {
+    "name": "C++",
+    "advancement": 2
+  }, {
+    "name": "SFML v2.0",
+    "advancement": 2
+  }, {
+    "name": "Boost",
+    "advancement": 2
+  }, {
+    "name": "Golang",
+    "advancement": 2
+  }, {
+    "name": "Python",
+    "advancement": 2
+  }, {
+    "name": "Gulp",
+    "advancement": 2
+  }, {
+    "name": "Styled Components",
+    "advancement": 2
+  }, {
+    "name": "Php",
+    "advancement": 2
+  }, {
+    "name": "MySQL",
+    "advancement": 2
+  }
+]

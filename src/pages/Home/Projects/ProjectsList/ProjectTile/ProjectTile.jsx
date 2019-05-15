@@ -22,9 +22,9 @@ export function ProjectTile({
         </Typography>
         <div className={classes.tags}>
           {tags.map(tag => (
-            <Typography className={classes.tag} key={tag} variant="h6">{tag}</Typography>
+            <Typography className={classes.tag} key={tag.name} variant="h6">{tag.name}</Typography>
           ))}
-        </div> 
+        </div>
       </Paper>
     </a>
   )
@@ -34,7 +34,10 @@ ProjectTile.propTypes = {
   classes: PropTypes.object,
   description: PropTypes.string,
   name: PropTypes.string.isRequired,
-  tags: PropTypes.arrayOf(PropTypes.string),
+  tags: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    url: PropTypes.string,
+  })),
   url: PropTypes.string.isRequired,
 }
 
