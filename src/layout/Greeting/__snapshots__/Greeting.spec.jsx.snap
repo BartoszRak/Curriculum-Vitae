@@ -9,6 +9,7 @@ exports[`global: Greeting should render as expected 1`] = `
   }
 >
   <AvatarMock
+    alt="Author instagram picture"
     src="instagram-photo.jpg"
   />
   <TypographyMock
@@ -19,7 +20,7 @@ exports[`global: Greeting should render as expected 1`] = `
   <TypographyMock
     variant="h2"
   >
-    Front-end developer 
+    Front-end developer
     <span
       aria-hidden={true}
     >
