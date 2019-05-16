@@ -12,8 +12,16 @@ export function LanguageSelect({ classes }) {
       {({ language, setLanguage }) => (
         <div className={classes.root}>
           <Select
+            className={classes.select}
             classes={{
-              root: classes.select,
+              root: classes.selectRoot,
+              icon: classes.selectIcon,
+              selectMenu: classes.selectMenu,
+            }}
+            MenuProps={{
+              classes: {
+                paper: classes.menuPaper,
+              },
             }}
             name="Language"
             onChange={evt => {
