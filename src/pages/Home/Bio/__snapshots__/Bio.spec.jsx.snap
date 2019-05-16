@@ -8,7 +8,10 @@ exports[`global: Bio should render as expected 1`] = `
     <TypographyMock
       variant="h1"
     >
-      Wait, wait... but who Am I?
+      <FormattedMessage
+        id="pages.home.bio.title"
+        values={Object {}}
+      />
       <span
         aria-hidden={true}
       >
@@ -20,75 +23,111 @@ exports[`global: Bio should render as expected 1`] = `
         <TypographyMock
           variant="h2"
         >
-          Unbrainless human
+          <FormattedMessage
+            id="pages.home.bio.tiles.0.title"
+            values={Object {}}
+          />
         </TypographyMock>
         <DividerMock />
         <TypographyMock
           variant="h4"
         >
-          How I treat life? Let me introduce myself with short description...
+          <FormattedMessage
+            id="pages.home.bio.tiles.0.subtitle"
+            values={Object {}}
+          />
         </TypographyMock>
         <br />
         <TypographyMock
           variant="body1"
         >
-          I am enthusiastic about basing our life decisions on intelligence, experience, and logic. I always consider everything to go through the optimized way.
+          <FormattedMessage
+            id="pages.home.bio.tiles.0.paragraphs.0"
+            values={Object {}}
+          />
         </TypographyMock>
         <br />
         <TypographyMock
           variant="body1"
         >
-          I treat everything - even the hardest issues and life problems - always as solvable.
+          <FormattedMessage
+            id="pages.home.bio.tiles.0.paragraphs.1"
+            values={Object {}}
+          />
         </TypographyMock>
       </div>
       <div>
         <TypographyMock
           variant="h2"
         >
-          Freak as well
+          <FormattedMessage
+            id="pages.home.bio.tiles.1.title"
+            values={Object {}}
+          />
         </TypographyMock>
         <DividerMock />
         <TypographyMock
           variant="h4"
         >
-          How did it start?
+          <FormattedMessage
+            id="pages.home.bio.tiles.1.subtitle"
+            values={Object {}}
+          />
         </TypographyMock>
         <br />
         <TypographyMock
           variant="body1"
         >
-          About 2 years ago I started my journey by creating simple websites. After a few months, I dived into programming and now I am big fun of it. It looks like I started being freak as well.
+          <FormattedMessage
+            id="pages.home.bio.tiles.1.paragraphs.0"
+            values={Object {}}
+          />
         </TypographyMock>
         <br />
         <TypographyMock
           variant="body1"
         >
-          It happens sometimes I make a night spending it on coding and delivering my ideas into reality.
+          <FormattedMessage
+            id="pages.home.bio.tiles.1.paragraphs.1"
+            values={Object {}}
+          />
         </TypographyMock>
       </div>
       <div>
         <TypographyMock
           variant="h2"
         >
-          Evolution
+          <FormattedMessage
+            id="pages.home.bio.tiles.2.title"
+            values={Object {}}
+          />
         </TypographyMock>
         <DividerMock />
         <TypographyMock
           variant="h4"
         >
-          What about future, ideas and plans?
+          <FormattedMessage
+            id="pages.home.bio.tiles.2.subtitle"
+            values={Object {}}
+          />
         </TypographyMock>
         <br />
         <TypographyMock
           variant="body1"
         >
-          For today when I look to the past, I learned so many things, but still, there are thousands of technologies and the language that I want to try and learn.
+          <FormattedMessage
+            id="pages.home.bio.tiles.2.paragraphs.0"
+            values={Object {}}
+          />
         </TypographyMock>
         <br />
         <TypographyMock
           variant="body1"
         >
-          In case of that, I do not stop engaging everything that interests me. I expand my knowledge and grow my skills to be a better and more accurate developer.
+          <FormattedMessage
+            id="pages.home.bio.tiles.2.paragraphs.1"
+            values={Object {}}
+          />
         </TypographyMock>
       </div>
     </div>

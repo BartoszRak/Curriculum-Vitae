@@ -7,7 +7,6 @@ const initComponent = overrides => {
   const mockProps = {
     classes: {},
     description: 'Some example description',
-    name: 'Example title',
     tags: [{
       name: 'testName1',
       url: 'http://testurl1.com',
@@ -15,6 +14,7 @@ const initComponent = overrides => {
       name: 'testName2',
       url: 'http://testurl2.com',
     }],
+    title: 'Example title',
     url: 'http://testurl.com',
   }
   const mockMethods = {}

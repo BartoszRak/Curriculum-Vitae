@@ -8,7 +8,10 @@ exports[`global: Projects should render as expected 1`] = `
     color="secondary"
     variant="h1"
   >
-    What have I created?
+    <FormattedMessage
+      id="pages.home.projects.title"
+      values={Object {}}
+    />
     <span
       aria-hidden={true}
     >
@@ -19,8 +22,7 @@ exports[`global: Projects should render as expected 1`] = `
     data={
       Array [
         Object {
-          "description": "Carefully designed react boilerplate repositorium that gives you fast and smooth start! ",
-          "name": "React Awesome Boilerplate",
+          "description": "pages.home.projects.projects.reactAwesomeBoilerplate.description",
           "tags": Array [
             Object {
               "name": "React",
@@ -35,17 +37,18 @@ exports[`global: Projects should render as expected 1`] = `
               "url": "https://github.com/rematch/rematch",
             },
           ],
+          "title": "pages.home.projects.projects.reactAwesomeBoilerplate.title",
           "url": "https://github.com/BartoszRak/React-Awesome-Boilerplate",
         },
         Object {
-          "description": "Matrices computing library.",
-          "name": "Mx",
+          "description": "pages.home.projects.projects.mx.description",
           "tags": Array [
             Object {
               "name": "TypeScript",
               "url": "https://www.typescriptlang.org/",
             },
           ],
+          "title": "pages.home.projects.projects.mx.title",
           "url": "https://github.com/BartoszRak/Mx",
         },
       ]

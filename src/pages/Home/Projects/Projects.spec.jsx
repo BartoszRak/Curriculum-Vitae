@@ -8,6 +8,9 @@ jest.mock('./ProjectsList', () => 'ProjectsListMock')
 const initComponent = overrides => {
   const mockProps = {
     classes: {},
+    intl: {
+     formatMessage: v => v.id,
+    },
   }
   const mockMethods = {}
   const wrapper = shallow(<Projects {...mockProps} {...mockMethods} {...overrides} />)

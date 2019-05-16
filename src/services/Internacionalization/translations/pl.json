@@ -1,8 +1,95 @@
 {
+  "components": {
+    "languageSelect": {
+      "languages": {
+        "en": "English",
+        "pl": "Polish"
+      }
+    }
+  },
+  "layout": {
+    "greeting": {
+      "subtitle": "Front-end enthusiast",
+      "subsubtitle": "Aspiring back-end developer"
+    },
+    "navigation": {
+      "items": {
+        "projects": "Projects",
+        "bio": "About me",
+        "skills": "My skills & technologies",
+        "workflow": "How do I work?"
+      }
+    },
+    "footer": {
+      "copyright": "© All copyrights reserved {date}"
+    }
+  },
   "pages": {
     "home": {
       "projects": {
-        "title": "Co takiego stworzyłem?"
+        "title": "What have I created?",
+        "projects": {
+          "reactAwesomeBoilerplate": {
+            "title": "React Awesome Boilerplate",
+            "description": "Carefully designed react boilerplate repositorium that gives you fast and smooth start!"
+          },
+          "mx": {
+            "title": "Mx",
+            "description": "Matrices computing library"
+          }
+        }
+      },
+      "bio": {
+        "title": "What have I created?",
+        "tiles": [
+          {
+            "title": "Unbrainless human",
+            "subtitle": "How I treat life? Let me introduce myself in few words...",
+            "paragraphs": [
+              "I am enthusiastic about basing our life decisions on intelligence, experience, and logic. I always consider everything to go through the optimized way.",
+              "I treat everything - even the hardest issues and life problems - always as solvable."
+            ]
+          }, {
+            "title": "Freak as well",
+            "subtitle": "How did it start?",
+            "paragraphs": [
+              "About 2 years ago I started my journey by creating simple websites. After a few months, I dived into programming and now I am big fun of it. It looks like I started being freak as well.",
+              "It happens sometimes I make a night spending it on coding and delivering my ideas into reality."
+            ]
+          }, {
+            "title": "Evolution",
+            "subtitle": "What about future, ideas and plans?",
+            "paragraphs": [
+              "For today when I look to the past, I learned so many things, but still, there are thousands of technologies and the language that I want to try and learn",
+              "In case of that, I do not stop engaging everything that interests me. I expand my knowledge and grow my skills to be a better and more accurate developer."
+            ]
+          }
+        ]
+      },
+      "skills": {
+        "title": "Do I engage awesome technologies?",
+        "levels": [
+          {
+            "title": "Core"
+          }, {
+            "title": "Side things"
+          }, {
+            "title": "Bonuses"
+          }
+        ]
+      },
+      "workflow": {
+        "title": "How my workflow looks like?",
+        "tiles": {
+          "project": {
+            "title": "Project side",
+            "description": "In case of project workflow I worked mostly in Agile & Scrum and in customized mixes of those two methodologies. I am fun of organized but flexible workflows that gives a possibility to adapt easily to the situation."
+          },
+          "git": {
+            "title": "Git part",
+            "description": "I always tend to use a workflow that is closest to {methodology} methodology. When I got, a task I create one branch, in which I always try to create only one commit and I squash at the end of work - to be sure my main branch will not be cluttered."
+          }
+        }
       }
     }
   }

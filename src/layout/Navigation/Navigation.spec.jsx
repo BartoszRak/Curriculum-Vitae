@@ -6,6 +6,9 @@ import { Navigation } from './Navigation'
 const initComponent = overrides => {
   const mockProps = {
     classes: {},
+    intl: {
+      formatMessage: v => v.id,
+    },
   }
   const mockMethods = {}
   const wrapper = shallow(<Navigation {...mockProps} {...mockMethods} {...overrides} />)
