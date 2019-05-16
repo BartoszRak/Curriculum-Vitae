@@ -21,7 +21,7 @@ exports[`global: Skills should render as expected 1`] = `
   >
     Core
   </TypographyMock>
-  <SkillsList
+  <SkillsListMock
     data={
       Array [
         Object {
@@ -97,7 +97,7 @@ exports[`global: Skills should render as expected 1`] = `
   >
     Side things
   </TypographyMock>
-  <SkillsList
+  <SkillsListMock
     data={
       Array [
         Object {
@@ -137,7 +137,7 @@ exports[`global: Skills should render as expected 1`] = `
   >
     Bonuses
   </TypographyMock>
-  <SkillsList
+  <SkillsListMock
     data={
       Array [
         Object {

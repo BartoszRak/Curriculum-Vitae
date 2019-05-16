@@ -3,6 +3,8 @@ import { shallow } from 'enzyme'
 
 import { Skills } from './Skills'
 
+jest.mock('./SkillsList', () => 'SkillsListMock')
+
 const initComponent = overrides => {
   const mockProps = {
     classes: {},

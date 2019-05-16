@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: Workflow should render as expected 1`] = `
+<div
+  id="workflow"
+>
+  <TypographyMock
+    variant="h1"
+  >
+    How my workflow looks like?
+    <span
+      aria-hidden={true}
+    >
+      🙌
+    </span>
+  </TypographyMock>
+  <DividerMock />
+  <TypographyMock
+    variant="h3"
+  >
+    Project side
+  </TypographyMock>
+  <TypographyMock
+    variant="body1"
+  >
+    In case of project workflow I worked mostly in Agile & Scrum and in customized mixes of those two methodologies. I am fun of organized but flexible workflows that gives a possibility to adapt easily to the situation.
+  </TypographyMock>
+  <TypographyMock
+    variant="h3"
+  >
+    Git part
+  </TypographyMock>
+  <TypographyMock
+    variant="body1"
+  >
+    I always tend to use a workflow that is closest to
+     
+    <a
+      href="https://pl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+    >
+      git-glow
+    </a>
+     
+    methodology. When I got, a task I create one branch, in which I always try to create only one commit and I squash at the end of work - to be sure my main branch will not be cluttered.
+  </TypographyMock>
+</div>
+`;
