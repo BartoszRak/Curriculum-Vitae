@@ -1,10 +1,13 @@
 export default ({ palette, spacing }) => ({
-  bioHolder: {
-    background: palette.secondary.main,
+  backgroundHolder: {
+    backgroundAttachment: 'fixed',
   },
   divider: {
     background: palette.secondary.main,
     height: spacing.unit * 2.5,
+  },
+  fairHolder: {
+    background: palette.secondary.main,
   },
   holder: {
     alignItems: 'center',
@@ -13,12 +16,6 @@ export default ({ palette, spacing }) => ({
     justifyContent: 'center',
     minHeight: '100vh',
     padding: '40px 15%',
-  },
-  projectsHolder: {
-    backgroundAttachment: 'fixed',
-  },
-  skillsHolder: {
-    backgroundAttachment: 'fixed',
   },
   root: {
     alignItems: 'stretch',

@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core'
 import Projects from './Projects'
 import Bio from './Bio'
 import Skills from './Skills'
+import Workflow from './Workflow'
 
 import style from './Home.style'
 
@@ -15,25 +16,28 @@ export function Home({ classes }) {
   return (
     <div className={classes.root}>
       <div
-        className={classNames(classes.holder, classes.projectsHolder)}
+        className={classNames(classes.holder, classes.backgroundHolder)}
         style={{
           backgroundImage: `url(${MountainsBlurImage})`,
         }}
       >
         <Projects />
       </div>
-      <div
-        className={classNames(classes.holder, classes.bioHolder)}
-      >
+      <div className={classNames(classes.holder, classes.fairHolder)}>
         <Bio />
       </div>
       <div
-        className={classNames(classes.holder, classes.skillsHolder)}
+        className={classNames(classes.holder, classes.backgroundHolder)}
         style={{
           backgroundImage: `url(${MountainsBlurImage})`,
         }}
       >
         <Skills />
+      </div>
+      <div
+        className={classNames(classes.holder, classes.fairHolder)}
+      >
+        <Workflow />
       </div>
     </div>
   )
