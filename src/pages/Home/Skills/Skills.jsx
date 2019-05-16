@@ -16,7 +16,7 @@ export function Skills({ classes }) {
     <div className={classes.root} id="skills">
       <Typography className={classes.title} color="secondary" variant="h1">
         Do I engage awesome technologies?
-        <span aria-hidden>😬</span>
+        <span aria-hidden className={classes.emoji}>😬</span>
       </Typography>
       <Typography className={classes.subtitle} color="secondary" variant="h3">
         Core

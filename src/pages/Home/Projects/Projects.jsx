@@ -28,7 +28,7 @@ export function Projects({ classes }) {
     <div className={classes.root} id="projects">
       <Typography className={classes.title} color="secondary" variant="h1">
         What have I created?
-        <span aria-hidden>😎</span>
+        <span aria-hidden className={classes.emoji}>😎</span>
       </Typography>
       <ProjectsList data={projects} />
     </div>

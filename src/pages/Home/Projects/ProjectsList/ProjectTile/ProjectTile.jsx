@@ -14,7 +14,7 @@ export function ProjectTile({
           root: classes.paper,
         }}
       >
-        <Typography className={classes.title} variant="h1">
+        <Typography className={classes.title} variant="h4">
           {name}
         </Typography>
         <Typography className={classes.description} variant="body1">

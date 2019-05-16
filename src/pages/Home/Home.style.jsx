@@ -12,7 +12,7 @@ export default ({ palette, spacing }) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     minHeight: '100vh',
-    padding: '0 15%',
+    padding: '40px 15%',
   },
   projectsHolder: {
     backgroundAttachment: 'fixed',

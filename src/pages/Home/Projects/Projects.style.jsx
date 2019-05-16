@@ -1,9 +1,17 @@
-export default () => ({
+export default ({ breakpoints }) => ({
+  emoji: {
+    fontSize: '2rem',
+    [breakpoints.down('md')]: {
+      fontSize: '1.5rem',
+    },
+  },
   root: {
     width: '100%',
   },
   title: {
-    fontSize: '3rem',
     textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
+    [breakpoints.down('md')]: {
+      fontSize: '2rem',
+    },
   },
 })

@@ -1,6 +1,5 @@
 export default ({ spacing, palette }) => ({
   description: {
-    fontSize: '1rem',
     fontWeight: 'normal',
     marginTop: spacing.unit * 1,
   },
@@ -40,7 +39,6 @@ export default ({ spacing, palette }) => ({
   },
   title: {
     borderLeft: `4px solid ${palette.primary.main}`,
-    fontSize: '1.3rem',
     fontWeight: 'normal',
     paddingLeft: spacing.unit * 1.5,
   },
