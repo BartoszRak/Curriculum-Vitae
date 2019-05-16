@@ -1,4 +1,4 @@
-export default ({ palette }) => ({
+export default ({ palette, spacing }) => ({
   avatar: {
     width: 250,
     height: 250,
@@ -15,12 +15,16 @@ export default ({ palette }) => ({
   },
   subtitle: {
     textAlign: 'center',
-    color: palette.primary.contrastText,
+    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
+  },
+  subsubtitle: {
+    fontWeight: 'lighter',
+    marginTop: spacing.unit * 0.5,
+    textAlign: 'center',
     textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
   },
   title: {
     textAlign: 'center',
-    color: palette.primary.contrastText,
     textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
   },
 })

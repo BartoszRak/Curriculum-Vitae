@@ -11,14 +11,14 @@ export function ProjectsList({ classes, data }) {
     <div className={classes.root}>
       {data.map(project => {
         const {
-          description, name, url, tags,
+          description, title, url, tags,
         } = project
         return (
           <ProjectTile
             description={description}
-            key={name}
-            name={name}
+            key={title}
             tags={tags}
+            title={title}
             url={url}
           />
         )
@@ -30,7 +30,7 @@ export function ProjectsList({ classes, data }) {
 ProjectsList.propTypes = {
   classes: PropTypes.object,
   data: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
+    title: PropTypes.string,
     url: PropTypes.string,
   }))
 }

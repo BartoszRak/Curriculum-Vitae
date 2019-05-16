@@ -11,7 +11,7 @@ const initComponent = overrides => {
     data: [
       {
         description: 'Test description1',
-        name: 'testName1',
+        title: 'testName1',
         tags: {
           name: 'testTag',
           url: 'testTagUrl',

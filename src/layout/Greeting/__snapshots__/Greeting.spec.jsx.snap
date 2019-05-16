@@ -13,19 +13,33 @@ exports[`global: Greeting should render as expected 1`] = `
     src="instagram-photo.jpg"
   />
   <TypographyMock
+    color="secondary"
     variant="h1"
   >
     Bartosz Rak
   </TypographyMock>
   <TypographyMock
+    color="secondary"
     variant="h2"
   >
-    Front-end developer
+    <FormattedMessage
+      id="layout.greeting.subtitle"
+      values={Object {}}
+    />
     <span
       aria-hidden={true}
     >
       😁
     </span>
+  </TypographyMock>
+  <TypographyMock
+    color="secondary"
+    variant="h3"
+  >
+    <FormattedMessage
+      id="layout.greeting.subsubtitle"
+      values={Object {}}
+    />
   </TypographyMock>
 </div>
 `;

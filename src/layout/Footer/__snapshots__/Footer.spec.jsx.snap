@@ -5,8 +5,14 @@ exports[`global: Footer should render as expected 1`] = `
   <WithStyles(Typography)
     variant="body2"
   >
-    © All copyrights reserved 2019-
-    2019
+    <FormattedMessage
+      id="layout.footer.copyright"
+      values={
+        Object {
+          "date": 2019,
+        }
+      }
+    />
   </WithStyles(Typography)>
 </div>
 `;

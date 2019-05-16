@@ -5,7 +5,7 @@ import { withStyles, Paper, Typography } from '@material-ui/core'
 import style from './ProjectTile.style'
 
 export function ProjectTile({
-  classes, description, name, url, tags,
+  classes, description, title, url, tags,
 }) {
   return (
     <a className={classes.root} href={url} rel="noopener noreferrer" target="_blank">
@@ -15,7 +15,7 @@ export function ProjectTile({
         }}
       >
         <Typography className={classes.title} variant="h4">
-          {name}
+          {title}
         </Typography>
         <Typography className={classes.description} variant="body1">
           {description}
@@ -33,11 +33,11 @@ export function ProjectTile({
 ProjectTile.propTypes = {
   classes: PropTypes.object,
   description: PropTypes.string,
-  name: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     url: PropTypes.string,
   })),
+  title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 }
 

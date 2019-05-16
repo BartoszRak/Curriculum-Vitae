@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { FormattedMessage } from 'react-intl'
 import { withStyles, Typography } from '@material-ui/core'
 
 import SkillsList from './SkillsList'
@@ -15,19 +16,19 @@ export function Skills({ classes }) {
   return (
     <div className={classes.root} id="skills">
       <Typography className={classes.title} color="secondary" variant="h1">
-        Do I engage awesome technologies?
+        <FormattedMessage id="pages.home.skills.title" />
         <span aria-hidden className={classes.emoji}>😬</span>
       </Typography>
       <Typography className={classes.subtitle} color="secondary" variant="h3">
-        Core
+      <FormattedMessage id="pages.home.skills.levels.0.title" />
       </Typography>
       <SkillsList className={classes.skills} data={coreSkills} />
       <Typography className={classes.subtitle} color="secondary" variant="h3">
-        Side things
+      <FormattedMessage id="pages.home.skills.levels.1.title" />
       </Typography>
       <SkillsList className={classes.skills} data={sideSkills} />
       <Typography className={classes.subtitle} color="secondary" variant="h3">
-        Bonuses
+      <FormattedMessage id="pages.home.skills.levels.2.title" />
       </Typography>
       <SkillsList className={classes.skills} data={additionalSkills} />
     </div>

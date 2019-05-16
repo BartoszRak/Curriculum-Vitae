@@ -19,10 +19,10 @@ exports[`global: Navigation should render as expected 1`] = `
           }
         }
         color="secondary"
-        key="Projects"
+        key="layout.navigation.items.projects"
         onClick={[Function]}
       >
-        Projects
+        layout.navigation.items.projects
       </ButtonMock>
       <ButtonMock
         classes={
@@ -32,10 +32,36 @@ exports[`global: Navigation should render as expected 1`] = `
           }
         }
         color="secondary"
-        key="About me"
+        key="layout.navigation.items.bio"
         onClick={[Function]}
       >
-        About me
+        layout.navigation.items.bio
+      </ButtonMock>
+      <ButtonMock
+        classes={
+          Object {
+            "label": undefined,
+            "root": undefined,
+          }
+        }
+        color="secondary"
+        key="layout.navigation.items.skills"
+        onClick={[Function]}
+      >
+        layout.navigation.items.skills
+      </ButtonMock>
+      <ButtonMock
+        classes={
+          Object {
+            "label": undefined,
+            "root": undefined,
+          }
+        }
+        color="secondary"
+        key="layout.navigation.items.workflow"
+        onClick={[Function]}
+      >
+        layout.navigation.items.workflow
       </ButtonMock>
     </div>
     <div>

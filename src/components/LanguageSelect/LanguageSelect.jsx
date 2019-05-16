@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { withStyles, Select, MenuItem } from '@material-ui/core'
+import { FormattedMessage } from 'react-intl'
 
 import { LanguageContext } from '~services/Internacionalization'
 
@@ -30,8 +31,8 @@ export function LanguageSelect({ classes }) {
             value={language}
             variant="standard"
           >
-            <MenuItem value="en">English</MenuItem>
-            <MenuItem value="pl">Polish</MenuItem>
+            <MenuItem value="en"><FormattedMessage id="components.languageSelect.languages.en" /></MenuItem>
+            <MenuItem value="pl"><FormattedMessage id="components.languageSelect.languages.pl" /></MenuItem>
           </Select>
         </div>
       )}

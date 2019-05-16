@@ -3,24 +3,30 @@ import PropTypes from 'prop-types'
 import {
   withStyles, AppBar, Toolbar, Button,
 } from '@material-ui/core'
+import { injectIntl } from 'react-intl'
 
 import LanguageSelect from '~components/LanguageSelect'
 import { useScrollTo } from '~hooks'
 
 import style from './Navigation.style'
 
-const routes = [
-  {
-    elementId: '#projects',
-    name: 'Projects',
-  },
-  {
-    elementId: '#bio',
-    name: 'About me',
-  },
-]
-
-export function Navigation({ classes }) {
+export function Navigation({ classes, intl }) {
+  const { formatMessage } = intl
+  const routes = [
+    {
+      elementId: '#projects',
+      name: formatMessage({ id: 'layout.navigation.items.projects' }),
+    }, {
+      elementId: '#bio',
+      name: formatMessage({ id: 'layout.navigation.items.bio' }),
+    }, {
+      elementId: '#skills',
+      name: formatMessage({ id: 'layout.navigation.items.skills' }),
+    }, {
+      elementId: '#workflow',
+      name: formatMessage({ id: 'layout.navigation.items.workflow' }),
+    },
+  ]
   const { scrollTo } = useScrollTo()
 
   return (
@@ -56,6 +62,7 @@ export function Navigation({ classes }) {
 
 Navigation.propTypes = {
   classes: PropTypes.object,
+  intl: PropTypes.object,
 }
 
-export default withStyles(style)(Navigation)
+export default injectIntl(withStyles(style)(Navigation))

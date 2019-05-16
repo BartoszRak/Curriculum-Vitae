@@ -8,7 +8,10 @@ exports[`global: Skills should render as expected 1`] = `
     color="secondary"
     variant="h1"
   >
-    Do I engage awesome technologies?
+    <FormattedMessage
+      id="pages.home.skills.title"
+      values={Object {}}
+    />
     <span
       aria-hidden={true}
     >
@@ -19,7 +22,10 @@ exports[`global: Skills should render as expected 1`] = `
     color="secondary"
     variant="h3"
   >
-    Core
+    <FormattedMessage
+      id="pages.home.skills.levels.0.title"
+      values={Object {}}
+    />
   </TypographyMock>
   <SkillsListMock
     data={
@@ -95,7 +101,10 @@ exports[`global: Skills should render as expected 1`] = `
     color="secondary"
     variant="h3"
   >
-    Side things
+    <FormattedMessage
+      id="pages.home.skills.levels.1.title"
+      values={Object {}}
+    />
   </TypographyMock>
   <SkillsListMock
     data={
@@ -135,7 +144,10 @@ exports[`global: Skills should render as expected 1`] = `
     color="secondary"
     variant="h3"
   >
-    Bonuses
+    <FormattedMessage
+      id="pages.home.skills.levels.2.title"
+      values={Object {}}
+    />
   </TypographyMock>
   <SkillsListMock
     data={
