@@ -1,4 +1,7 @@
 export default ({ palette, spacing }) => ({
+  actions: {
+    marginRight: 50,
+  },
   button: {
     '&:hover': {
       background: 'rgba(0, 0, 0, 0.05)',
@@ -16,5 +19,12 @@ export default ({ palette, spacing }) => ({
     boxShadow: 'none',
     margin: 0,
     padding: spacing.unit * 2,
+    position: 'fixed',
   },
+  toolbar: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+  }
 })

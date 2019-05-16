@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: LanguageSelect should render as expected 1`] = `
+<div>
+  <SelectMock
+    name="Language"
+    onChange={[Function]}
+    value="en"
+    variant="contained"
+  >
+    <MenuItemMock
+      value="en"
+    >
+      English
+    </MenuItemMock>
+    <MenuItemMock
+      value="pl"
+    >
+      Polish
+    </MenuItemMock>
+  </SelectMock>
+</div>
+`;
