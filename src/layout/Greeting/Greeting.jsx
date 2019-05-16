@@ -15,12 +15,13 @@ export function Greeting({ classes }) {
         backgroundImage: `url(${backgroundUrl})`,
       }}
     >
-      <Avatar className={classes.avatar} src={avatarUrl} />
-      <Typography variant="h1" className={classes.title}>
-      Bartosz Rak
+      <Avatar alt="Author instagram picture" className={classes.avatar} src={avatarUrl} />
+      <Typography className={classes.title} variant="h1">
+        Bartosz Rak
       </Typography>
-      <Typography variant="h2" className={classes.subtitle}>
-      Front-end developer <span aria-hidden>😁</span>
+      <Typography className={classes.subtitle} variant="h2">
+        Front-end developer
+        <span aria-hidden>😁</span>
       </Typography>
     </div>
   )
