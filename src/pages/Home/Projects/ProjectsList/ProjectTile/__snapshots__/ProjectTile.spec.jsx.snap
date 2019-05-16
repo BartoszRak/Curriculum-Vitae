@@ -14,7 +14,7 @@ exports[`global: ProjectTile should render as expected 1`] = `
     }
   >
     <TypographyMock
-      variant="h1"
+      variant="h4"
     >
       Example title
     </TypographyMock>

@@ -1,8 +1,14 @@
-export default ({ palette, spacing }) => ({
+export default ({ breakpoints, palette, spacing }) => ({
   item: {
     marginBottom: spacing.unit * 1,
     marginRight: spacing.unit * 2,
     padding: `${spacing.unit * 0.5}px ${spacing.unit * 2.5}px`,
+    [breakpoints.down('md')]: {
+      fontSize: '0.8rem',
+    },
+    [breakpoints.down('lg')]: {
+      fontSize: '1rem',
+    },
   },
   root: {
     display: 'flex',

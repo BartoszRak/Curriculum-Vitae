@@ -2,14 +2,22 @@ export default ({ breakpoints, palette, spacing }) => ({
   divider: {
     margin: `${spacing.unit * 2}px 0`,
   },
+  emoji: {
+    fontSize: '2rem',
+    [breakpoints.down('md')]: {
+      fontSize: '1.5rem',
+    },
+  },
   root: {
-    margin: '50px 0',
     width: '100%',
   },
   subtitle: {
     borderLeft: `4px solid ${palette.primary.main}`,
     marginTop: spacing.unit * 2,
     paddingLeft: spacing.unit * 2,
+    [breakpoints.down('md')]: {
+      fontSize: '1.8rem',
+    },
   },
   tile: {
     breakInside: 'avoid-column',
@@ -28,7 +36,9 @@ export default ({ breakpoints, palette, spacing }) => ({
   },
   title: {
     color: palette.text.primary,
-    fontSize: '3rem',
     marginBottom: spacing.unit * 4,
+    [breakpoints.down('md')]: {
+      fontSize: '2rem',
+    },
   },
 })
