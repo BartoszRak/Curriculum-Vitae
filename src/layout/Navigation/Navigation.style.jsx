@@ -18,7 +18,7 @@ export default ({ palette, spacing }) => ({
     background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0)100%)',
     boxShadow: 'none',
     margin: 0,
-    padding: spacing.unit * 2,
+    padding: `${spacing.unit * 2}px !important`,
     position: 'fixed',
   },
   toolbar: {
