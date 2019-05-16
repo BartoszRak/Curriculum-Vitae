@@ -10,32 +10,37 @@ exports[`global: Navigation should render as expected 1`] = `
   position="fixed"
 >
   <ToolbarMock>
-    <ButtonMock
-      classes={
-        Object {
-          "label": undefined,
-          "root": undefined,
+    <div>
+      <ButtonMock
+        classes={
+          Object {
+            "label": undefined,
+            "root": undefined,
+          }
         }
-      }
-      color="secondary"
-      key="Projects"
-      onClick={[Function]}
-    >
-      Projects
-    </ButtonMock>
-    <ButtonMock
-      classes={
-        Object {
-          "label": undefined,
-          "root": undefined,
+        color="secondary"
+        key="Projects"
+        onClick={[Function]}
+      >
+        Projects
+      </ButtonMock>
+      <ButtonMock
+        classes={
+          Object {
+            "label": undefined,
+            "root": undefined,
+          }
         }
-      }
-      color="secondary"
-      key="About me"
-      onClick={[Function]}
-    >
-      About me
-    </ButtonMock>
+        color="secondary"
+        key="About me"
+        onClick={[Function]}
+      >
+        About me
+      </ButtonMock>
+    </div>
+    <div>
+      <LanguageSelect />
+    </div>
   </ToolbarMock>
 </AppBarMock>
 `;

@@ -37,6 +37,8 @@ exports[`global: Workflow should render as expected 1`] = `
      
     <a
       href="https://pl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       git-glow
     </a>

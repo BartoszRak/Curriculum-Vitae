@@ -4,6 +4,7 @@ import {
   withStyles, AppBar, Toolbar, Button,
 } from '@material-ui/core'
 
+import LanguageSelect from '~components/LanguageSelect'
 import { useScrollTo } from '~hooks'
 
 import style from './Navigation.style'
@@ -29,7 +30,8 @@ export function Navigation({ classes }) {
       }}
       position="fixed"
     >
-      <Toolbar>
+      <Toolbar className={classes.toolbar}>
+        <div>
         {routes.map(route => (
           <Button
             classes={{
@@ -43,6 +45,10 @@ export function Navigation({ classes }) {
             {route.name}
           </Button>
         ))}
+        </div>
+        <div>
+          <LanguageSelect />
+        </div>
       </Toolbar>
     </AppBar>
   )

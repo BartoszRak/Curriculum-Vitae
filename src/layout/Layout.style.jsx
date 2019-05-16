@@ -10,12 +10,12 @@ export default ({ palette, spacing }) => ({
   },
   information: {
     background: palette.error.main,
+    bottom: 0,
     color: palette.secondary.main,
     margin: spacing.unit * 1,
     padding: spacing.unit * 1.5,
     position: 'fixed',
     right: 0,
-    top: 0,
     zIndex: 100000000000,
   },
   root: {

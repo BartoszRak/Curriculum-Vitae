@@ -28,7 +28,11 @@ export function Workflow({ classes }) {
       <Typography variant="body1">
         I always tend to use a workflow that is closest to
         {' '}
-        <a href="https://pl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">
+        <a
+          href="https://pl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           git-glow
         </a>
         {' '}
