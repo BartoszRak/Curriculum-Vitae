@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { LinearProgress } from '@material-ui/core'
 
-import withStylesAndProps from '~utils/withStylesAndProps'
+import withStylesAndProps from '~hocs/withStylesAndProps'
 
 import style from './Loader.style'
 
