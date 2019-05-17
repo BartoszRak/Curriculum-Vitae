@@ -1,18 +1,15 @@
 language: node_js
 node_js:
 - stable
-script:
-- yarn
-- yarn test
-- REACT_APP_STAGE=development yarn build
 cache:
   directories:
   - node_modules
-before_install:
-- yarn global add firebase-tools
-deploy:
-  skip_cleanup: true
-  provider: firebase
-  token: $FIREBASE_API_KEY
-  on:
-    branch: dev
+jobs:
+  include:
+    - stage: "Install packages"
+      script:
+      - yarn global add firebase-tools
+      - yarn
+    - stage: "Test application"
+      script:
+      - yarn test

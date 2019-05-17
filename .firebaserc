@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "curriculum-vitae-123231"
+    "master": "curriculum-vitae-123231",
+    "dev": "curriculum-vitae-dev"
   }
 }
