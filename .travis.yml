@@ -13,3 +13,14 @@ jobs:
     - stage: "Test application"
       script:
       - yarn test
+    - stage: "Build application"
+      script: 
+      - if [[ "$TRAVIS_BRANCH" == "dev" ]]; then
+        echo BUILDING DEV
+        REACT_APP_STAGE = development yarn build;
+        fi
+      script:
+      - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
+        echo BUILDING MASTER
+        REACT_APP_STAGE = production yarn build;
+        fi
