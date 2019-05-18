@@ -2,92 +2,92 @@
   "components": {
     "languageSelect": {
       "languages": {
-        "en": "English",
-        "pl": "Polish"
+        "en": "Angielski",
+        "pl": "Polski"
       }
     }
   },
   "layout": {
     "greeting": {
-      "subtitle": "Front-end enthusiast",
-      "subsubtitle": "Aspiring back-end developer"
+      "subtitle": "Entuzjasta front-endu",
+      "subsubtitle": "Aspriujący back-end developer"
     },
     "navigation": {
       "items": {
-        "projects": "Projects",
-        "bio": "About me",
-        "skills": "My skills & technologies",
-        "workflow": "How do I work?"
+        "projects": "Projekty",
+        "bio": "O mnie",
+        "skills": "Umiejętności & technologie",
+        "workflow": "Jak pracuje?"
       }
     },
     "footer": {
-      "copyright": "© All copyrights reserved {date}"
+      "copyright": "© Wszystkie prawa zastrzeżone {date}"
     }
   },
   "pages": {
     "home": {
       "projects": {
-        "title": "What have I created?",
+        "title": "Co takiego stworzyłem?",
         "projects": {
           "reactAwesomeBoilerplate": {
             "title": "React Awesome Boilerplate",
-            "description": "Carefully designed react boilerplate repositorium that gives you fast and smooth start!"
+            "description": "Starannie zaprojektowany starter projektu opartego o Reacta, dający łatwy i szybki start!"
           },
           "mx": {
             "title": "Mx",
-            "description": "Matrices computing library"
+            "description": "Biblioteka wspomagająca obliczenia na macierzach"
           }
         }
       },
       "bio": {
-        "title": "What have I created?",
+        "title": "Co takiego stworzyłem?",
         "tiles": [
           {
-            "title": "Unbrainless human",
-            "subtitle": "How I treat life? Let me introduce myself in few words...",
+            "title": "Człowiek umysłu",
+            "subtitle": "Jak traktuje życie? Niech się opiszę w paru słowach...",
             "paragraphs": [
-              "I am enthusiastic about basing our life decisions on intelligence, experience, and logic. I always consider everything to go through the optimized way.",
-              "I treat everything - even the hardest issues and life problems - always as solvable."
+              "Jestem entuzjastyczny w temacie bazowania naszych życiowych decyzji na inteligencji, doświadczeniu i logice. Zawsze rozważam wszystko, aby podążyć najbardizej optymalną drogą.",
+              "Wszystko - nawet najtrudniejsze problemy - traktuje jak rozwiazywalne."
             ]
           }, {
-            "title": "Freak as well",
-            "subtitle": "How did it start?",
+            "title": "Zapewne totalny feak",
+            "subtitle": "Jak to się zaczęło?",
             "paragraphs": [
-              "About 2 years ago I started my journey by creating simple websites. After a few months, I dived into programming and now I am big fun of it. It looks like I started being freak as well.",
-              "It happens sometimes I make a night spending it on coding and delivering my ideas into reality."
+              "Jakieś 2 lata temu zacząłem moją przygodę od tworzenia prostych stron internetowych. Po kilku miesiącach zagłębiłem się w programowaniu i teraz jestem jego ogromnym fanem. Wygląda na to, że zostałem freakiem.",
+              "Czasem zdarza się, że zarywam noc spędzając ją na programowaniu i wdrażaniu moich następnych pomysłów w życie."
             ]
           }, {
-            "title": "Evolution",
-            "subtitle": "What about future, ideas and plans?",
+            "title": "Ewolucja",
+            "subtitle": "Co z przyszłośćią, pomysłami, planami?",
             "paragraphs": [
-              "For today when I look to the past, I learned so many things, but still, there are thousands of technologies and the language that I want to try and learn",
-              "In case of that, I do not stop engaging everything that interests me. I expand my knowledge and grow my skills to be a better and more accurate developer."
+              "Dzisiaj, kiedy patrzę w przeszłóść widzę, jak dużo rzeczy się nauczyłem, ale nadal jest tysiące technologi i języków, których chciałbym spróbować i się nauczyć.",
+              "W związku z tym, nie przestaje angażować się we wszystko co mnie interesuje. Poszerzam swoją wiedzę i zwiększam swoje umiejętnośc bybyć lepszym i skuteczniejszym developerem."
             ]
           }
         ]
       },
       "skills": {
-        "title": "Do I engage awesome technologies?",
+        "title": "Czy korzystam z świetnych technologi?",
         "levels": [
           {
-            "title": "Core"
+            "title": "Filar"
           }, {
-            "title": "Side things"
+            "title": "Poboczne rzeczy"
           }, {
-            "title": "Bonuses"
+            "title": "Bonusy"
           }
         ]
       },
       "workflow": {
-        "title": "How my workflow looks like?",
+        "title": "Jak wygląda mój workflow?",
         "tiles": {
           "project": {
-            "title": "Project side",
-            "description": "In case of project workflow I worked mostly in Agile & Scrum and in customized mixes of those two methodologies. I am fun of organized but flexible workflows that gives a possibility to adapt easily to the situation."
+            "title": "Praca w projekcie",
+            "description": "W kwestii workflow w projekcie, pracowałem głównie metodologią Agile i Scrum, dodatkowo ich dostosowanymi do potrzeb mixami. Jestem fanem zoorganizowanego, ale elastycznego trybu pracy, który daje możliwość łatwego zaadaptowania się do sytuacja. "
           },
           "git": {
-            "title": "Git part",
-            "description": "I always tend to use a workflow that is closest to {methodology} methodology. When I got, a task I create one branch, in which I always try to create only one commit and I squash at the end of work - to be sure my main branch will not be cluttered."
+            "title": "Praca z git'em",
+            "description": "Zawsze staram się pracować tak by być najbliżej metodologii {methodology}. Kiedy mam taska, tworzę brancha, w którym zawsze staram się finalnie mieć jednego commita i/lub squash'ować na koniec pracy z taskiem - by być pewnym, że mój branch nie będzie zaśmiecony."
           }
         }
       }
