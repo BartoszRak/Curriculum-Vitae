@@ -18,9 +18,17 @@ jobs:
       - if [[ "$TRAVIS_BRANCH" == "dev" ]]; then
         echo BUILDING DEV
         REACT_APP_STAGE = development yarn build;
-        fi
+        fi;
       script:
       - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
         echo BUILDING MASTER
         REACT_APP_STAGE = production yarn build;
-        fi
+        fi;
+    - stage: "Deploy to firebase"
+      deploy:
+        skip_cleanup: true
+        provider: firebase
+        token: $FIREBASE_API_KEY_DEV
+        project: dev
+        on:
+          branch: dev
