@@ -90,6 +90,19 @@
             "description": "Zawsze staram się pracować tak by być najbliżej metodologii {methodology}. Kiedy mam taska, tworzę brancha, w którym zawsze staram się finalnie mieć jednego commita i/lub squash'ować na koniec pracy z taskiem - by być pewnym, że mój branch nie będzie zaśmiecony."
           }
         }
+      },
+      "hobbies": {
+        "title": "What my passions are?",
+        "tiles": {
+          "programming": {
+            "title": "Programowanie",
+            "description": "To prawdopodobnie nie jest niespodziewane, lecz kocham programowanie. Totalnie się w nie wkręciłem 2 lata temu i nie zamierzam przestawać tego robić!"
+          },
+          "insects": {
+            "title": "Owady",
+            "description": "O tak, tutaj duże zaskoczenie. Myślę, że owady to jest z najrzadszych hobby, ale jest bardzo uzależniające i świetne to uprawiania. W moim przypadku wszystko zaczęło się od jednego krocionoga, którego kupiłem siostrze w prezencie rok temu. Aktualnie ja i rodzeństwo posiadamy kilka pająków, karaczany, węża i pluskwiaki."
+          }
+        }
       }
     }
   }
