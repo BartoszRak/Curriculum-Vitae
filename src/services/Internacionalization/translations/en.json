@@ -90,6 +90,19 @@
             "description": "I always tend to use a workflow that is closest to {methodology} methodology. When I got, a task I create one branch, in which I always try to create only one commit and I squash at the end of work - to be sure my main branch will not be cluttered."
           }
         }
+      },
+      "hobbies": {
+        "title": "What my passions are?",
+        "tiles": {
+          "programming": {
+            "title": "Programming",
+            "description": "That is probably not unexpected but I love programming. I am totally into it since 2 years, and I am not going to stop!"
+          },
+          "insects": {
+            "title": "Insects",
+            "description": "Yeah, big surprise here. I think insects are one of the rarest hobbies but it is really addicting and awesome. I started with 1 millipede that I bought for my sister 1 year ago. Actually me and my siblings have few spiders, cockroaches, snake and assasing bugs."
+          }
+        }
       }
     }
   }
