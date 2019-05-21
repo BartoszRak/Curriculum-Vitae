@@ -2,6 +2,7 @@ import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
+import { FormattedMessage } from 'react-intl'
 
 import Footer from './Footer'
 import Navigation from './Navigation'
@@ -24,7 +25,7 @@ export const Layout = ({ classes }) => (
     </div>
     <div className={classes.bottomShadow} />
     <div className={classes.information}>
-      Site under construction
+      <FormattedMessage id="layout.information.title" />
     </div>
   </React.Fragment>
 )

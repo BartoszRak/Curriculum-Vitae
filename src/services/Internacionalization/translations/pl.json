@@ -20,6 +20,9 @@
         "workflow": "Jak pracuje?"
       }
     },
+    "information": {
+      "title": "Strona w trakcie prac."
+    },
     "footer": {
       "copyright": "© Wszystkie prawa zastrzeżone {date}"
     }
@@ -92,7 +95,7 @@
         }
       },
       "hobbies": {
-        "title": "What my passions are?",
+        "title": "Jakie realnie mam pasje?",
         "tiles": {
           "programming": {
             "title": "Programowanie",

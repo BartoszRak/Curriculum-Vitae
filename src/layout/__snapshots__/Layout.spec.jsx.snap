@@ -19,7 +19,10 @@ exports[`global: Layout should render as expected 1`] = `
   </div>
   <div />
   <div>
-    Site under construction
+    <FormattedMessage
+      id="layout.information.title"
+      values={Object {}}
+    />
   </div>
 </Fragment>
 `;
