@@ -16,7 +16,7 @@ exports[`global: Hobbies should render as expected 1`] = `
       <span
         aria-hidden={true}
       >
-        🙄
+         🙄
       </span>
     </TypographyMock>
     <div>

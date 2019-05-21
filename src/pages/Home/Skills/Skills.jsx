@@ -17,7 +17,7 @@ export function Skills({ classes }) {
     <div className={classes.root} id="skills">
       <Typography className={classes.title} color="secondary" variant="h1">
         <FormattedMessage id="pages.home.skills.title" />
-        <span aria-hidden className={classes.emoji}>😬</span>
+        <span aria-hidden className={classes.emoji}> 😬</span>
       </Typography>
       <Typography className={classes.subtitle} color="secondary" variant="h3">
       <FormattedMessage id="pages.home.skills.levels.0.title" />

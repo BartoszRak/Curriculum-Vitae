@@ -14,7 +14,7 @@ export function Hobbies({ classes }) {
       <div className={classes.root} id="hobbies">
         <Typography className={classes.title} color="secondary" variant="h1">
           <FormattedMessage id="pages.home.hobbies.title" />
-          <span aria-hidden className={classes.emoji}>🙄</span>
+          <span aria-hidden className={classes.emoji}> 🙄</span>
         </Typography>
         <div className={classes.tilesHolder}>
           <div className={classes.tile}>

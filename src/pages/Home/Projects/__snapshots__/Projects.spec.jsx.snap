@@ -15,7 +15,7 @@ exports[`global: Projects should render as expected 1`] = `
     <span
       aria-hidden={true}
     >
-      😎
+       😎
     </span>
   </TypographyMock>
   <ProjectsListMock
