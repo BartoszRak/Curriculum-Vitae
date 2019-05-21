@@ -11,7 +11,7 @@ export function Bio({ classes }) {
       <div className={classes.root} id="bio">
         <Typography className={classes.title} variant="h1">
           <FormattedMessage id="pages.home.bio.title" />
-          <span aria-hidden className={classes.emoji}>🙄</span>
+          <span aria-hidden className={classes.emoji}> 🤠</span>
         </Typography>
         <div className={classes.tilesHolder}>
           <div className={classes.tile}>

@@ -28,7 +28,7 @@ export function Projects({ classes, intl }) {
     <div className={classes.root} id="projects">
       <Typography className={classes.title} color="secondary" variant="h1">
         <FormattedMessage id="pages.home.projects.title" />
-        <span aria-hidden className={classes.emoji}>😎</span>
+        <span aria-hidden className={classes.emoji}> 😎</span>
       </Typography>
       <ProjectsList data={projects} />
     </div>
