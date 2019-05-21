@@ -32,5 +32,15 @@ exports[`global: Home should render as expected 1`] = `
   >
     <WorkflowMock />
   </div>
+  <div
+    className=""
+    style={
+      Object {
+        "backgroundImage": "url(landscape-mountains-nature-dark-blur.jpg)",
+      }
+    }
+  >
+    <HobbiesMock />
+  </div>
 </div>
 `;

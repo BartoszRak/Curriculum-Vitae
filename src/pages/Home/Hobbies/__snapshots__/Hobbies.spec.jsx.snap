@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: Hobbies should render as expected 1`] = `
+<Fragment>
+  <div
+    id="hobbies"
+  >
+    <TypographyMock
+      color="secondary"
+      variant="h1"
+    >
+      <FormattedMessage
+        id="pages.home.hobbies.title"
+        values={Object {}}
+      />
+      <span
+        aria-hidden={true}
+      >
+        🙄
+      </span>
+    </TypographyMock>
+    <div>
+      <div>
+        <TypographyMock
+          variant="h2"
+        >
+          <FormattedMessage
+            id="pages.home.hobbies.tiles.insects.title"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <TypographyMock
+          variant="body1"
+        >
+          <FormattedMessage
+            id="pages.home.hobbies.tiles.insects.description"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <img
+          alt="Assasing bug"
+          src="assasin-bug.jpg"
+        />
+      </div>
+      <div>
+        <TypographyMock
+          variant="h2"
+        >
+          <FormattedMessage
+            id="pages.home.hobbies.tiles.programming.title"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <TypographyMock
+          variant="body1"
+        >
+          <FormattedMessage
+            id="pages.home.hobbies.tiles.programming.description"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <img
+          alt="Coding"
+          src="coding.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;

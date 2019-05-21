@@ -14,8 +14,8 @@ export default ({ palette, spacing }) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    minHeight: '100vh',
-    padding: '40px 15%',
+    height: '100vh',
+    padding: '150px 15%',
   },
   root: {
     alignItems: 'stretch',

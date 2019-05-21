@@ -7,6 +7,7 @@ import Projects from './Projects'
 import Bio from './Bio'
 import Skills from './Skills'
 import Workflow from './Workflow'
+import Hobbies from './Hobbies'
 
 import style from './Home.style'
 
@@ -38,6 +39,14 @@ export function Home({ classes }) {
         className={classNames(classes.holder, classes.fairHolder)}
       >
         <Workflow />
+      </div>
+      <div
+        className={classNames(classes.holder, classes.backgroundHolder)}
+        style={{
+          backgroundImage: `url(${MountainsBlurImage})`,
+        }}
+      >
+        <Hobbies />
       </div>
     </div>
   )
