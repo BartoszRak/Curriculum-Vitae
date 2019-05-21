@@ -20,6 +20,9 @@
         "workflow": "How do I work?"
       }
     },
+    "information": {
+      "title": "Site under construction"
+    },
     "footer": {
       "copyright": "© All copyrights reserved {date}"
     }
@@ -92,7 +95,7 @@
         }
       },
       "hobbies": {
-        "title": "What my passions are?",
+        "title": "What my real passions are?",
         "tiles": {
           "programming": {
             "title": "Programming",
