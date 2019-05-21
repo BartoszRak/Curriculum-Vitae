@@ -13,8 +13,8 @@ export default ({ palette, spacing }) => ({
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'column',
-    height: '100vh',
     justifyContent: 'center',
+    minHeight: '100vh',
     padding: '150px 15%',
   },
   root: {
