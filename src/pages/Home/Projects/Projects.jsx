@@ -12,6 +12,12 @@ export function Projects({ classes, intl }) {
   const { formatMessage } = intl
   const projects = [
     {
+      description: formatMessage({ id: 'pages.home.projects.projects.insectifyApi.description' }),
+      tags: [technologiesMap.nestjs, technologiesMap.express, technologiesMap.firebase],
+      title: formatMessage({ id: 'pages.home.projects.projects.insectifyApi.title' }),
+      url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
+    },
+    {
       description: formatMessage({ id: 'pages.home.projects.projects.reactAwesomeBoilerplate.description' }),
       tags: [technologiesMap.react, technologiesMap.redux, technologiesMap.rematch],
       title: formatMessage({ id: 'pages.home.projects.projects.reactAwesomeBoilerplate.title' }),

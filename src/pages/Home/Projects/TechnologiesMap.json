@@ -14,5 +14,18 @@
   "typescript": {
     "name": "TypeScript",
     "url": "https://www.typescriptlang.org/"
+  },
+  "express": {
+    "name": "Express",
+    "url": "https://expressjs.com//"
+  },
+  "nestjs": {
+    "name": "nestjs",
+    "url": "https://nestjs.com/"
+  },
+  "firebase": {
+    "name": "Firebase",
+    "url": "https://firebase.google.com/"
   }
+  
 }

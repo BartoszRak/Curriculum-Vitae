@@ -32,6 +32,10 @@
       "projects": {
         "title": "What have I created?",
         "projects": {
+          "insectifyApi": {
+            "title": "Insectify API",
+            "description": "Server application that abilities to use web shop."
+          },
           "reactAwesomeBoilerplate": {
             "title": "React Awesome Boilerplate",
             "description": "Carefully designed react boilerplate repositorium that gives you fast and smooth start!"

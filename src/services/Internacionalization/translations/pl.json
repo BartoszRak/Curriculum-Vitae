@@ -32,6 +32,10 @@
       "projects": {
         "title": "Co takiego stworzyłem?",
         "projects": {
+          "insectifyApi": {
+            "title": "Insectify API",
+            "description": "Aplikacja serwerowa udostępniająca możliwości sklepu internetowego."
+          },
           "reactAwesomeBoilerplate": {
             "title": "React Awesome Boilerplate",
             "description": "Starannie zaprojektowany starter projektu opartego o Reacta, dający łatwy i szybki start!"
