@@ -1,9 +1,9 @@
-export default ({ palette, spacing }) => ({
+export default ({ breakpoints, palette, spacing }) => ({
   avatar: {
-    width: 250,
+    border: `2px solid ${palette.secondary.main}`,
     height: 250,
     marginBottom: 60,
-    border: `2px solid ${palette.secondary.main}`,
+    width: 250,
   },
   root: {
     alignItems: 'center',
@@ -13,18 +13,27 @@ export default ({ palette, spacing }) => ({
     height: '100vh',
     justifyContent: 'center',
   },
-  subtitle: {
-    textAlign: 'center',
-    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
-  },
   subsubtitle: {
     fontWeight: 'lighter',
     marginTop: spacing.unit * 0.5,
     textAlign: 'center',
     textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
+    [breakpoints.down('sm')]: {
+      fontSize: '1.2rem',
+    },
+  },
+  subtitle: {
+    textAlign: 'center',
+    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
+    [breakpoints.down('sm')]: {
+      fontSize: '1.6rem',
+    },
   },
   title: {
     textAlign: 'center',
     textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
+    [breakpoints.down('sm')]: {
+      fontSize: '2.5rem',
+    },
   },
 })

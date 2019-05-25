@@ -21,6 +21,9 @@ export default ({ breakpoints, palette, spacing }) => ({
     padding: spacing.unit * 3,
     pageBreakInside: 'avoid',
     width: '100%',
+    [breakpoints.down('md')]: {
+      marginBottom: spacing.unit * 4,
+    },
   },
   tileDescription: {
     marginTop: spacing.unit * 1.5,
