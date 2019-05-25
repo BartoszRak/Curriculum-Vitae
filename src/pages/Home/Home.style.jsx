@@ -1,6 +1,8 @@
 export default ({ palette, spacing }) => ({
   backgroundHolder: {
     backgroundAttachment: 'fixed',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
   },
   divider: {
     background: palette.secondary.main,
