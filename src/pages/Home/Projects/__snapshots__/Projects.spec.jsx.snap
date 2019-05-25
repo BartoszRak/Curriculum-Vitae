@@ -22,6 +22,25 @@ exports[`global: Projects should render as expected 1`] = `
     data={
       Array [
         Object {
+          "description": "pages.home.projects.projects.insectifyApi.description",
+          "tags": Array [
+            Object {
+              "name": "nestjs",
+              "url": "https://nestjs.com/",
+            },
+            Object {
+              "name": "Express",
+              "url": "https://expressjs.com//",
+            },
+            Object {
+              "name": "Firebase",
+              "url": "https://firebase.google.com/",
+            },
+          ],
+          "title": "pages.home.projects.projects.insectifyApi.title",
+          "url": "https://github.com/BartoszRak/React-Awesome-Boilerplate",
+        },
+        Object {
           "description": "pages.home.projects.projects.reactAwesomeBoilerplate.description",
           "tags": Array [
             Object {
