@@ -3,6 +3,9 @@ import { shallow } from 'enzyme'
 
 import { App } from './App'
 
+jest.mock('./Layout', () => 'LayoutMock')
+jest.mock('~components/PreventInternetExplorer', () => 'PreventInternetExplorerMock')
+
 const initComponent = overrides => {
   const mockProps = {
     classes: {},
