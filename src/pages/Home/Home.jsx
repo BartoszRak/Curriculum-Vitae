@@ -15,23 +15,23 @@ import style from './Home.style'
 const contentList = [
   {
     component: Projects,
-    id: uuidv4,
+    id: uuidv4(),
   },
   {
     component: Bio,
-    id: uuidv4,
+    id: uuidv4(),
   },
   {
     component: Skills,
-    id: uuidv4,
+    id: uuidv4(),
   },
   {
     component: Workflow,
-    id: uuidv4,
+    id: uuidv4(),
   },
   {
     component: Hobbies,
-    id: uuidv4,
+    id: uuidv4(),
   },
 ]
 
