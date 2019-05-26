@@ -24,5 +24,6 @@ export default ({ palette, spacing }) => ({
     flexDirection: 'column',
     justifyContent: 'flex-start',
     minHeight: '100vh',
+    width: '100vw',
   },
 })
