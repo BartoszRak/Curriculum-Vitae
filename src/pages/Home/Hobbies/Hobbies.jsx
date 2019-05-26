@@ -18,7 +18,7 @@ export function Hobbies({ classes }) {
         </Typography>
         <div className={classes.tilesHolder}>
           <div className={classes.tile}>
-            <Typography variant="h2">
+            <Typography variant="h2" className={classes.title}>
               <FormattedMessage id="pages.home.hobbies.tiles.insects.title" />
             </Typography>
             <Typography className={classes.tileDescription} variant="body1">
@@ -27,7 +27,7 @@ export function Hobbies({ classes }) {
             <img alt="Assasing bug" className={classes.tileImage} src={assasinBugUrl} />
           </div>
           <div className={classes.tile}>
-            <Typography variant="h2">
+            <Typography variant="h2" className={classes.title}>
               <FormattedMessage id="pages.home.hobbies.tiles.programming.title" />
             </Typography>
             <Typography className={classes.tileDescription} variant="body1">

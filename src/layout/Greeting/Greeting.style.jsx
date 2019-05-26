@@ -1,3 +1,5 @@
+import backgroundUrl from '~assets/images/landscape-mountains-nature-dark.jpg'
+
 export default ({ breakpoints, palette, spacing }) => ({
   avatar: {
     border: `2px solid ${palette.secondary.main}`,
@@ -7,7 +9,10 @@ export default ({ breakpoints, palette, spacing }) => ({
   },
   root: {
     alignItems: 'center',
+    background: `url(${backgroundUrl})`,
     backgroundAttachment: 'fixed',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
     display: 'flex',
     flexDirection: 'column',
     height: '100vh',

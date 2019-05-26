@@ -9,44 +9,32 @@ exports[`global: MobileMenu should render as expected 1`] = `
       color="secondary"
     />
   </IconButtonMock>
-  <DialogMock
-    classes={
+  <ModalMock
+    BackdropProps={
       Object {
-        "modal": undefined,
-        "paper": undefined,
+        "classes": Object {
+          "root": undefined,
+        },
       }
     }
+    disableAutoFocus={true}
     onBackdropClick={[Function]}
     open={false}
   >
     <MenuListMock>
       <MenuItemMock
-        classes={
-          Object {
-            "label": undefined,
-            "root": undefined,
-          }
-        }
-        color="secondary"
         key="testElementName1"
         onClick={[Function]}
       >
         testElementName1
       </MenuItemMock>
       <MenuItemMock
-        classes={
-          Object {
-            "label": undefined,
-            "root": undefined,
-          }
-        }
-        color="secondary"
         key="testElementName2"
         onClick={[Function]}
       >
         testElementName2
       </MenuItemMock>
     </MenuListMock>
-  </DialogMock>
+  </ModalMock>
 </Fragment>
 `;

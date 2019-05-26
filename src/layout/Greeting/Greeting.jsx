@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl'
 import { withStyles, Typography, Avatar } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import backgroundUrl from '~assets/images/landscape-mountains-nature-dark.jpg'
+
 import avatarUrl from '~assets/images/instagram-photo.jpg'
 
 import style from './Greeting.style'
@@ -12,9 +12,6 @@ export function Greeting({ classes }) {
   return (
     <div
       className={classes.root}
-      style={{
-        backgroundImage: `url(${backgroundUrl})`,
-      }}
     >
       <Avatar alt="Author instagram picture" className={classes.avatar} src={avatarUrl} />
       <Typography className={classes.title} color="secondary" variant="h1">

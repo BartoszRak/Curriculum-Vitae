@@ -28,11 +28,6 @@ exports[`global: Home should render as expected 1`] = `
 
   return buf || bytesToUuid(rnds);
 }"
-    style={
-      Object {
-        "backgroundImage": "url(landscape-mountains-nature-dark-blur.jpg)",
-      }
-    }
   >
     <ProjectsMock />
   </div>
@@ -91,11 +86,6 @@ exports[`global: Home should render as expected 1`] = `
 
   return buf || bytesToUuid(rnds);
 }"
-    style={
-      Object {
-        "backgroundImage": "url(landscape-mountains-nature-dark-blur.jpg)",
-      }
-    }
   >
     <SkillsMock />
   </div>
@@ -154,11 +144,6 @@ exports[`global: Home should render as expected 1`] = `
 
   return buf || bytesToUuid(rnds);
 }"
-    style={
-      Object {
-        "backgroundImage": "url(landscape-mountains-nature-dark-blur.jpg)",
-      }
-    }
   >
     <HobbiesMock />
   </div>
