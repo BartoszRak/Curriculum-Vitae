@@ -23,7 +23,7 @@ export default ({ palette, spacing }) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
-    minHeight: '100vh',
     maxWidth: '100vw',
+    minHeight: '100vh',
   },
 })

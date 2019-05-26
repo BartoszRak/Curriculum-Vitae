@@ -10,6 +10,7 @@ import localePl from 'react-intl/locale-data/pl'
 import withMuiTheme from '~theme/withMuiTheme'
 import Layout from './layout'
 import Loader from '~components/Loader'
+import PreventInternetExplorer from '~components/PreventInternetExplorer'
 import { usePayloadLoading } from '~hooks'
 import { LanguageContext } from '~services/Internacionalization'
 import messagesPl from '~services/Internacionalization/translations/pl.json'
@@ -41,7 +42,9 @@ export function App({ classes }) {
               messages={messages[chosenLanguage]}
             >
               <Loader className={classes.loader} disable={!loading}>
-                <Layout />
+                <PreventInternetExplorer>
+                  <Layout />
+                </PreventInternetExplorer>
               </Loader>
             </IntlProvider>
           )}
