@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: DesktopMenu should render as expected 1`] = `
+<Fragment>
+  <ButtonMock
+    classes={
+      Object {
+        "label": undefined,
+        "root": undefined,
+      }
+    }
+    color="secondary"
+    key="testElementName1"
+    onClick={[Function]}
+  >
+    testElementName1
+  </ButtonMock>
+  <ButtonMock
+    classes={
+      Object {
+        "label": undefined,
+        "root": undefined,
+      }
+    }
+    color="secondary"
+    key="testElementName2"
+    onClick={[Function]}
+  >
+    testElementName2
+  </ButtonMock>
+</Fragment>
+`;

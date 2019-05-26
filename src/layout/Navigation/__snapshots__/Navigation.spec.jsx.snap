@@ -11,58 +11,54 @@ exports[`global: Navigation should render as expected 1`] = `
 >
   <ToolbarMock>
     <div>
-      <ButtonMock
-        classes={
-          Object {
-            "label": undefined,
-            "root": undefined,
+      <div>
+        <MobileMenuMock
+          routes={
+            Array [
+              Object {
+                "elementId": "#projects",
+                "name": "layout.navigation.items.projects",
+              },
+              Object {
+                "elementId": "#bio",
+                "name": "layout.navigation.items.bio",
+              },
+              Object {
+                "elementId": "#skills",
+                "name": "layout.navigation.items.skills",
+              },
+              Object {
+                "elementId": "#workflow",
+                "name": "layout.navigation.items.workflow",
+              },
+            ]
           }
-        }
-        color="secondary"
-        key="layout.navigation.items.projects"
-        onClick={[Function]}
-      >
-        layout.navigation.items.projects
-      </ButtonMock>
-      <ButtonMock
-        classes={
-          Object {
-            "label": undefined,
-            "root": undefined,
+        />
+      </div>
+      <div>
+        <DesktopMenuMock
+          routes={
+            Array [
+              Object {
+                "elementId": "#projects",
+                "name": "layout.navigation.items.projects",
+              },
+              Object {
+                "elementId": "#bio",
+                "name": "layout.navigation.items.bio",
+              },
+              Object {
+                "elementId": "#skills",
+                "name": "layout.navigation.items.skills",
+              },
+              Object {
+                "elementId": "#workflow",
+                "name": "layout.navigation.items.workflow",
+              },
+            ]
           }
-        }
-        color="secondary"
-        key="layout.navigation.items.bio"
-        onClick={[Function]}
-      >
-        layout.navigation.items.bio
-      </ButtonMock>
-      <ButtonMock
-        classes={
-          Object {
-            "label": undefined,
-            "root": undefined,
-          }
-        }
-        color="secondary"
-        key="layout.navigation.items.skills"
-        onClick={[Function]}
-      >
-        layout.navigation.items.skills
-      </ButtonMock>
-      <ButtonMock
-        classes={
-          Object {
-            "label": undefined,
-            "root": undefined,
-          }
-        }
-        color="secondary"
-        key="layout.navigation.items.workflow"
-        onClick={[Function]}
-      >
-        layout.navigation.items.workflow
-      </ButtonMock>
+        />
+      </div>
     </div>
     <div>
       <LanguageSelect />

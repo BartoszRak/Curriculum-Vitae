@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`global: MobileMenu should render as expected 1`] = `
+<Fragment>
+  <IconButtonMock
+    onClick={[Function]}
+  >
+    <pure(MenuIcon)
+      color="secondary"
+    />
+  </IconButtonMock>
+  <DialogMock
+    classes={
+      Object {
+        "modal": undefined,
+        "paper": undefined,
+      }
+    }
+    onBackdropClick={[Function]}
+    open={false}
+  >
+    <MenuListMock>
+      <MenuItemMock
+        classes={
+          Object {
+            "label": undefined,
+            "root": undefined,
+          }
+        }
+        color="secondary"
+        key="testElementName1"
+        onClick={[Function]}
+      >
+        testElementName1
+      </MenuItemMock>
+      <MenuItemMock
+        classes={
+          Object {
+            "label": undefined,
+            "root": undefined,
+          }
+        }
+        color="secondary"
+        key="testElementName2"
+        onClick={[Function]}
+      >
+        testElementName2
+      </MenuItemMock>
+    </MenuListMock>
+  </DialogMock>
+</Fragment>
+`;
