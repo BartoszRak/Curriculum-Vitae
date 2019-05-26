@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {
   withStyles,
   IconButton,
-  Dialog,
+  Modal,
   MenuList,
   MenuItem,
 } from '@material-ui/core'
@@ -25,23 +25,21 @@ export function MobileMenu({ classes, routes }) {
       >
         <MenuIcon color="secondary" />
       </IconButton>
-      <Dialog
-        className={classes.dialog}
-        classes={{
-          modal: classes.dialogModal,
-          paper: classes.dialogPaper,
+      <Modal
+        BackdropProps={{
+          classes: {
+            root: classes.backdrop,
+          }
         }}
+        className={classes.dialog}
+        disableAutoFocus
         onBackdropClick={() => setToggle(!toggle)}
         open={toggle}
       >
         <MenuList className={classes.list}>
           {routes.map(route => (
             <MenuItem
-              classes={{
-                label: classes.buttonLabel,
-                root: classes.button,
-              }}
-              color="secondary"
+              className={classes.item}
               key={route.name}
               onClick={() => {
                 setToggle(!toggle)
@@ -52,7 +50,7 @@ export function MobileMenu({ classes, routes }) {
             </MenuItem>
           ))}
         </MenuList>
-      </Dialog>
+      </Modal>
     </React.Fragment>
   )
 }

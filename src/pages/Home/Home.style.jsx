@@ -1,5 +1,8 @@
+import backgroundUrl from '~assets/images/landscape-mountains-nature-dark-blur.jpg'
+
 export default ({ palette, spacing }) => ({
   backgroundHolder: {
+    background: `url(${backgroundUrl})`,
     backgroundAttachment: 'fixed',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',

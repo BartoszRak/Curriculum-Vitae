@@ -1,13 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`global: Greeting should render as expected 1`] = `
-<div
-  style={
-    Object {
-      "backgroundImage": "url(landscape-mountains-nature-dark.jpg)",
-    }
-  }
->
+<div>
   <AvatarMock
     alt="Author instagram picture"
     src="instagram-photo.jpg"

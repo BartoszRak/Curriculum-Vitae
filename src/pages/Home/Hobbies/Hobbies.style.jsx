@@ -48,7 +48,12 @@ export default ({ breakpoints, palette, spacing }) => ({
   title: {
     marginBottom: spacing.unit * 4,
     [breakpoints.down('md')]: {
-      fontSize: '2rem',
+      fontSize: '2.3rem',
+      marginBottom: spacing.unit * 3,
+    },
+    [breakpoints.down('sm')]: {
+      fontSize: '1.8rem',
+      marginBottom: spacing.unit * 2,
     },
   },
 })

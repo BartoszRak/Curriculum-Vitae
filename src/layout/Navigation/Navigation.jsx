@@ -28,6 +28,10 @@ export function Navigation({ classes, intl }) {
       elementId: '#workflow',
       name: formatMessage({ id: 'layout.navigation.items.workflow' }),
     },
+    {
+      elementId: '#hobbies',
+      name: formatMessage({ id: 'layout.navigation.items.passions' }),
+    },
   ]
 
   return (

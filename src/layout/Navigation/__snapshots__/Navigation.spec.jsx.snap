@@ -31,6 +31,10 @@ exports[`global: Navigation should render as expected 1`] = `
                 "elementId": "#workflow",
                 "name": "layout.navigation.items.workflow",
               },
+              Object {
+                "elementId": "#hobbies",
+                "name": "layout.navigation.items.passions",
+              },
             ]
           }
         />
@@ -54,6 +58,10 @@ exports[`global: Navigation should render as expected 1`] = `
               Object {
                 "elementId": "#workflow",
                 "name": "layout.navigation.items.workflow",
+              },
+              Object {
+                "elementId": "#hobbies",
+                "name": "layout.navigation.items.passions",
               },
             ]
           }

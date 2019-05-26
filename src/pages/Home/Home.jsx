@@ -12,8 +12,6 @@ import Hobbies from './Hobbies'
 
 import style from './Home.style'
 
-import MountainsBlurImage from '~assets/images/landscape-mountains-nature-dark-blur.jpg'
-
 const contentList = [
   {
     component: Projects,
@@ -44,9 +42,6 @@ export function Home({ classes }) {
         const { component: Component, id } = item
         const props = index % 2 === 0 ? {
           className: classNames(classes.holder, classes.backgroundHolder),
-          style: {
-            backgroundImage: `url(${MountainsBlurImage})`,
-          },
         } : {
           className: classNames(classes.holder, classes.fairHolder),
         }
