@@ -1,20 +1,16 @@
-export default ({ palette, spacing }) => ({
+export default ({ breakpoints, spacing }) => ({
   actions: {
     marginRight: 50,
   },
-  button: {
-    '&:hover': {
-      background: 'rgba(0, 0, 0, 0.05)',
+  desktop: {
+    [breakpoints.down('md')]: {
+      display: 'none',
     },
-    borderRadius: 100,
-    marginRight: spacing.unit * 4,
-    padding: `${spacing.unit * 0.5}px ${spacing.unit * 2}px`,
   },
-  buttonLabel: {
-    color: palette.secondary.light,
-    fontSize: '1rem',
-    fontWeight: 'normal',
-    textShadow: '0 0 5px rgba(0, 0, 0, 0.8)',
+  mobile: {
+    [breakpoints.up('md')]: {
+      display: 'none',
+    },
   },
   root: {
     background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0)100%)',

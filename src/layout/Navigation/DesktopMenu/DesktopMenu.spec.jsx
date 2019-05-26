@@ -1,24 +1,30 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import { Navigation } from './Navigation'
-
-jest.mock('./MobileMenu', () => 'MobileMenuMock')
-jest.mock('./DesktopMenu', () => 'DesktopMenuMock')
+import { DesktopMenu } from './DesktopMenu'
 
 const initComponent = overrides => {
   const mockProps = {
     classes: {},
-    intl: {
-      formatMessage: v => v.id,
-    },
+    routes: [
+      {
+        elementId: 'testElementId1',
+        name: 'testElementName1',
+      },
+      {
+        elementId: 'testElementId2',
+        name: 'testElementName2',
+      },
+    ],
   }
   const mockMethods = {}
-  const wrapper = shallow(<Navigation {...mockProps} {...mockMethods} {...overrides} />)
+  const wrapper = shallow(
+    <DesktopMenu {...mockProps} {...mockMethods} {...overrides} />
+  )
   return { mockProps, wrapper }
 }
 
-describe('global: Navigation', () => {
+describe('global: DesktopMenu', () => {
   it('renders without crashing', () => {
     const { wrapper } = initComponent()
     expect(wrapper).toBeTruthy()

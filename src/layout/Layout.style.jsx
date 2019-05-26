@@ -1,7 +1,7 @@
 export default ({ palette, spacing }) => ({
   bottomShadow: {
     background:
-    'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0.40)100%)',
+      'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0.40)100%)',
     bottom: 0,
     height: 96,
     left: 0,
