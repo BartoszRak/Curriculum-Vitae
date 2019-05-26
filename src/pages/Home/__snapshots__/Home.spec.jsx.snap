@@ -4,31 +4,31 @@ exports[`global: Home should render as expected 1`] = `
 <div>
   <div
     className=""
-    key="cafd1653-ce49-460d-8619-1bfd02108159"
+    key="a38b60bc-f792-4dda-a0f4-4949666fdf07"
   >
     <ProjectsMock />
   </div>
   <div
     className=""
-    key="5d34a046-8800-4b90-a8d8-fc907b9e40da"
+    key="36d28e32-bf97-4353-8aa1-40cc57664d1a"
   >
     <BioMock />
   </div>
   <div
     className=""
-    key="44f65e71-f151-4c0e-8446-268339863945"
+    key="74f06ffa-c53f-4cfd-b604-87d0729df53f"
   >
     <SkillsMock />
   </div>
   <div
     className=""
-    key="898c5cdf-2341-4862-9cf3-bc16a67469a4"
+    key="9732c347-8827-4c80-b08a-f0260e978232"
   >
     <WorkflowMock />
   </div>
   <div
     className=""
-    key="3d3a1e1f-8787-4169-a571-55c04db065b3"
+    key="6915b22c-550a-4221-bbff-16eca0330794"
   >
     <HobbiesMock />
   </div>
