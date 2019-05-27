@@ -5,6 +5,16 @@
         "en": "English",
         "pl": "Polish"
       }
+    },
+    "preventInternetExplorer": {
+      "title": "Oops!",
+      "subtitle": "Internet explorer detected!",
+      "description": "Internet Explorer web browser in any version is not supported. Not because I am lazy devloper (because I am not) - it is not supported due to security reasons. Internet Explorer is outdated, old, based on old/unsecure technologies and it is not recommended to use it at all.",
+      "button": "Go unsecure",
+      "legend": [
+        "* You see this warning because whole website or component should not be used on Internet Explorer.",
+        "** Going unsecure may be dangerous, also component or website can behave improperly."
+      ]
     }
   },
   "layout": {
