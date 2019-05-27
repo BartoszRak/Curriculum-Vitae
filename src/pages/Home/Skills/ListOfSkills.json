@@ -63,6 +63,12 @@
     "name": "Next.js",
     "advancement": 1
   }, {
+    "name": "Nestjs",
+    "advancement": 1
+  },  {
+    "name": "Typescript REST",
+    "advancement": 1
+  }, {
     "name": "GraphQL",
     "advancement": 1
   }, {
@@ -94,6 +100,9 @@
     "advancement": 2
   }, {
     "name": "MySQL",
+    "advancement": 2
+  }, {
+    "name": "Animejs",
     "advancement": 2
   }
 ]
