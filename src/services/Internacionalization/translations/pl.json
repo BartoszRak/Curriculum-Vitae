@@ -5,6 +5,16 @@
         "en": "Angielski",
         "pl": "Polski"
       }
+    },
+    "preventInternetExplorer": {
+      "title": "Oops!",
+      "subtitle": "Internet explorer wykryty!",
+      "description": "Internet explorer w żadnej wersji nie jest wspierany. Nie ponieważ jestem leniwym programistą (bo nie jestem) - nie jest wspierany ze względów bezpieczeństwa. Internet Explorer jest nieaktualny, opary o stare i niebezpieczne technologie i jest nierekomendowane by go używać.",
+      "button": "Zaryzykuj i kontynuuj",
+      "legend": [
+        "* Widzisz to ostrzeżenie, ponieważ cała aplikacja lub komponent nie powinien być używany z Internet Explorerem.",
+        "** Kontynuowanie może być niebezpieczne, dodatkowo komponent lub aplikacja mogą zachować się nieprzewidzianie."
+      ]
     }
   },
   "layout": {

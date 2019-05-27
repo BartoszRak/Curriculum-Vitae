@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { withStyles, Typography, Button } from '@material-ui/core'
+import { FormattedMessage } from 'react-intl'
 
 import style from './PreventInternetExplorer.style'
 
@@ -13,28 +14,23 @@ export function PreventInternetExplorer({ classes, children }) {
   )
   return isExplorer ? (
     <div className={classes.root}>
-      <Typography variant="h1">Oops!</Typography>
-      <Typography variant="h2">Internet explorer detected!</Typography>
+      <Typography variant="h1"><FormattedMessage id="components.preventInternetExplorer.title" /></Typography>
+      <Typography variant="h2"><FormattedMessage id="components.preventInternetExplorer.subtitle" /></Typography>
       <Typography variant="body1">
-        Internet Explorer web browser in any version is not supported. Not because I
-        am lazy devloper (because I am not) - it is not supported due to security
-        reasons. Internet Explorer is outdated, old, based on old/unsecure
-        technologies and it is not recommended to use it at all.
+      <FormattedMessage id="components.preventInternetExplorer.description" />
       </Typography>
       <Button
         className={classes.button}
         onClick={() => setInternetExplorer(false)}
         variant="contained"
       >
-        Go unsecure
+        <FormattedMessage id="components.preventInternetExplorer.button" />
       </Button>
       <Typography variant="body2">
-        * You see this warning because whole website or component should not be used
-        on Internet Explorer.
+        <FormattedMessage id="components.preventInternetExplorer.legend.0" />
       </Typography>
       <Typography variant="body2">
-        ** Going unsecure may be dangerous, also component or website can behave
-        improperly.
+        <FormattedMessage id="components.preventInternetExplorer.legend.1" />
       </Typography>
     </div>
   ) : (
