@@ -131,6 +131,14 @@ exports[`global: Skills should render as expected 1`] = `
         },
         Object {
           "advancement": 1,
+          "name": "Nestjs",
+        },
+        Object {
+          "advancement": 1,
+          "name": "Typescript REST",
+        },
+        Object {
+          "advancement": 1,
           "name": "GraphQL",
         },
         Object {
@@ -187,6 +195,10 @@ exports[`global: Skills should render as expected 1`] = `
         Object {
           "advancement": 2,
           "name": "MySQL",
+        },
+        Object {
+          "advancement": 2,
+          "name": "Animejs",
         },
       ]
     }
