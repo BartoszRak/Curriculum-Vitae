@@ -19,7 +19,7 @@ export function PreventInternetExplorer({ classes, children }) {
         Internet Explorer web browser in any version is not supported. Not because I
         am lazy devloper (because I am not) - it is not supported due to security
         reasons. Internet Explorer is outdated, old, based on old/unsecure
-        technologies and there is not recommended to use it.
+        technologies and it is not recommended to use it at all.
       </Typography>
       <Button
         className={classes.button}
