@@ -11,8 +11,6 @@ function useScrollTo() {
     if (!element) return
 
     const boundingRect = element.getBoundingClientRect()
-    console.log(boundingRect.top)
-    console.log(window.pageYOffset)
     anime({
       duration: 500,
       easing: 'easeInOutQuad',
