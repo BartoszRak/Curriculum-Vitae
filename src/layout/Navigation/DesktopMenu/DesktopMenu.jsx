@@ -6,10 +6,10 @@ import { useScrollTo } from '~hooks'
 
 import style from './DesktopMenu.style'
 
-export function DesktopMenu({ classes, routes }) {
+export function DesktopMenu({ classes, className, routes }) {
   const { scrollTo } = useScrollTo()
   return (
-    <React.Fragment>
+    <div className={className}>
       {routes.map(route => (
         <Button
           classes={{
@@ -23,12 +23,13 @@ export function DesktopMenu({ classes, routes }) {
           {route.name}
         </Button>
       ))}
-    </React.Fragment>
+    </div>
   )
 }
 
 DesktopMenu.propTypes = {
   classes: PropTypes.object,
+  className: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.shape({
     elementId: PropTypes.string,
     name: PropTypes.string,

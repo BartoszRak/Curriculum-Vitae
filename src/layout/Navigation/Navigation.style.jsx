@@ -3,13 +3,15 @@ export default ({ breakpoints, spacing }) => ({
     marginRight: 50,
   },
   desktop: {
+    display: 'block',
     [breakpoints.down('md')]: {
       display: 'none',
     },
   },
   mobile: {
-    [breakpoints.up('md')]: {
-      display: 'none',
+    display: 'none',
+    [breakpoints.down('md')]: {
+      display: 'block',
     },
   },
   root: {

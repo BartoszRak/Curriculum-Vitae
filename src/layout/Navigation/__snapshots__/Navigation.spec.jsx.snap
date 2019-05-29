@@ -11,62 +11,58 @@ exports[`global: Navigation should render as expected 1`] = `
 >
   <ToolbarMock>
     <div>
-      <div>
-        <MobileMenuMock
-          routes={
-            Array [
-              Object {
-                "elementId": "#projects",
-                "name": "layout.navigation.items.projects",
-              },
-              Object {
-                "elementId": "#bio",
-                "name": "layout.navigation.items.bio",
-              },
-              Object {
-                "elementId": "#skills",
-                "name": "layout.navigation.items.skills",
-              },
-              Object {
-                "elementId": "#workflow",
-                "name": "layout.navigation.items.workflow",
-              },
-              Object {
-                "elementId": "#hobbies",
-                "name": "layout.navigation.items.passions",
-              },
-            ]
-          }
-        />
-      </div>
-      <div>
-        <DesktopMenuMock
-          routes={
-            Array [
-              Object {
-                "elementId": "#projects",
-                "name": "layout.navigation.items.projects",
-              },
-              Object {
-                "elementId": "#bio",
-                "name": "layout.navigation.items.bio",
-              },
-              Object {
-                "elementId": "#skills",
-                "name": "layout.navigation.items.skills",
-              },
-              Object {
-                "elementId": "#workflow",
-                "name": "layout.navigation.items.workflow",
-              },
-              Object {
-                "elementId": "#hobbies",
-                "name": "layout.navigation.items.passions",
-              },
-            ]
-          }
-        />
-      </div>
+      <MobileMenuMock
+        routes={
+          Array [
+            Object {
+              "elementId": "#projects",
+              "name": "layout.navigation.items.projects",
+            },
+            Object {
+              "elementId": "#bio",
+              "name": "layout.navigation.items.bio",
+            },
+            Object {
+              "elementId": "#skills",
+              "name": "layout.navigation.items.skills",
+            },
+            Object {
+              "elementId": "#workflow",
+              "name": "layout.navigation.items.workflow",
+            },
+            Object {
+              "elementId": "#hobbies",
+              "name": "layout.navigation.items.passions",
+            },
+          ]
+        }
+      />
+      <DesktopMenuMock
+        routes={
+          Array [
+            Object {
+              "elementId": "#projects",
+              "name": "layout.navigation.items.projects",
+            },
+            Object {
+              "elementId": "#bio",
+              "name": "layout.navigation.items.bio",
+            },
+            Object {
+              "elementId": "#skills",
+              "name": "layout.navigation.items.skills",
+            },
+            Object {
+              "elementId": "#workflow",
+              "name": "layout.navigation.items.workflow",
+            },
+            Object {
+              "elementId": "#hobbies",
+              "name": "layout.navigation.items.passions",
+            },
+          ]
+        }
+      />
     </div>
     <div>
       <LanguageSelect />

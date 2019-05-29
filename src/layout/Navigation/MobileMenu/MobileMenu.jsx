@@ -13,11 +13,11 @@ import { useScrollTo } from '~hooks'
 
 import style from './MobileMenu.style'
 
-export function MobileMenu({ classes, routes }) {
+export function MobileMenu({ classes, className, routes }) {
   const [toggle, setToggle] = useState(false)
   const { scrollTo } = useScrollTo()
   return (
-    <React.Fragment>
+    <div className={className}>
       <IconButton
         onClick={() => {
           setToggle(!toggle)
@@ -51,12 +51,13 @@ export function MobileMenu({ classes, routes }) {
           ))}
         </MenuList>
       </Modal>
-    </React.Fragment>
+    </div>
   )
 }
 
 MobileMenu.propTypes = {
   classes: PropTypes.object,
+  className: PropTypes.string,
   routes: PropTypes.arrayOf(
     PropTypes.shape({
       elementId: PropTypes.string,

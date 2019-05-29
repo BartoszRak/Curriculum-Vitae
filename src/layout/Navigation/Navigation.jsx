@@ -43,12 +43,8 @@ export function Navigation({ classes, intl }) {
     >
       <Toolbar className={classes.toolbar}>
         <div>
-          <div className={classes.mobile}>
-            <MobileMenu routes={routes} />
-          </div>
-          <div className={classes.desktop}>
-            <DesktopMenu routes={routes} />
-          </div>
+          <MobileMenu className={classes.mobile} routes={routes} />
+          <DesktopMenu className={classes.desktop} routes={routes} />
         </div>
         <div>
           <LanguageSelect />
