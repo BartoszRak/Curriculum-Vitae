@@ -11,8 +11,9 @@ import withMuiTheme from '~theme/withMuiTheme'
 import Layout from './layout'
 import Loader from '~components/Loader'
 import PreventInternetExplorer from '~components/PreventInternetExplorer'
-import { usePayloadLoading } from '~hooks'
-import { LanguageContext } from '~services/Internacionalization'
+import { usePayloadLoading, useKeyboardCapture } from '~hooks'
+import LanguageContext from '~services/Internacionalization'
+import ApplicationContext from '~services/AppState'
 import messagesPl from '~services/Internacionalization/translations/pl.json'
 import messagesEn from '~services/Internacionalization/translations/en.json'
 
@@ -26,6 +27,15 @@ addLocaleData([...localeEn, ...localePl])
 export function App({ classes }) {
   const { loading } = usePayloadLoading()
   const [language, setLanguage] = useState('en')
+  const [mode, setMode] = useState('normal')
+
+  useKeyboardCapture([
+    command => {
+      if (command === 'snake') setMode('play')
+      if (command === 'stop') setMode('normal')
+    },
+  ])
+
   return (
     <BrowserRouter>
       <LanguageContext.Provider
@@ -43,7 +53,10 @@ export function App({ classes }) {
             >
               <Loader className={classes.loader} disable={!loading}>
                 <PreventInternetExplorer>
-                  <Layout />
+                  <ApplicationContext.Provider value={{ mode, setMode }}>
+                    {mode === 'normal' && <Layout />}
+                    {mode === 'play' && <div>lets play</div>}
+                  </ApplicationContext.Provider>
                 </PreventInternetExplorer>
               </Loader>
             </IntlProvider>
