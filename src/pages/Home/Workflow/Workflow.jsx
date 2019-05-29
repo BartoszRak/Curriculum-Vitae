@@ -10,7 +10,7 @@ export function Workflow({ classes }) {
     <div className={classes.root} id="workflow">
       <Typography className={classes.title} variant="h1">
         <FormattedMessage id="pages.home.workflow.title" />
-        <span aria-hidden className={classes.emoji}> 
+        <span aria-hidden className={classes.emoji}>
           🙌
         </span>
       </Typography>

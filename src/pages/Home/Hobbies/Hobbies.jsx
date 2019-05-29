@@ -17,7 +17,7 @@ export function Hobbies({ classes }) {
           <span aria-hidden className={classes.emoji}> 🙄</span>
         </Typography>
         <div className={classes.tilesHolder}>
-          <div className={classes.tile}>
+          <article className={classes.tile}>
             <Typography variant="h2" className={classes.title}>
               <FormattedMessage id="pages.home.hobbies.tiles.insects.title" />
             </Typography>
@@ -25,8 +25,8 @@ export function Hobbies({ classes }) {
               <FormattedMessage id="pages.home.hobbies.tiles.insects.description" />
             </Typography>
             <img alt="Assasing bug" className={classes.tileImage} src={assasinBugUrl} />
-          </div>
-          <div className={classes.tile}>
+          </article>
+          <article className={classes.tile}>
             <Typography variant="h2" className={classes.title}>
               <FormattedMessage id="pages.home.hobbies.tiles.programming.title" />
             </Typography>
@@ -34,7 +34,7 @@ export function Hobbies({ classes }) {
               <FormattedMessage id="pages.home.hobbies.tiles.programming.description" />
             </Typography>
             <img alt="Coding" className={classes.tileImage} src={codingUrl} />
-          </div>
+          </article>
         </div>
       </div>
     </React.Fragment>

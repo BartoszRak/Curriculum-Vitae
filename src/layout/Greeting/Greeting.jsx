@@ -10,7 +10,7 @@ import style from './Greeting.style'
 
 export function Greeting({ classes }) {
   return (
-    <div
+    <header
       className={classes.root}
     >
       <Avatar alt="Author instagram picture" className={classes.avatar} src={avatarUrl} />
@@ -24,7 +24,7 @@ export function Greeting({ classes }) {
       <Typography className={classes.subsubtitle} color="secondary" variant="h3">
         <FormattedMessage id="layout.greeting.subsubtitle" />
       </Typography>
-    </div>
+    </header>
   )
 }
 

@@ -2,6 +2,7 @@
 
 exports[`global: ProjectTile should render as expected 1`] = `
 <a
+  aria-label="Open github repository of project"
   href="http://testurl.com"
   rel="noopener noreferrer"
   target="_blank"

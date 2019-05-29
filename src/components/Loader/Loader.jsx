@@ -19,7 +19,7 @@ export function Loader({
   return disable ? (
     children
   ) : (
-    <div className={classNames(classes.root, { [classes.fill]: fill }, className)}>
+    <div aria-busy className={classNames(classes.root, { [classes.fill]: fill }, className)} role="progressbar">
       <LinearProgress {...barProps} />
       <LinearProgress {...barProps} variant="query" />
       <LinearProgress {...barProps} />

@@ -13,7 +13,7 @@ export function SkillsList({ classes, className, data }) {
           {skill.name}
         </Typography>
       ))}
-      <Typography className={classNames(classes.sum, classes.item)} color="secondary" variant="h5">
+      <Typography aria-hidden className={classNames(classes.sum, classes.item)} color="secondary" variant="h5">
         {data.length}
       </Typography>
     </div>

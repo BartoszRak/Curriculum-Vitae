@@ -1,36 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`global: Home should render as expected 1`] = `
-<div>
-  <div
+<main
+  role="main"
+>
+  <section
     className=""
     key="Mocked UUIDV4"
   >
     <ProjectsMock />
-  </div>
-  <div
+  </section>
+  <section
     className=""
     key="Mocked UUIDV4"
   >
     <BioMock />
-  </div>
-  <div
+  </section>
+  <section
     className=""
     key="Mocked UUIDV4"
   >
     <SkillsMock />
-  </div>
-  <div
+  </section>
+  <section
     className=""
     key="Mocked UUIDV4"
   >
     <WorkflowMock />
-  </div>
-  <div
+  </section>
+  <section
     className=""
     key="Mocked UUIDV4"
   >
     <HobbiesMock />
-  </div>
-</div>
+  </section>
+</main>
 `;

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`global: Footer should render as expected 1`] = `
-<div>
+<footer>
   <WithStyles(Typography)
     variant="body2"
   >
@@ -14,5 +14,5 @@ exports[`global: Footer should render as expected 1`] = `
       }
     />
   </WithStyles(Typography)>
-</div>
+</footer>
 `;

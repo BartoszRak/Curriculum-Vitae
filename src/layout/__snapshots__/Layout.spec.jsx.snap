@@ -17,12 +17,14 @@ exports[`global: Layout should render as expected 1`] = `
     </SwitchMock>
     <FooterMock />
   </div>
-  <div />
-  <div>
+  <div
+    aria-hidden={true}
+  />
+  <aside>
     <FormattedMessage
       id="layout.information.title"
       values={Object {}}
     />
-  </div>
+  </aside>
 </Fragment>
 `;

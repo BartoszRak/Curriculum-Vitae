@@ -23,10 +23,10 @@ export const Layout = ({ classes }) => (
       </Switch>
       <Footer />
     </div>
-    <div className={classes.bottomShadow} />
-    <div className={classes.information}>
+    <div aria-hidden className={classes.bottomShadow} />
+    <aside className={classes.information}>
       <FormattedMessage id="layout.information.title" />
-    </div>
+    </aside>
   </React.Fragment>
 )
 

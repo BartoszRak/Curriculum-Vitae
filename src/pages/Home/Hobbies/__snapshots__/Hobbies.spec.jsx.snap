@@ -20,7 +20,7 @@ exports[`global: Hobbies should render as expected 1`] = `
       </span>
     </TypographyMock>
     <div>
-      <div>
+      <article>
         <TypographyMock
           variant="h2"
         >
@@ -41,8 +41,8 @@ exports[`global: Hobbies should render as expected 1`] = `
           alt="Assasing bug"
           src="assasin-bug.jpg"
         />
-      </div>
-      <div>
+      </article>
+      <article>
         <TypographyMock
           variant="h2"
         >
@@ -63,7 +63,7 @@ exports[`global: Hobbies should render as expected 1`] = `
           alt="Coding"
           src="coding.jpg"
         />
-      </div>
+      </article>
     </div>
   </div>
 </Fragment>

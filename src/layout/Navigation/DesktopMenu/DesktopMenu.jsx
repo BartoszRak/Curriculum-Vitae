@@ -9,7 +9,7 @@ import style from './DesktopMenu.style'
 export function DesktopMenu({ classes, className, routes }) {
   const { scrollTo } = useScrollTo()
   return (
-    <div className={className}>
+    <div aria-label="Navigate to" className={className} role="navigation">
       {routes.map(route => (
         <Button
           classes={{

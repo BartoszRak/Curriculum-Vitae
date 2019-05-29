@@ -2,7 +2,9 @@
 
 exports[`global: Loader rendering should render as expected 1`] = `
 <div
+  aria-busy={true}
   className=""
+  role="progressbar"
 >
   <LinearProgressMock
     classes={

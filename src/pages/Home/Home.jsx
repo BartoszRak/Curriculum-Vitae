@@ -37,7 +37,7 @@ const contentList = [
 
 export function Home({ classes }) {
   return (
-    <div className={classes.root}>
+    <main className={classes.root} role="main">
       {contentList.map((item, index) => {
         const { component: Component, id } = item
         const props = index % 2 === 0 ? {
@@ -46,12 +46,12 @@ export function Home({ classes }) {
           className: classNames(classes.holder, classes.fairHolder),
         }
         return (
-          <div {...props} key={id}>
+          <section {...props} key={id}>
             <Component />
-          </div>
+          </section>
         )
       })}
-    </div>
+    </main>
   )
 }
 

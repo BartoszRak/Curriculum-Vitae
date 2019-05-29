@@ -13,7 +13,7 @@ export function PreventInternetExplorer({ classes, children }) {
     Boolean(msie > 0 || userAgent.match(/Trident.*rv:11\./))
   )
   return isExplorer ? (
-    <div className={classes.root}>
+    <div className={classes.root} role="alert">
       <Typography variant="h1"><FormattedMessage id="components.preventInternetExplorer.title" /></Typography>
       <Typography variant="h2"><FormattedMessage id="components.preventInternetExplorer.subtitle" /></Typography>
       <Typography variant="body1">

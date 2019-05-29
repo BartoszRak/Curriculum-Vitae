@@ -8,7 +8,7 @@ export function ProjectTile({
   classes, description, title, url, tags,
 }) {
   return (
-    <a className={classes.root} href={url} rel="noopener noreferrer" target="_blank">
+    <a aria-label="Open github repository of project" className={classes.root} href={url} rel="noopener noreferrer" target="_blank">
       <Paper
         classes={{
           root: classes.paper,

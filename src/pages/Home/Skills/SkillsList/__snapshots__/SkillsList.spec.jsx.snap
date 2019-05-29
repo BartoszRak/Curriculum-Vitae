@@ -29,6 +29,7 @@ exports[`global: SkillsList should render as expected 1`] = `
     testName3
   </TypographyMock>
   <TypographyMock
+    aria-hidden={true}
     className=""
     color="secondary"
     variant="h5"
