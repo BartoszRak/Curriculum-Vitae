@@ -2,7 +2,7 @@
 
 exports[`global: Footer should render as expected 1`] = `
 <footer>
-  <WithStyles(Typography)
+  <WithStyles(ForwardRef(Typography))
     variant="body2"
   >
     <FormattedMessage
@@ -13,6 +13,6 @@ exports[`global: Footer should render as expected 1`] = `
         }
       }
     />
-  </WithStyles(Typography)>
+  </WithStyles(ForwardRef(Typography))>
 </footer>
 `;
