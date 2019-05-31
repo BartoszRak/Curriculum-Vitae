@@ -5,7 +5,7 @@ exports[`global: MobileMenu should render as expected 1`] = `
   <IconButtonMock
     onClick={[Function]}
   >
-    <pure(MenuIcon)
+    <[object Object]
       color="secondary"
     />
   </IconButtonMock>

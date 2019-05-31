@@ -1,16 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: Skills should render as expected 1`] = `
-<section>
-  <ContainerMock
+exports[`component: Skills rendering match snapshot 1`] = `
+<section
+  className="makeStyles-section-3"
+>
+  <WithStyles(ForwardRef(Container))
     classes={
       Object {
-        "root": undefined,
+        "root": "makeStyles-root-2",
       }
     }
     id="skills"
   >
-    <TypographyMock
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-title-6"
       color="secondary"
       variant="h1"
     >
@@ -20,11 +23,13 @@ exports[`global: Skills should render as expected 1`] = `
       />
       <span
         aria-hidden={true}
+        className="makeStyles-emoji-1"
       >
          😬
       </span>
-    </TypographyMock>
-    <TypographyMock
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-subtitle-5"
       color="secondary"
       variant="h3"
     >
@@ -32,8 +37,9 @@ exports[`global: Skills should render as expected 1`] = `
         id="pages.home.skills.levels.0.title"
         values={Object {}}
       />
-    </TypographyMock>
+    </WithStyles(ForwardRef(Typography))>
     <SkillsListMock
+      className="makeStyles-skills-4"
       data={
         Array [
           Object {
@@ -103,7 +109,8 @@ exports[`global: Skills should render as expected 1`] = `
         ]
       }
     />
-    <TypographyMock
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-subtitle-5"
       color="secondary"
       variant="h3"
     >
@@ -111,8 +118,9 @@ exports[`global: Skills should render as expected 1`] = `
         id="pages.home.skills.levels.1.title"
         values={Object {}}
       />
-    </TypographyMock>
+    </WithStyles(ForwardRef(Typography))>
     <SkillsListMock
+      className="makeStyles-skills-4"
       data={
         Array [
           Object {
@@ -154,7 +162,8 @@ exports[`global: Skills should render as expected 1`] = `
         ]
       }
     />
-    <TypographyMock
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-subtitle-5"
       color="secondary"
       variant="h3"
     >
@@ -162,8 +171,9 @@ exports[`global: Skills should render as expected 1`] = `
         id="pages.home.skills.levels.2.title"
         values={Object {}}
       />
-    </TypographyMock>
+    </WithStyles(ForwardRef(Typography))>
     <SkillsListMock
+      className="makeStyles-skills-4"
       data={
         Array [
           Object {
@@ -209,6 +219,6 @@ exports[`global: Skills should render as expected 1`] = `
         ]
       }
     />
-  </ContainerMock>
+  </WithStyles(ForwardRef(Container))>
 </section>
 `;

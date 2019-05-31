@@ -1,11 +1,12 @@
 import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import { withStyles, Typography } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 
-import style from './SkillsList.style'
+import useStyle from './SkillsList.style'
 
-export function SkillsList({ classes, className, data }) {
+export function SkillsList({ classes: overridingClasses, className, data }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   return (
     <div className={classNames(classes.root, className)}>
       {data.map(skill => (
@@ -29,4 +30,4 @@ SkillsList.propTypes = {
   })),
 }
 
-export default withStyles(style)(SkillsList)
+export default SkillsList

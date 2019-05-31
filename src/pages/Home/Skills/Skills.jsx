@@ -1,18 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
-import { withStyles, Typography, Container } from '@material-ui/core'
+import { Typography, Container } from '@material-ui/core'
 
 import SkillsList from './SkillsList'
 import listOfSkills from './ListOfSkills.json'
 
-import style from './Skills.style'
+import useStyle from './Skills.style'
 
 const coreSkills = listOfSkills.filter(skill => skill.advancement === 0)
 const sideSkills = listOfSkills.filter(skill => skill.advancement === 1)
 const additionalSkills = listOfSkills.filter(skill => skill.advancement === 2)
 
-export function Skills({ classes }) {
+export function Skills({ classes: overridingClasses }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   return (
     <section className={classes.section}>
       <Container classes={{ root: classes.root }} id="skills">
@@ -41,4 +42,4 @@ Skills.propTypes = {
   classes: PropTypes.object,
 }
 
-export default withStyles(style)(Skills)
+export default Skills

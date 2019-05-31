@@ -1,29 +1,35 @@
 import React from 'react'
+import { cleanup } from '@testing-library/react'
 import { shallow } from 'enzyme'
 
 import { Projects } from './Projects'
+import { createPropertyProxy } from '~utils/proxies'
+
+jest.unmock('@material-ui/core')
 
 jest.mock('./ProjectsList', () => 'ProjectsListMock')
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-    intl: {
-     formatMessage: v => v.id,
-    },
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<Projects {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+let props
 
-describe('global: Projects', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
+describe('component: Projects', () => {
+  afterEach(cleanup)
+
+  beforeEach(() => {
+    props = {
+      classes: createPropertyProxy,
+    }
   })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+  describe('rendering', () => {
+    test('render without crash', () => {
+      const wrapper = shallow(<Projects {...props} />)
+
+      expect(wrapper).toBeTruthy()
+    })
+
+    test('match snapshot', () => {
+      const wrapper = shallow(<Projects {...props} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
   })
 })

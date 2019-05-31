@@ -1,24 +1,33 @@
 import React from 'react'
+import { cleanup } from '@testing-library/react'
 import { shallow } from 'enzyme'
 
 import { Hobbies } from './Hobbies'
+import { createPropertyProxy } from '~utils/proxies'
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<Hobbies {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+jest.unmock('@material-ui/core')
 
-describe('global: Hobbies', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
+let props
+
+describe('component: Hobbies', () => {
+  afterEach(cleanup)
+
+  beforeEach(() => {
+    props = {
+      classes: createPropertyProxy,
+    }
   })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+  describe('rendering', () => {
+    test('render without crash', () => {
+      const wrapper = shallow(<Hobbies {...props} />)
+
+      expect(wrapper).toBeTruthy()
+    })
+
+    test('match snapshot', () => {
+      const wrapper = shallow(<Hobbies {...props} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
   })
 })

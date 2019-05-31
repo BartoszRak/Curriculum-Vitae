@@ -1,4 +1,6 @@
-export default ({ breakpoints, palette, spacing }) => ({
+import { makeStyles } from '@material-ui/core'
+
+export default makeStyles(({ breakpoints, palette, spacing }) => ({
   emoji: {
     fontSize: '2rem',
     [breakpoints.down('md')]: {
@@ -57,4 +59,4 @@ export default ({ breakpoints, palette, spacing }) => ({
       marginBottom: spacing(2),
     },
   },
-})
+}))

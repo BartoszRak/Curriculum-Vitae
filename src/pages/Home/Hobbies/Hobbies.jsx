@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
-import { withStyles, Typography, Container } from '@material-ui/core'
+import { Typography, Container } from '@material-ui/core'
 
 import assasinBugUrl from '~assets/images/assasin-bug.jpg'
 import codingUrl from '~assets/images/coding.jpg'
 
-import style from './Hobbies.style'
+import useStyle from './Hobbies.style'
 
-export function Hobbies({ classes }) {
+export function Hobbies({ classes: overridingClasses }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   return (
     <section className={classes.section}>
       <Container classes={{ root: classes.root }} id="hobbies">
@@ -45,4 +46,4 @@ Hobbies.propTypes = {
   classes: PropTypes.object,
 }
 
-export default withStyles(style)(Hobbies)
+export default Hobbies
