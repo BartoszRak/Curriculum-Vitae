@@ -6,16 +6,19 @@ import { ProjectTile } from './ProjectTile'
 const initComponent = overrides => {
   const mockProps = {
     classes: {},
-    description: 'Some example description',
-    tags: [{
-      name: 'testName1',
-      url: 'http://testurl1.com',
-    }, {
-      name: 'testName2',
-      url: 'http://testurl2.com',
-    }],
-    title: 'Example title',
-    url: 'http://testurl.com',
+    project: {
+      description: 'Some example description',
+      isFavorite: true,
+      tags: [{
+        name: 'testName1',
+        url: 'http://testurl1.com',
+      }, {
+        name: 'testName2',
+        url: 'http://testurl2.com',
+      }],
+      title: 'Example title',
+      url: 'http://testurl.com',
+    }
   }
   const mockMethods = {}
   const wrapper = shallow(<ProjectTile {...mockProps} {...mockMethods} {...overrides} />)

@@ -3,16 +3,20 @@
 exports[`global: ProjectsList should render as expected 1`] = `
 <div>
   <ProjectTileMock
-    description="Test description1"
     key="testName1"
-    tags={
+    project={
       Object {
-        "name": "testTag",
-        "url": "testTagUrl",
+        "description": "Test description1",
+        "tags": Array [
+          Object {
+            "name": "testTag",
+            "url": "testTagUrl",
+          },
+        ],
+        "title": "testName1",
+        "url": "https://testurl.com",
       }
     }
-    title="testName1"
-    url="https://testurl.com"
   />
 </div>
 `;

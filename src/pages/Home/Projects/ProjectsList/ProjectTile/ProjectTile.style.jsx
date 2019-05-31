@@ -1,10 +1,29 @@
 export default ({ spacing, palette }) => ({
+  actions: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    borderBottom: '4px solid rgba(0, 0, 0, 0)',
+  },
   description: {
     fontWeight: 'normal',
     marginTop: spacing.unit * 1,
   },
+  favoriteActions: {
+    borderBottom: `4px solid ${palette.error.main}`,
+  },
+  favoriteIconButton: {
+    color: palette.error.main,
+  },
   focus: {
     background: palette.primary.dark,
+  },
+  href: {
+    textDecoration: 'none',
+  },
+  icon: {
+    height: '1rem',
+    width: '1rem',
   },
   root: {
     breakInside: 'avoid-column',

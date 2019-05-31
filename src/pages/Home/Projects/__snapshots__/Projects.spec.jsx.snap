@@ -15,7 +15,8 @@ exports[`global: Projects should render as expected 1`] = `
     <span
       aria-hidden={true}
     >
-       😎
+       
+      😎
     </span>
   </TypographyMock>
   <ProjectsListMock
@@ -23,6 +24,7 @@ exports[`global: Projects should render as expected 1`] = `
       Array [
         Object {
           "description": "pages.home.projects.projects.insectifyApi.description",
+          "isFavorite": false,
           "tags": Array [
             Object {
               "name": "nestjs",
@@ -38,10 +40,11 @@ exports[`global: Projects should render as expected 1`] = `
             },
           ],
           "title": "pages.home.projects.projects.insectifyApi.title",
-          "url": "https://github.com/BartoszRak/React-Awesome-Boilerplate",
+          "url": "https://github.com/BartoszRak/Insectify-api",
         },
         Object {
           "description": "pages.home.projects.projects.reactAwesomeBoilerplate.description",
+          "isFavorite": false,
           "tags": Array [
             Object {
               "name": "React",
@@ -61,6 +64,7 @@ exports[`global: Projects should render as expected 1`] = `
         },
         Object {
           "description": "pages.home.projects.projects.mx.description",
+          "isFavorite": false,
           "tags": Array [
             Object {
               "name": "TypeScript",

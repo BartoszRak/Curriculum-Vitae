@@ -12,10 +12,10 @@ const initComponent = overrides => {
       {
         description: 'Test description1',
         title: 'testName1',
-        tags: {
+        tags: [{
           name: 'testTag',
           url: 'testTagUrl',
-        },
+        }],
         url: 'https://testurl.com',
       },
     ]

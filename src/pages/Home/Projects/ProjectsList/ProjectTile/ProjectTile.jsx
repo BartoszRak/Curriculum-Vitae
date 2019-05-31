@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import {
   withStyles,
@@ -6,20 +7,31 @@ import {
   Card,
   CardActionArea,
   CardContent,
+  CardActions,
+  IconButton,
 } from '@material-ui/core'
+import { Favorite } from '@material-ui/icons'
+
+import { useFavoriteProjectsStorage } from '~hooks'
 
 import style from './ProjectTile.style'
 
-export function ProjectTile({ classes, description, title, url, tags }) {
+export function ProjectTile({
+  classes,
+  project: { description, title, url, tags = [], isFavorite },
+}) {
+  const { toggleProject } = useFavoriteProjectsStorage()
+  const [favorite, setFavorite] = useState(isFavorite)
+
   return (
-    <a
-      aria-label="Open github repository of project"
-      className={classes.root}
-      href={url}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <Card>
+    <Card className={classes.root}>
+      <a
+        aria-label="Open github repository of project"
+        className={classes.href}
+        href={url}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         <CardActionArea classes={{ focusHighlight: classes.focus }}>
           <CardContent>
             <Typography className={classes.title} variant="h4">
@@ -37,27 +49,38 @@ export function ProjectTile({ classes, description, title, url, tags }) {
             </div>
           </CardContent>
         </CardActionArea>
-      </Card>
-    </a>
+      </a>
+      <CardActions classes={{ root: classNames(classes.actions, {
+        [classes.favoriteActions]: favorite,
+      }) }}>
+        <IconButton
+          className={classNames({ [classes.favoriteIconButton]: favorite })}
+          onClick={() => {
+            setFavorite(!favorite)
+            toggleProject(url)
+          }}
+        >
+          <Favorite className={classes.icon} />
+        </IconButton>
+      </CardActions>
+    </Card>
   )
 }
 
 ProjectTile.propTypes = {
   classes: PropTypes.object,
-  description: PropTypes.string,
-  tags: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      url: PropTypes.string,
-    })
-  ),
-  title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-}
-
-ProjectTile.defaultProps = {
-  description: '',
-  tags: [],
+  project: PropTypes.shape({
+    description: PropTypes.string,
+    isFavorite: PropTypes.bool,
+    tags: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        url: PropTypes.string,
+      })
+    ),
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+  }),
 }
 
 export default withStyles(style)(ProjectTile)
