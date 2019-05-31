@@ -1,16 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: Workflow should render as expected 1`] = `
-<section>
-  <ContainerMock
+exports[`component: Workflow rendering match snapshot 1`] = `
+<section
+  className="makeStyles-section-6"
+>
+  <WithStyles(ForwardRef(Container))
     classes={
       Object {
-        "root": undefined,
+        "root": "makeStyles-root-5",
       }
     }
     id="workflow"
   >
-    <TypographyMock
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-title-8"
       variant="h1"
     >
       <FormattedMessage
@@ -19,36 +22,41 @@ exports[`global: Workflow should render as expected 1`] = `
       />
       <span
         aria-hidden={true}
+        className="makeStyles-emoji-2"
       >
         🙌
       </span>
-    </TypographyMock>
-    <DividerMock />
-    <TypographyMock
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Divider))
+      className="makeStyles-divider-1"
+    />
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-subtitle-7"
       variant="h3"
     >
       <FormattedMessage
         id="pages.home.workflow.tiles.project.title"
         values={Object {}}
       />
-    </TypographyMock>
-    <TypographyMock
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
       variant="body1"
     >
       <FormattedMessage
         id="pages.home.workflow.tiles.project.description"
         values={Object {}}
       />
-    </TypographyMock>
-    <TypographyMock
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-subtitle-7"
       variant="h3"
     >
       <FormattedMessage
         id="pages.home.workflow.tiles.git.title"
         values={Object {}}
       />
-    </TypographyMock>
-    <TypographyMock
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
       variant="body1"
     >
       <FormattedMessage
@@ -65,7 +73,7 @@ exports[`global: Workflow should render as expected 1`] = `
           }
         }
       />
-    </TypographyMock>
-  </ContainerMock>
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Container))>
 </section>
 `;
