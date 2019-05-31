@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
-import { withStyles, Typography, Divider, SvgIcon, Container } from '@material-ui/core'
+import { withStyles, Typography, Divider, Container } from '@material-ui/core'
 
 import style from './Workflow.style'
 
 export function Workflow({ classes }) {
   return (
     <section className={classes.section}>
-      <Container classes={{ root: classes.root}} id="workflow">
+      <Container classes={{ root: classes.root }} id="workflow">
         <Typography className={classes.title} variant="h1">
           <FormattedMessage id="pages.home.workflow.title" />
           <span aria-hidden className={classes.emoji}>
