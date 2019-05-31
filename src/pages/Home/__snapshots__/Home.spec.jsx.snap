@@ -1,13 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: Home should render as expected 1`] = `
+exports[`component: Home rendering match snapshot 1`] = `
 <main
+  className="makeStyles-root-5"
   role="main"
 >
   <ProjectsMock
     classes={
       Object {
-        "section": "undefined",
+        "section": "makeStyles-holder-4 makeStyles-backgroundHolder-1",
       }
     }
     key="Mocked UUIDV4"
@@ -15,7 +16,7 @@ exports[`global: Home should render as expected 1`] = `
   <BioMock
     classes={
       Object {
-        "section": "",
+        "section": "makeStyles-holder-4 makeStyles-fairHolder-3",
       }
     }
     key="Mocked UUIDV4"
@@ -23,7 +24,7 @@ exports[`global: Home should render as expected 1`] = `
   <SkillsMock
     classes={
       Object {
-        "section": "undefined",
+        "section": "makeStyles-holder-4 makeStyles-backgroundHolder-1",
       }
     }
     key="Mocked UUIDV4"
@@ -31,7 +32,7 @@ exports[`global: Home should render as expected 1`] = `
   <WorkflowMock
     classes={
       Object {
-        "section": "",
+        "section": "makeStyles-holder-4 makeStyles-fairHolder-3",
       }
     }
     key="Mocked UUIDV4"
@@ -39,7 +40,7 @@ exports[`global: Home should render as expected 1`] = `
   <HobbiesMock
     classes={
       Object {
-        "section": "undefined",
+        "section": "makeStyles-holder-4 makeStyles-backgroundHolder-1",
       }
     }
     key="Mocked UUIDV4"

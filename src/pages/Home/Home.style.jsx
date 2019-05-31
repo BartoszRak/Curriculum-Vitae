@@ -1,6 +1,7 @@
+import { makeStyles } from '@material-ui/core'
 import backgroundUrl from '~assets/images/landscape-mountains-nature-dark-blur.jpg'
 
-export default ({ palette, spacing }) => ({
+export default makeStyles(({ palette, spacing }) => ({
   backgroundHolder: {
     background: `url(${backgroundUrl})`,
     backgroundAttachment: 'fixed',
@@ -27,4 +28,4 @@ export default ({ palette, spacing }) => ({
     display: 'flex',
     flexDirection: 'column',
   },
-})
+}))

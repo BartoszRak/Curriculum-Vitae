@@ -1,7 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { withStyles } from '@material-ui/core'
 import uuidv4 from 'uuid/v4'
 
 import Projects from './Projects'
@@ -10,14 +8,15 @@ import Skills from './Skills'
 import Workflow from './Workflow'
 import Hobbies from './Hobbies'
 
-import style from './Home.style'
+import useStyle from './Home.style'
 
 const contentList = [Projects, Bio, Skills, Workflow, Hobbies].map(obj => ({
   component: obj,
   id: uuidv4(),
 }))
 
-export function Home({ classes }) {
+export function Home() {
+  const classes = useStyle()
   return (
     <main className={classes.root} role="main">
       {contentList.map((item, index) => {
@@ -38,8 +37,4 @@ export function Home({ classes }) {
   )
 }
 
-Home.propTypes = {
-  classes: PropTypes.object,
-}
-
-export default withStyles(style)(Home)
+export default Home
