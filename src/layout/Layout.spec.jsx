@@ -1,28 +1,25 @@
 import React from 'react'
+import { cleanup } from '@testing-library/react'
 import { shallow } from 'enzyme'
 
 import { Layout } from './Layout'
 
-jest.mock('~pages/Home', () => 'HomeMock')
-jest.mock('./Greeting', () => 'GreetingMock')
-jest.mock('./Footer', () => 'FooterMock')
+jest.unmock('@material-ui/core')
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<Layout {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+describe('component: Layout', () => {
+  afterEach(cleanup)
 
-describe('global: Layout', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
-  })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+  describe('rendering', () => {
+    test('render without crash', () => {
+      const wrapper = shallow(<Layout />)
+
+      expect(wrapper).toBeTruthy()
+    })
+
+    test('match snapshot', () => {
+      const wrapper = shallow(<Layout />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
   })
 })
