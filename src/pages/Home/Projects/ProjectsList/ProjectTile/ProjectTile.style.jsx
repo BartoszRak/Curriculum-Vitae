@@ -20,6 +20,7 @@ export default ({ spacing, palette }) => ({
   },
   href: {
     textDecoration: 'none',
+    color: 'none',
   },
   icon: {
     height: '1rem',

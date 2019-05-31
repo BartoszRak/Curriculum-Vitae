@@ -8,6 +8,7 @@ export default ({ breakpoints, spacing, palette }) => ({
   root: {
     width: '100%',
   },
+  section: {},
   skills: {
     marginTop: 20,
   },

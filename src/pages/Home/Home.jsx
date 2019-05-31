@@ -12,43 +12,26 @@ import Hobbies from './Hobbies'
 
 import style from './Home.style'
 
-const contentList = [
-  {
-    component: Projects,
-    id: uuidv4(),
-  },
-  {
-    component: Bio,
-    id: uuidv4(),
-  },
-  {
-    component: Skills,
-    id: uuidv4(),
-  },
-  {
-    component: Workflow,
-    id: uuidv4(),
-  },
-  {
-    component: Hobbies,
-    id: uuidv4(),
-  },
-]
+const contentList = [Projects, Bio, Skills, Workflow, Hobbies].map(obj => ({
+  component: obj,
+  id: uuidv4(),
+}))
 
 export function Home({ classes }) {
   return (
     <main className={classes.root} role="main">
       {contentList.map((item, index) => {
         const { component: Component, id } = item
-        const props = index % 2 === 0 ? {
-          className: classNames(classes.holder, classes.backgroundHolder),
-        } : {
-          className: classNames(classes.holder, classes.fairHolder),
-        }
         return (
-          <section {...props} key={id}>
-            <Component />
-          </section>
+          <Component
+            classes={{
+              section: classNames(classes.holder, {
+                [classes.fairHolder]: index % 2 !== 0,
+                [classes.backgroundHolder]: index % 2 === 0,
+              }),
+            }}
+            key={id}
+          />
         )
       })}
     </main>

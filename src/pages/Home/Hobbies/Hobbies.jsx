@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
-import { withStyles, Typography } from '@material-ui/core'
+import { withStyles, Typography, Container } from '@material-ui/core'
 
 import assasinBugUrl from '~assets/images/assasin-bug.jpg'
 import codingUrl from '~assets/images/coding.jpg'
@@ -10,8 +10,8 @@ import style from './Hobbies.style'
 
 export function Hobbies({ classes }) {
   return (
-    <React.Fragment>
-      <div className={classes.root} id="hobbies">
+    <section className={classes.section}>
+      <Container classes={{ root: classes.root }} id="hobbies">
         <Typography className={classes.title} color="secondary" variant="h1">
           <FormattedMessage id="pages.home.hobbies.title" />
           <span aria-hidden className={classes.emoji}> 🙄</span>
@@ -36,8 +36,8 @@ export function Hobbies({ classes }) {
             <img alt="Coding" className={classes.tileImage} src={codingUrl} />
           </article>
         </div>
-      </div>
-    </React.Fragment>
+      </Container>
+    </section>
   )
 }
 

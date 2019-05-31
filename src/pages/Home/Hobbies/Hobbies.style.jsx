@@ -8,6 +8,7 @@ export default ({ breakpoints, palette, spacing }) => ({
   root: {
     width: '100%',
   },
+  section: {},
   tile: {
     alignItems: 'center',
     background: palette.secondary.main,

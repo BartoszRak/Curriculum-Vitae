@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
-import { withStyles, Typography } from '@material-ui/core'
+import { withStyles, Typography, Container } from '@material-ui/core'
 import { injectIntl, FormattedMessage } from 'react-intl'
 
 import ProjectsList from './ProjectsList'
@@ -66,16 +66,18 @@ export function Projects({ classes, intl }) {
   }, [favoriteProjects])
 
   return (
-    <div className={classes.root} id="projects">
-      <Typography className={classes.title} color="secondary" variant="h1">
-        <FormattedMessage id="pages.home.projects.title" />
-        <span aria-hidden className={classes.emoji}>
-          {' '}
-          😎
-        </span>
-      </Typography>
-      <ProjectsList data={projects} />
-    </div>
+    <section className={classes.section}>
+      <Container classes={{ root: classes.root}} id="projects">
+        <Typography className={classes.title} color="secondary" variant="h1">
+          <FormattedMessage id="pages.home.projects.title" />
+          <span aria-hidden className={classes.emoji}>
+            {' '}
+            😎
+          </span>
+        </Typography>
+        <ProjectsList data={projects} />
+      </Container>
+    </section>
   )
 }
 

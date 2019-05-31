@@ -6,6 +6,7 @@ body {
   position: absolute;
   padding: 0 !important;
   overflow-y: scroll !important;
+  width: 100%;
 }
 
 code {

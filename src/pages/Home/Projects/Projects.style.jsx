@@ -8,6 +8,7 @@ export default ({ breakpoints }) => ({
   root: {
     width: '100%',
   },
+  section: {},
   title: {
     textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
     [breakpoints.down('md')]: {

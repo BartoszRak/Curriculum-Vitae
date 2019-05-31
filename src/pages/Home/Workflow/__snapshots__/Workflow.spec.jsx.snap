@@ -1,64 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`global: Workflow should render as expected 1`] = `
-<div
-  id="workflow"
->
-  <TypographyMock
-    variant="h1"
-  >
-    <FormattedMessage
-      id="pages.home.workflow.title"
-      values={Object {}}
-    />
-    <span
-      aria-hidden={true}
-    >
-      🙌
-    </span>
-  </TypographyMock>
-  <DividerMock />
-  <TypographyMock
-    variant="h3"
-  >
-    <FormattedMessage
-      id="pages.home.workflow.tiles.project.title"
-      values={Object {}}
-    />
-  </TypographyMock>
-  <TypographyMock
-    variant="body1"
-  >
-    <FormattedMessage
-      id="pages.home.workflow.tiles.project.description"
-      values={Object {}}
-    />
-  </TypographyMock>
-  <TypographyMock
-    variant="h3"
-  >
-    <FormattedMessage
-      id="pages.home.workflow.tiles.git.title"
-      values={Object {}}
-    />
-  </TypographyMock>
-  <TypographyMock
-    variant="body1"
-  >
-    <FormattedMessage
-      id="pages.home.workflow.tiles.git.description"
-      values={
-        Object {
-          "methodology": <a
-            href="https://pl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            git-flow
-          </a>,
-        }
+<section>
+  <ContainerMock
+    classes={
+      Object {
+        "root": undefined,
       }
-    />
-  </TypographyMock>
-</div>
+    }
+    id="workflow"
+  >
+    <TypographyMock
+      variant="h1"
+    >
+      <FormattedMessage
+        id="pages.home.workflow.title"
+        values={Object {}}
+      />
+      <span
+        aria-hidden={true}
+      >
+        🙌
+      </span>
+    </TypographyMock>
+    <DividerMock />
+    <TypographyMock
+      variant="h3"
+    >
+      <FormattedMessage
+        id="pages.home.workflow.tiles.project.title"
+        values={Object {}}
+      />
+    </TypographyMock>
+    <TypographyMock
+      variant="body1"
+    >
+      <FormattedMessage
+        id="pages.home.workflow.tiles.project.description"
+        values={Object {}}
+      />
+    </TypographyMock>
+    <TypographyMock
+      variant="h3"
+    >
+      <FormattedMessage
+        id="pages.home.workflow.tiles.git.title"
+        values={Object {}}
+      />
+    </TypographyMock>
+    <TypographyMock
+      variant="body1"
+    >
+      <FormattedMessage
+        id="pages.home.workflow.tiles.git.description"
+        values={
+          Object {
+            "methodology": <a
+              href="https://pl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              git-flow
+            </a>,
+          }
+        }
+      />
+    </TypographyMock>
+  </ContainerMock>
+</section>
 `;

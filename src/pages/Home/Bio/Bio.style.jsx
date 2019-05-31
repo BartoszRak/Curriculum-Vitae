@@ -11,6 +11,7 @@ export default ({ breakpoints, palette, spacing }) => ({
   root: {
     width: '100%',
   },
+  section: {},
   subtitle: {
     borderLeft: `4px solid ${palette.primary.main}`,
     marginTop: spacing.unit * 2,

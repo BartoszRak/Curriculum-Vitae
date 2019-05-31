@@ -20,7 +20,7 @@ export default ({ palette, spacing }) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     minHeight: '100vh',
-    padding: '150px 15%',
+    padding: '150px 0',
   },
   root: {
     alignItems: 'stretch',

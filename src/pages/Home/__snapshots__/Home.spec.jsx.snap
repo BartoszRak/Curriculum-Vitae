@@ -4,35 +4,45 @@ exports[`global: Home should render as expected 1`] = `
 <main
   role="main"
 >
-  <section
-    className=""
+  <ProjectsMock
+    classes={
+      Object {
+        "section": "undefined",
+      }
+    }
     key="Mocked UUIDV4"
-  >
-    <ProjectsMock />
-  </section>
-  <section
-    className=""
+  />
+  <BioMock
+    classes={
+      Object {
+        "section": "",
+      }
+    }
     key="Mocked UUIDV4"
-  >
-    <BioMock />
-  </section>
-  <section
-    className=""
+  />
+  <SkillsMock
+    classes={
+      Object {
+        "section": "undefined",
+      }
+    }
     key="Mocked UUIDV4"
-  >
-    <SkillsMock />
-  </section>
-  <section
-    className=""
+  />
+  <WorkflowMock
+    classes={
+      Object {
+        "section": "",
+      }
+    }
     key="Mocked UUIDV4"
-  >
-    <WorkflowMock />
-  </section>
-  <section
-    className=""
+  />
+  <HobbiesMock
+    classes={
+      Object {
+        "section": "undefined",
+      }
+    }
     key="Mocked UUIDV4"
-  >
-    <HobbiesMock />
-  </section>
+  />
 </main>
 `;

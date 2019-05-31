@@ -1,207 +1,214 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`global: Skills should render as expected 1`] = `
-<div
-  id="skills"
->
-  <TypographyMock
-    color="secondary"
-    variant="h1"
+<section>
+  <ContainerMock
+    classes={
+      Object {
+        "root": undefined,
+      }
+    }
+    id="skills"
   >
-    <FormattedMessage
-      id="pages.home.skills.title"
-      values={Object {}}
-    />
-    <span
-      aria-hidden={true}
+    <TypographyMock
+      color="secondary"
+      variant="h1"
     >
-       😬
-    </span>
-  </TypographyMock>
-  <TypographyMock
-    color="secondary"
-    variant="h3"
-  >
-    <FormattedMessage
-      id="pages.home.skills.levels.0.title"
-      values={Object {}}
+      <FormattedMessage
+        id="pages.home.skills.title"
+        values={Object {}}
+      />
+      <span
+        aria-hidden={true}
+      >
+         😬
+      </span>
+    </TypographyMock>
+    <TypographyMock
+      color="secondary"
+      variant="h3"
+    >
+      <FormattedMessage
+        id="pages.home.skills.levels.0.title"
+        values={Object {}}
+      />
+    </TypographyMock>
+    <SkillsListMock
+      data={
+        Array [
+          Object {
+            "advancement": 0,
+            "name": "React",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Javascript",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Material UI",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Scss/Sass",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Axios",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Firebase",
+          },
+          Object {
+            "advancement": 0,
+            "name": "TypeScript",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Rematch",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Redux",
+          },
+          Object {
+            "advancement": 0,
+            "name": ".Jss",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Immutable",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Git",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Formik",
+          },
+          Object {
+            "advancement": 0,
+            "name": "HTML",
+          },
+          Object {
+            "advancement": 0,
+            "name": "CSS",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Rest API",
+          },
+        ]
+      }
     />
-  </TypographyMock>
-  <SkillsListMock
-    data={
-      Array [
-        Object {
-          "advancement": 0,
-          "name": "React",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Javascript",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Material UI",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Scss/Sass",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Axios",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Firebase",
-        },
-        Object {
-          "advancement": 0,
-          "name": "TypeScript",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Rematch",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Redux",
-        },
-        Object {
-          "advancement": 0,
-          "name": ".Jss",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Immutable",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Git",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Formik",
-        },
-        Object {
-          "advancement": 0,
-          "name": "HTML",
-        },
-        Object {
-          "advancement": 0,
-          "name": "CSS",
-        },
-        Object {
-          "advancement": 0,
-          "name": "Rest API",
-        },
-      ]
-    }
-  />
-  <TypographyMock
-    color="secondary"
-    variant="h3"
-  >
-    <FormattedMessage
-      id="pages.home.skills.levels.1.title"
-      values={Object {}}
+    <TypographyMock
+      color="secondary"
+      variant="h3"
+    >
+      <FormattedMessage
+        id="pages.home.skills.levels.1.title"
+        values={Object {}}
+      />
+    </TypographyMock>
+    <SkillsListMock
+      data={
+        Array [
+          Object {
+            "advancement": 1,
+            "name": "Travis CI",
+          },
+          Object {
+            "advancement": 1,
+            "name": "Keycloak",
+          },
+          Object {
+            "advancement": 1,
+            "name": "Webpack",
+          },
+          Object {
+            "advancement": 1,
+            "name": "Express.js",
+          },
+          Object {
+            "advancement": 1,
+            "name": "Next.js",
+          },
+          Object {
+            "advancement": 1,
+            "name": "Nestjs",
+          },
+          Object {
+            "advancement": 1,
+            "name": "Typescript REST",
+          },
+          Object {
+            "advancement": 1,
+            "name": "GraphQL",
+          },
+          Object {
+            "advancement": 1,
+            "name": "jQuery",
+          },
+        ]
+      }
     />
-  </TypographyMock>
-  <SkillsListMock
-    data={
-      Array [
-        Object {
-          "advancement": 1,
-          "name": "Travis CI",
-        },
-        Object {
-          "advancement": 1,
-          "name": "Keycloak",
-        },
-        Object {
-          "advancement": 1,
-          "name": "Webpack",
-        },
-        Object {
-          "advancement": 1,
-          "name": "Express.js",
-        },
-        Object {
-          "advancement": 1,
-          "name": "Next.js",
-        },
-        Object {
-          "advancement": 1,
-          "name": "Nestjs",
-        },
-        Object {
-          "advancement": 1,
-          "name": "Typescript REST",
-        },
-        Object {
-          "advancement": 1,
-          "name": "GraphQL",
-        },
-        Object {
-          "advancement": 1,
-          "name": "jQuery",
-        },
-      ]
-    }
-  />
-  <TypographyMock
-    color="secondary"
-    variant="h3"
-  >
-    <FormattedMessage
-      id="pages.home.skills.levels.2.title"
-      values={Object {}}
+    <TypographyMock
+      color="secondary"
+      variant="h3"
+    >
+      <FormattedMessage
+        id="pages.home.skills.levels.2.title"
+        values={Object {}}
+      />
+    </TypographyMock>
+    <SkillsListMock
+      data={
+        Array [
+          Object {
+            "advancement": 2,
+            "name": "C++",
+          },
+          Object {
+            "advancement": 2,
+            "name": "SFML v2.0",
+          },
+          Object {
+            "advancement": 2,
+            "name": "Boost",
+          },
+          Object {
+            "advancement": 2,
+            "name": "Golang",
+          },
+          Object {
+            "advancement": 2,
+            "name": "Python",
+          },
+          Object {
+            "advancement": 2,
+            "name": "Gulp",
+          },
+          Object {
+            "advancement": 2,
+            "name": "Styled Components",
+          },
+          Object {
+            "advancement": 2,
+            "name": "Php",
+          },
+          Object {
+            "advancement": 2,
+            "name": "MySQL",
+          },
+          Object {
+            "advancement": 2,
+            "name": "Animejs",
+          },
+        ]
+      }
     />
-  </TypographyMock>
-  <SkillsListMock
-    data={
-      Array [
-        Object {
-          "advancement": 2,
-          "name": "C++",
-        },
-        Object {
-          "advancement": 2,
-          "name": "SFML v2.0",
-        },
-        Object {
-          "advancement": 2,
-          "name": "Boost",
-        },
-        Object {
-          "advancement": 2,
-          "name": "Golang",
-        },
-        Object {
-          "advancement": 2,
-          "name": "Python",
-        },
-        Object {
-          "advancement": 2,
-          "name": "Gulp",
-        },
-        Object {
-          "advancement": 2,
-          "name": "Styled Components",
-        },
-        Object {
-          "advancement": 2,
-          "name": "Php",
-        },
-        Object {
-          "advancement": 2,
-          "name": "MySQL",
-        },
-        Object {
-          "advancement": 2,
-          "name": "Animejs",
-        },
-      ]
-    }
-  />
-</div>
+  </ContainerMock>
+</section>
 `;

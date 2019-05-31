@@ -1,134 +1,141 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`global: Bio should render as expected 1`] = `
-<div
-  id="bio"
->
-  <TypographyMock
-    variant="h1"
+<section>
+  <ContainerMock
+    classes={
+      Object {
+        "root": undefined,
+      }
+    }
+    id="bio"
   >
-    <FormattedMessage
-      id="pages.home.bio.title"
-      values={Object {}}
-    />
-    <span
-      aria-hidden={true}
+    <TypographyMock
+      variant="h1"
     >
-       🤠
-    </span>
-  </TypographyMock>
-  <div>
-    <article>
-      <TypographyMock
-        variant="h2"
+      <FormattedMessage
+        id="pages.home.bio.title"
+        values={Object {}}
+      />
+      <span
+        aria-hidden={true}
       >
-        <FormattedMessage
-          id="pages.home.bio.tiles.0.title"
-          values={Object {}}
-        />
-      </TypographyMock>
-      <DividerMock />
-      <TypographyMock
-        variant="h4"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.0.subtitle"
-          values={Object {}}
-        />
-      </TypographyMock>
-      <br />
-      <TypographyMock
-        variant="body1"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.0.paragraphs.0"
-          values={Object {}}
-        />
-      </TypographyMock>
-      <br />
-      <TypographyMock
-        variant="body1"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.0.paragraphs.1"
-          values={Object {}}
-        />
-      </TypographyMock>
-    </article>
-    <article>
-      <TypographyMock
-        variant="h2"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.1.title"
-          values={Object {}}
-        />
-      </TypographyMock>
-      <DividerMock />
-      <TypographyMock
-        variant="h4"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.1.subtitle"
-          values={Object {}}
-        />
-      </TypographyMock>
-      <br />
-      <TypographyMock
-        variant="body1"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.1.paragraphs.0"
-          values={Object {}}
-        />
-      </TypographyMock>
-      <br />
-      <TypographyMock
-        variant="body1"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.1.paragraphs.1"
-          values={Object {}}
-        />
-      </TypographyMock>
-    </article>
-    <article>
-      <TypographyMock
-        variant="h2"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.2.title"
-          values={Object {}}
-        />
-      </TypographyMock>
-      <DividerMock />
-      <TypographyMock
-        variant="h4"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.2.subtitle"
-          values={Object {}}
-        />
-      </TypographyMock>
-      <br />
-      <TypographyMock
-        variant="body1"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.2.paragraphs.0"
-          values={Object {}}
-        />
-      </TypographyMock>
-      <br />
-      <TypographyMock
-        variant="body1"
-      >
-        <FormattedMessage
-          id="pages.home.bio.tiles.2.paragraphs.1"
-          values={Object {}}
-        />
-      </TypographyMock>
-    </article>
-  </div>
-</div>
+         🤠
+      </span>
+    </TypographyMock>
+    <div>
+      <article>
+        <TypographyMock
+          variant="h2"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.0.title"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <DividerMock />
+        <TypographyMock
+          variant="h4"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.0.subtitle"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <br />
+        <TypographyMock
+          variant="body1"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.0.paragraphs.0"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <br />
+        <TypographyMock
+          variant="body1"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.0.paragraphs.1"
+            values={Object {}}
+          />
+        </TypographyMock>
+      </article>
+      <article>
+        <TypographyMock
+          variant="h2"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.1.title"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <DividerMock />
+        <TypographyMock
+          variant="h4"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.1.subtitle"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <br />
+        <TypographyMock
+          variant="body1"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.1.paragraphs.0"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <br />
+        <TypographyMock
+          variant="body1"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.1.paragraphs.1"
+            values={Object {}}
+          />
+        </TypographyMock>
+      </article>
+      <article>
+        <TypographyMock
+          variant="h2"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.2.title"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <DividerMock />
+        <TypographyMock
+          variant="h4"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.2.subtitle"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <br />
+        <TypographyMock
+          variant="body1"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.2.paragraphs.0"
+            values={Object {}}
+          />
+        </TypographyMock>
+        <br />
+        <TypographyMock
+          variant="body1"
+        >
+          <FormattedMessage
+            id="pages.home.bio.tiles.2.paragraphs.1"
+            values={Object {}}
+          />
+        </TypographyMock>
+      </article>
+    </div>
+  </ContainerMock>
+</section>
 `;

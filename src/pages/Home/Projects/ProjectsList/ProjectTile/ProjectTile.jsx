@@ -50,9 +50,13 @@ export function ProjectTile({
           </CardContent>
         </CardActionArea>
       </a>
-      <CardActions classes={{ root: classNames(classes.actions, {
-        [classes.favoriteActions]: favorite,
-      }) }}>
+      <CardActions
+        classes={{
+          root: classNames(classes.actions, {
+            [classes.favoriteActions]: favorite,
+          }),
+        }}
+      >
         <IconButton
           className={classNames({ [classes.favoriteIconButton]: favorite })}
           onClick={() => {
