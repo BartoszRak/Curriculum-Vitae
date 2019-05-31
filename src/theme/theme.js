@@ -40,4 +40,11 @@ export default {
     },
     useNextVariants: true,
   },
+  overrides: {
+    MuiButton: {
+      root: {
+        fontWeight: 'normal',
+      },
+    },
+  },
 }

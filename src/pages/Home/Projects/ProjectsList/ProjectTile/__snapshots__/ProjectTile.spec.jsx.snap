@@ -2,47 +2,32 @@
 
 exports[`global: ProjectTile should render as expected 1`] = `
 <CardMock>
-  <a
-    aria-label="Open github repository of project"
-    href="http://testurl.com"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    <CardActionAreaMock
-      classes={
-        Object {
-          "focusHighlight": undefined,
-        }
-      }
+  <CardContentMock>
+    <TypographyMock
+      variant="h4"
     >
-      <CardContentMock>
-        <TypographyMock
-          variant="h4"
-        >
-          Example title
-        </TypographyMock>
-        <TypographyMock
-          variant="body1"
-        >
-          Some example description
-        </TypographyMock>
-        <div>
-          <TypographyMock
-            key="testName1"
-            variant="h6"
-          >
-            testName1
-          </TypographyMock>
-          <TypographyMock
-            key="testName2"
-            variant="h6"
-          >
-            testName2
-          </TypographyMock>
-        </div>
-      </CardContentMock>
-    </CardActionAreaMock>
-  </a>
+      Example title
+    </TypographyMock>
+    <TypographyMock
+      variant="body1"
+    >
+      Some example description
+    </TypographyMock>
+    <div>
+      <TypographyMock
+        key="testName1"
+        variant="h6"
+      >
+        testName1
+      </TypographyMock>
+      <TypographyMock
+        key="testName2"
+        variant="h6"
+      >
+        testName2
+      </TypographyMock>
+    </div>
+  </CardContentMock>
   <CardActionsMock
     classes={
       Object {
@@ -50,6 +35,20 @@ exports[`global: ProjectTile should render as expected 1`] = `
       }
     }
   >
+    <div>
+      <a
+        aria-label="Open github repository of project"
+        href="http://testurl.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <ButtonMock
+          color="primary"
+        >
+          Details
+        </ButtonMock>
+      </a>
+    </div>
     <IconButtonMock
       className="undefined"
       onClick={[Function]}

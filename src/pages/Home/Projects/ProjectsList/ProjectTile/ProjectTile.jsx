@@ -9,6 +9,7 @@ import {
   CardContent,
   CardActions,
   IconButton,
+  Button,
 } from '@material-ui/core'
 import { Favorite } from '@material-ui/icons'
 
@@ -25,31 +26,21 @@ export function ProjectTile({
 
   return (
     <Card className={classes.root}>
-      <a
-        aria-label="Open github repository of project"
-        className={classes.href}
-        href={url}
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <CardActionArea classes={{ focusHighlight: classes.focus }}>
-          <CardContent>
-            <Typography className={classes.title} variant="h4">
-              {title}
+      <CardContent>
+        <Typography className={classes.title} variant="h4">
+          {title}
+        </Typography>
+        <Typography className={classes.description} variant="body1">
+          {description}
+        </Typography>
+        <div className={classes.tags}>
+          {tags.map(tag => (
+            <Typography className={classes.tag} key={tag.name} variant="h6">
+              {tag.name}
             </Typography>
-            <Typography className={classes.description} variant="body1">
-              {description}
-            </Typography>
-            <div className={classes.tags}>
-              {tags.map(tag => (
-                <Typography className={classes.tag} key={tag.name} variant="h6">
-                  {tag.name}
-                </Typography>
-              ))}
-            </div>
-          </CardContent>
-        </CardActionArea>
-      </a>
+          ))}
+        </div>
+      </CardContent>
       <CardActions
         classes={{
           root: classNames(classes.actions, {
@@ -57,6 +48,17 @@ export function ProjectTile({
           }),
         }}
       >
+        <div>
+          <a
+            aria-label="Open github repository of project"
+            className={classes.href}
+            href={url}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Button className={classes.hrefButton} color="primary">Details</Button>
+          </a>
+        </div>
         <IconButton
           className={classNames({ [classes.favoriteIconButton]: favorite })}
           onClick={() => {

@@ -1,9 +1,9 @@
 export default ({ spacing, palette }) => ({
   actions: {
+    borderBottom: '4px solid rgba(0, 0, 0, 0)',
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'flex-end',
-    borderBottom: '4px solid rgba(0, 0, 0, 0)',
+    justifyContent: 'space-between',
   },
   description: {
     fontWeight: 'normal',
@@ -15,12 +15,11 @@ export default ({ spacing, palette }) => ({
   favoriteIconButton: {
     color: palette.error.main,
   },
-  focus: {
-    background: palette.primary.dark,
-  },
   href: {
     textDecoration: 'none',
-    color: 'none',
+  },
+  hrefButton: {
+    textTransform: 'uppercase',
   },
   icon: {
     height: '1rem',
