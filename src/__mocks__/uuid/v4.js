@@ -1,2 +1,2 @@
-const v4 = () => 'Mocked UUIDV4'
+const v4 = () => 'Uuidv4Mock'
 export default v4

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component: App rendering match snapshot 1`] = `
+<BrowserRouterMock>
+  <ContextProvider
+    value={
+      Object {
+        "language": "en",
+        "setLanguage": [Function],
+      }
+    }
+  >
+    <ContextConsumer>
+      <Component />
+    </ContextConsumer>
+  </ContextProvider>
+</BrowserRouterMock>
+`;

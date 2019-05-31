@@ -11,7 +11,7 @@ exports[`component: Home rendering match snapshot 1`] = `
         "section": "makeStyles-holder-4 makeStyles-backgroundHolder-1",
       }
     }
-    key="Mocked UUIDV4"
+    key="Uuidv4Mock"
   />
   <BioMock
     classes={
@@ -19,7 +19,7 @@ exports[`component: Home rendering match snapshot 1`] = `
         "section": "makeStyles-holder-4 makeStyles-fairHolder-3",
       }
     }
-    key="Mocked UUIDV4"
+    key="Uuidv4Mock"
   />
   <SkillsMock
     classes={
@@ -27,7 +27,7 @@ exports[`component: Home rendering match snapshot 1`] = `
         "section": "makeStyles-holder-4 makeStyles-backgroundHolder-1",
       }
     }
-    key="Mocked UUIDV4"
+    key="Uuidv4Mock"
   />
   <WorkflowMock
     classes={
@@ -35,7 +35,7 @@ exports[`component: Home rendering match snapshot 1`] = `
         "section": "makeStyles-holder-4 makeStyles-fairHolder-3",
       }
     }
-    key="Mocked UUIDV4"
+    key="Uuidv4Mock"
   />
   <HobbiesMock
     classes={
@@ -43,7 +43,7 @@ exports[`component: Home rendering match snapshot 1`] = `
         "section": "makeStyles-holder-4 makeStyles-backgroundHolder-1",
       }
     }
-    key="Mocked UUIDV4"
+    key="Uuidv4Mock"
   />
 </main>
 `;

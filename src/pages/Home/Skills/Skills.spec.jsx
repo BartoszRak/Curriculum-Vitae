@@ -3,7 +3,7 @@ import { cleanup } from '@testing-library/react'
 import { shallow } from 'enzyme'
 
 import { Skills } from './Skills'
-import { createPropertyProxy } from '~utils/proxies'
+import { PropertyProxy } from '~utils/proxies'
 
 jest.unmock('@material-ui/core')
 
@@ -16,7 +16,7 @@ describe('component: Skills', () => {
 
   beforeEach(() => {
     props = {
-      classes: createPropertyProxy,
+      classes: PropertyProxy,
     }
   })
   describe('rendering', () => {

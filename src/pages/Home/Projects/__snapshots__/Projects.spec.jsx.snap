@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component: Projects rendering match snapshot 1`] = `
+<section
+  className="makeStyles-section-3"
+>
+  <WithStyles(ForwardRef(Container))
+    classes={
+      Object {
+        "root": "makeStyles-root-2",
+      }
+    }
+    id="projects"
+  >
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-title-4"
+      color="secondary"
+      variant="h1"
+    >
+      <FormattedMessage
+        id="pages.home.projects.title"
+        values={Object {}}
+      />
+      <span
+        aria-hidden={true}
+        className="makeStyles-emoji-1"
+      >
+         
+        😎
+      </span>
+    </WithStyles(ForwardRef(Typography))>
+    <ProjectsListMock
+      data={
+        Array [
+          Object {
+            "description": Object {
+              "id": "pages.home.projects.projects.insectifyApi.description",
+            },
+            "isFavorite": false,
+            "tags": Array [
+              Object {
+                "name": "nestjs",
+                "url": "https://nestjs.com/",
+              },
+              Object {
+                "name": "Express",
+                "url": "https://expressjs.com//",
+              },
+              Object {
+                "name": "Firebase",
+                "url": "https://firebase.google.com/",
+              },
+            ],
+            "title": Object {
+              "id": "pages.home.projects.projects.insectifyApi.title",
+            },
+            "url": "https://github.com/BartoszRak/Insectify-api",
+          },
+          Object {
+            "description": Object {
+              "id": "pages.home.projects.projects.reactAwesomeBoilerplate.description",
+            },
+            "isFavorite": false,
+            "tags": Array [
+              Object {
+                "name": "React",
+                "url": "https://reactjs.org/",
+              },
+              Object {
+                "name": "Redux",
+                "url": "https://redux.js.org/",
+              },
+              Object {
+                "name": "Rematch",
+                "url": "https://github.com/rematch/rematch",
+              },
+            ],
+            "title": Object {
+              "id": "pages.home.projects.projects.reactAwesomeBoilerplate.title",
+            },
+            "url": "https://github.com/BartoszRak/React-Awesome-Boilerplate",
+          },
+          Object {
+            "description": Object {
+              "id": "pages.home.projects.projects.mx.description",
+            },
+            "isFavorite": false,
+            "tags": Array [
+              Object {
+                "name": "TypeScript",
+                "url": "https://www.typescriptlang.org/",
+              },
+            ],
+            "title": Object {
+              "id": "pages.home.projects.projects.mx.title",
+            },
+            "url": "https://github.com/BartoszRak/Mx",
+          },
+        ]
+      }
+    />
+  </WithStyles(ForwardRef(Container))>
+</section>
+`;
