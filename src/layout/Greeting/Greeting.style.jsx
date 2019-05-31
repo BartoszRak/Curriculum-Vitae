@@ -20,7 +20,7 @@ export default ({ breakpoints, palette, spacing }) => ({
   },
   subsubtitle: {
     fontWeight: 'lighter',
-    marginTop: spacing.unit * 0.5,
+    marginTop: spacing(0.5),
     textAlign: 'center',
     textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
     [breakpoints.down('sm')]: {

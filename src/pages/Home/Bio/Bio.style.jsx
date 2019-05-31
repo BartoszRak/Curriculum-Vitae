@@ -1,6 +1,6 @@
 export default ({ breakpoints, palette, spacing }) => ({
   divider: {
-    margin: `${spacing.unit * 2}px 0`,
+    margin: spacing(2, 0),
   },
   emoji: {
     fontSize: '2rem',
@@ -14,8 +14,8 @@ export default ({ breakpoints, palette, spacing }) => ({
   section: {},
   subtitle: {
     borderLeft: `4px solid ${palette.primary.main}`,
-    marginTop: spacing.unit * 2,
-    paddingLeft: spacing.unit * 2,
+    marginTop: spacing(2),
+    paddingLeft: spacing(2),
     [breakpoints.down('md')]: {
       fontSize: '1.8rem',
     },
@@ -37,7 +37,7 @@ export default ({ breakpoints, palette, spacing }) => ({
   },
   title: {
     color: palette.text.primary,
-    marginBottom: spacing.unit * 4,
+    marginBottom: spacing(4),
     [breakpoints.down('md')]: {
       fontSize: '2rem',
     },

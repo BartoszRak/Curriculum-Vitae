@@ -18,7 +18,7 @@ export default ({ breakpoints, spacing }) => ({
     background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0)100%)',
     boxShadow: 'none',
     margin: 0,
-    padding: `${spacing.unit * 0.5}px !important`,
+    padding: `${spacing(0.5)}px !important`,
     position: 'fixed',
   },
   toolbar: {

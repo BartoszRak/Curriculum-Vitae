@@ -4,8 +4,8 @@ export default ({ palette, spacing }) => ({
       background: 'rgba(0, 0, 0, 0.05)',
     },
     borderRadius: 100,
-    marginRight: spacing.unit * 4,
-    padding: `${spacing.unit * 0.5}px ${spacing.unit * 2}px`,
+    marginRight: spacing(4),
+    padding: spacing(0.5, 2),
   },
   buttonLabel: {
     color: palette.secondary.light,
