@@ -9,7 +9,7 @@ export default ({ palette, spacing }) => ({
   },
   divider: {
     background: palette.secondary.main,
-    height: spacing.unit * 2.5,
+    height: spacing(2.5),
   },
   fairHolder: {
     background: palette.secondary.main,

@@ -12,27 +12,27 @@ export default ({ breakpoints, palette, spacing }) => ({
   tile: {
     alignItems: 'center',
     background: palette.secondary.main,
-    borderRadius: spacing.unit * 0.5,
+    borderRadius: spacing(0.5),
     breakInside: 'avoid-column',
     columnBreakInside: 'avoid',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     minHeight: 200,
-    padding: spacing.unit * 3,
+    padding: spacing(3),
     pageBreakInside: 'avoid',
     width: '100%',
     [breakpoints.down('md')]: {
-      marginBottom: spacing.unit * 4,
+      marginBottom: spacing(4),
     },
   },
   tileDescription: {
-    marginTop: spacing.unit * 1.5,
+    marginTop: spacing(1.5),
     width: '100%',
   },
   tileImage: {
-    borderRadius: spacing.unit * 0.5,
-    marginTop: spacing.unit * 1.5,
+    borderRadius: spacing(0.5),
+    marginTop: spacing(1.5),
     objectFit: 'cover',
     position: 'relative',
     width: '100%',
@@ -47,14 +47,14 @@ export default ({ breakpoints, palette, spacing }) => ({
     },
   },
   title: {
-    marginBottom: spacing.unit * 4,
+    marginBottom: spacing(4),
     [breakpoints.down('md')]: {
       fontSize: '2.3rem',
-      marginBottom: spacing.unit * 3,
+      marginBottom: spacing(3),
     },
     [breakpoints.down('sm')]: {
       fontSize: '1.8rem',
-      marginBottom: spacing.unit * 2,
+      marginBottom: spacing(2),
     },
   },
 })

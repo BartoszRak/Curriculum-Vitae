@@ -1,10 +1,10 @@
 export default ({ spacing }) => ({
   button: {
     fontWeight: 'normal',
-    marginBottom: spacing.unit * 1,
-    marginTop: spacing.unit * 1,
+    marginBottom: spacing(1),
+    marginTop: spacing(1),
   },
   root: {
-    padding: spacing.unit * 1,
+    padding: spacing(1),
   },
 })

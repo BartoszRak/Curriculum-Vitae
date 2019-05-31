@@ -2,7 +2,7 @@ export default ({ palette, spacing }) => ({
   menuPaper: {
     '& li': {
       fontSize: '0.9rem',
-      padding: `${spacing.unit * 0.5}px ${spacing.unit * 3}px`,
+      padding: spacing(0.5, 3),
     },
   },
   root: {},
@@ -16,7 +16,7 @@ export default ({ palette, spacing }) => ({
   },
   selectIcon: {
     color: palette.primary.main,
-    marginRight: spacing.unit * 1,
+    marginRight: spacing(1),
   },
   selectMenu: {
     '&:focus': {
@@ -28,6 +28,6 @@ export default ({ palette, spacing }) => ({
     borderRadius: 100,
     color: palette.primary.main,
     fontSize: '0.9rem',
-    padding: `0 ${spacing.unit * 2}px`,
+    padding: spacing(0, 2),
   },
 })

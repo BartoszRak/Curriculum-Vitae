@@ -15,7 +15,7 @@ export default ({ breakpoints, spacing, palette }) => ({
   subtitle: {
     borderLeft: `4px solid ${palette.secondary.main}`,
     marginTop: 50,
-    paddingLeft: spacing.unit * 2,
+    paddingLeft: spacing(2),
     textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
   },
   title: {
