@@ -7,37 +7,41 @@ exports[`global: ProjectTile should render as expected 1`] = `
   rel="noopener noreferrer"
   target="_blank"
 >
-  <PaperMock
-    classes={
-      Object {
-        "root": undefined,
+  <CardMock>
+    <CardActionAreaMock
+      classes={
+        Object {
+          "focusHighlight": undefined,
+        }
       }
-    }
-  >
-    <TypographyMock
-      variant="h4"
     >
-      Example title
-    </TypographyMock>
-    <TypographyMock
-      variant="body1"
-    >
-      Some example description
-    </TypographyMock>
-    <div>
-      <TypographyMock
-        key="testName1"
-        variant="h6"
-      >
-        testName1
-      </TypographyMock>
-      <TypographyMock
-        key="testName2"
-        variant="h6"
-      >
-        testName2
-      </TypographyMock>
-    </div>
-  </PaperMock>
+      <CardContentMock>
+        <TypographyMock
+          variant="h4"
+        >
+          Example title
+        </TypographyMock>
+        <TypographyMock
+          variant="body1"
+        >
+          Some example description
+        </TypographyMock>
+        <div>
+          <TypographyMock
+            key="testName1"
+            variant="h6"
+          >
+            testName1
+          </TypographyMock>
+          <TypographyMock
+            key="testName2"
+            variant="h6"
+          >
+            testName2
+          </TypographyMock>
+        </div>
+      </CardContentMock>
+    </CardActionAreaMock>
+  </CardMock>
 </a>
 `;

@@ -3,14 +3,8 @@ export default ({ spacing, palette }) => ({
     fontWeight: 'normal',
     marginTop: spacing.unit * 1,
   },
-  paper: {
-    '&:hover': {
-      border: `1px solid ${palette.primary.main}`,
-    },
-    background: palette.secondary.main,
-    border: `1px solid ${palette.secondary.light}`,
-    boxShadow: 'none',
-    padding: spacing.unit * 2,
+  focus: {
+    background: palette.primary.dark,
   },
   root: {
     breakInside: 'avoid-column',
