@@ -1,4 +1,6 @@
-export default ({ palette, spacing }) => ({
+import { makeStyles } from '@material-ui/core'
+
+export default makeStyles(({ palette, spacing }) => ({
   menuPaper: {
     '& li': {
       fontSize: '0.9rem',
@@ -30,4 +32,4 @@ export default ({ palette, spacing }) => ({
     fontSize: '0.9rem',
     padding: spacing(0, 2),
   },
-})
+}))

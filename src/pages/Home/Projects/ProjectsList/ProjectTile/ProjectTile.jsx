@@ -55,7 +55,9 @@ export function ProjectTile({
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Button className={classes.hrefButton} color="primary">Details</Button>
+            <Button className={classes.hrefButton} color="primary">
+              Details
+            </Button>
           </a>
         </div>
         <IconButton

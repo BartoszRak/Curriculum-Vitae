@@ -1,4 +1,6 @@
-export default (theme, { size }) => ({
+import { makeStylesWithProps } from '~hooks'
+
+export default makeStylesWithProps((theme, { size }) => ({
   fill: {
     flex: '1 1 auto',
     height: '100%',
@@ -12,4 +14,4 @@ export default (theme, { size }) => ({
     flexDirection: 'column',
     justifyContent: 'center',
   },
-})
+}))

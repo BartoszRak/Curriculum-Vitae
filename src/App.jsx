@@ -51,7 +51,7 @@ export function App({ classes }) {
               locale={chosenLanguage}
               messages={messages[chosenLanguage]}
             >
-              <Loader className={classes.loader} disable={!loading}>
+              <Loader className={classes.loader} disabled={!loading}>
                 <PreventInternetExplorer>
                   <ApplicationContext.Provider value={{ mode, setMode }}>
                     {mode === 'normal' && <Layout />}

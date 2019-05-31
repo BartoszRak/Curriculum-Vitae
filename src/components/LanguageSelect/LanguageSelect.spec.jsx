@@ -1,24 +1,27 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render, cleanup } from '@testing-library/react'
 
 import { LanguageSelect } from './LanguageSelect'
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<LanguageSelect {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+jest.unmock('@material-ui/core')
+jest.mock('~services/Internacionalization')
+jest.mock('react-intl')
 
-describe('global: LanguageSelect', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
-  })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+describe('component: LanguageSelect', () => {
+  afterEach(cleanup)
+
+  describe('rendering', () => {
+    test('match snapshot', () => {
+      const wrapper = render(<LanguageSelect />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    test('render select', () => {
+      const { getByTestId } = render(<LanguageSelect />)
+      const el = getByTestId('language-select')
+
+      expect(el).toBeVisible()
+    })
   })
 })
