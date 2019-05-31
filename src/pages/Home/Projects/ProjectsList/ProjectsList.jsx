@@ -10,16 +10,10 @@ export function ProjectsList({ classes, data }) {
   return (
     <div className={classes.root}>
       {data.map(project => {
-        const {
-          description, title, url, tags,
-        } = project
         return (
           <ProjectTile
-            description={description}
-            key={title}
-            tags={tags}
-            title={title}
-            url={url}
+            key={project.title}
+            project={project}
           />
         )
       })}
@@ -30,9 +24,17 @@ export function ProjectsList({ classes, data }) {
 ProjectsList.propTypes = {
   classes: PropTypes.object,
   data: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
-    url: PropTypes.string,
-  }))
+    description: PropTypes.string,
+    isFavorite: PropTypes.bool,
+    tags: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        url: PropTypes.string,
+      })
+    ),
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+  })),
 }
 
 export default withStyles(style)(ProjectsList)
