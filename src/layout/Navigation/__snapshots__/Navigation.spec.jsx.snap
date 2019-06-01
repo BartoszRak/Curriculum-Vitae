@@ -1,72 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: Navigation should render as expected 1`] = `
-<AppBarMock
+exports[`component: Navigation rendering match snapshot  1`] = `
+<WithStyles(ForwardRef(AppBar))
   classes={
     Object {
-      "root": undefined,
+      "root": "makeStyles-root-4",
     }
   }
   position="fixed"
 >
-  <ToolbarMock>
+  <WithStyles(ForwardRef(Toolbar))
+    className="makeStyles-toolbar-5"
+  >
     <div>
       <MobileMenuMock
+        className="makeStyles-mobile-3"
         routes={
           Array [
             Object {
               "elementId": "#projects",
-              "name": "layout.navigation.items.projects",
+              "name": undefined,
             },
             Object {
               "elementId": "#bio",
-              "name": "layout.navigation.items.bio",
+              "name": undefined,
             },
             Object {
               "elementId": "#skills",
-              "name": "layout.navigation.items.skills",
+              "name": undefined,
             },
             Object {
               "elementId": "#workflow",
-              "name": "layout.navigation.items.workflow",
+              "name": undefined,
             },
             Object {
               "elementId": "#hobbies",
-              "name": "layout.navigation.items.passions",
+              "name": undefined,
             },
           ]
         }
       />
       <DesktopMenuMock
+        className="makeStyles-desktop-2"
         routes={
           Array [
             Object {
               "elementId": "#projects",
-              "name": "layout.navigation.items.projects",
+              "name": undefined,
             },
             Object {
               "elementId": "#bio",
-              "name": "layout.navigation.items.bio",
+              "name": undefined,
             },
             Object {
               "elementId": "#skills",
-              "name": "layout.navigation.items.skills",
+              "name": undefined,
             },
             Object {
               "elementId": "#workflow",
-              "name": "layout.navigation.items.workflow",
+              "name": undefined,
             },
             Object {
               "elementId": "#hobbies",
-              "name": "layout.navigation.items.passions",
+              "name": undefined,
             },
           ]
         }
       />
     </div>
     <div>
-      <LanguageSelect />
+      <LanguageSelectMock />
     </div>
-  </ToolbarMock>
-</AppBarMock>
+  </WithStyles(ForwardRef(Toolbar))>
+</WithStyles(ForwardRef(AppBar))>
 `;
