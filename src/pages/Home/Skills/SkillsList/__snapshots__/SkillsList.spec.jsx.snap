@@ -1,40 +1,106 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: SkillsList should render as expected 1`] = `
-<div
-  className=""
->
-  <TypographyMock
-    className=""
-    color="secondary"
-    key="testName1"
-    variant="h5"
-  >
-    testName1
-  </TypographyMock>
-  <TypographyMock
-    className=""
-    color="secondary"
-    key="testName2"
-    variant="h5"
-  >
-    testName2
-  </TypographyMock>
-  <TypographyMock
-    className=""
-    color="secondary"
-    key="testName3"
-    variant="h5"
-  >
-    testName3
-  </TypographyMock>
-  <TypographyMock
-    aria-hidden={true}
-    className=""
-    color="secondary"
-    variant="h5"
-  >
-    3
-  </TypographyMock>
-</div>
+exports[`component: SkillsList rendering match snapshot  1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="makeStyles-root-2"
+      >
+        <h5
+          class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-skill-3 makeStyles-item-1"
+        >
+          1 Test skill name
+        </h5>
+        <h5
+          class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-skill-3 makeStyles-item-1"
+        >
+          2 Test skill name
+        </h5>
+        <h5
+          aria-hidden="true"
+          class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-sum-4 makeStyles-item-1"
+          data-testid="skills-list-summary"
+        >
+          2
+        </h5>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="makeStyles-root-2"
+    >
+      <h5
+        class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-skill-3 makeStyles-item-1"
+      >
+        1 Test skill name
+      </h5>
+      <h5
+        class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-skill-3 makeStyles-item-1"
+      >
+        2 Test skill name
+      </h5>
+      <h5
+        aria-hidden="true"
+        class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-sum-4 makeStyles-item-1"
+        data-testid="skills-list-summary"
+      >
+        2
+      </h5>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
 `;

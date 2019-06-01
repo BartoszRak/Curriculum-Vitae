@@ -14,7 +14,7 @@ export function SkillsList({ classes: overridingClasses, className, data }) {
           {skill.name}
         </Typography>
       ))}
-      <Typography aria-hidden className={classNames(classes.sum, classes.item)} color="secondary" variant="h5">
+      <Typography aria-hidden className={classNames(classes.sum, classes.item)} color="secondary" data-testid="skills-list-summary" variant="h5">
         {data.length}
       </Typography>
     </div>
