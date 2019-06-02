@@ -1,4 +1,6 @@
-export default ({ palette, spacing }) => ({
+import { makeStyles } from '@material-ui/core'
+
+export default makeStyles(({ palette, spacing }) => ({
   bottomShadow: {
     background:
       'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0.40)100%)',
@@ -26,4 +28,4 @@ export default ({ palette, spacing }) => ({
     maxWidth: '100vw',
     minHeight: '100vh',
   },
-})
+}))

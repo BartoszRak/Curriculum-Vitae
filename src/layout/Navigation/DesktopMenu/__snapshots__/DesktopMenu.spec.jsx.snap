@@ -1,35 +1,130 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: DesktopMenu should render as expected 1`] = `
-<div
-  aria-label="Navigate to"
-  role="navigation"
->
-  <ButtonMock
-    classes={
-      Object {
-        "label": undefined,
-        "root": undefined,
-      }
-    }
-    color="secondary"
-    key="testElementName1"
-    onClick={[Function]}
-  >
-    testElementName1
-  </ButtonMock>
-  <ButtonMock
-    classes={
-      Object {
-        "label": undefined,
-        "root": undefined,
-      }
-    }
-    color="secondary"
-    key="testElementName2"
-    onClick={[Function]}
-  >
-    testElementName2
-  </ButtonMock>
-</div>
+exports[`component: DesktopMenu rendering match snapshot  1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        aria-label="Navigate to"
+        role="navigation"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root makeStyles-button-33 MuiButton-textSecondary MuiButton-text"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label makeStyles-buttonLabel-34"
+          >
+            1 test name
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root makeStyles-button-33 MuiButton-textSecondary MuiButton-text"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label makeStyles-buttonLabel-34"
+          >
+            2 test name
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      aria-label="Navigate to"
+      role="navigation"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root makeStyles-button-33 MuiButton-textSecondary MuiButton-text"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label makeStyles-buttonLabel-34"
+        >
+          1 test name
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        class="MuiButtonBase-root MuiButton-root makeStyles-button-33 MuiButton-textSecondary MuiButton-text"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiButton-label makeStyles-buttonLabel-34"
+        >
+          2 test name
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
 `;

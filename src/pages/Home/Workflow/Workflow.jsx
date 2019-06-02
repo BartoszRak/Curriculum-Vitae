@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { FormattedMessage } from 'react-intl'
-import { withStyles, Typography, Divider, Container } from '@material-ui/core'
+import { Typography, Divider, Container } from '@material-ui/core'
 
-import style from './Workflow.style'
+import useStyle from './Workflow.style'
 
-export function Workflow({ classes }) {
+export function Workflow({ classes: overridingClasses }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   return (
     <section className={classes.section}>
       <Container classes={{ root: classes.root }} id="workflow">
@@ -50,4 +51,4 @@ Workflow.propTypes = {
   classes: PropTypes.object,
 }
 
-export default withStyles(style)(Workflow)
+export default Workflow

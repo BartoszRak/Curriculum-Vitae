@@ -1,15 +1,16 @@
 import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
-import { withStyles, Typography, Container } from '@material-ui/core'
+import { Typography, Container } from '@material-ui/core'
 import { injectIntl, FormattedMessage } from 'react-intl'
 
 import ProjectsList from './ProjectsList'
 import { useFavoriteProjectsStorage } from '~hooks'
 
-import styles from './Projects.style'
+import useStyle from './Projects.style'
 import technologiesMap from './TechnologiesMap.json'
 
-export function Projects({ classes, intl }) {
+export function Projects({ classes: overridingClasses, intl }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   const { formatMessage } = intl
   const { getProjects } = useFavoriteProjectsStorage()
   const favoriteProjects = getProjects() || []
@@ -67,7 +68,7 @@ export function Projects({ classes, intl }) {
 
   return (
     <section className={classes.section}>
-      <Container classes={{ root: classes.root}} id="projects">
+      <Container classes={{ root: classes.root }} id="projects">
         <Typography className={classes.title} color="secondary" variant="h1">
           <FormattedMessage id="pages.home.projects.title" />
           <span aria-hidden className={classes.emoji}>
@@ -86,4 +87,4 @@ Projects.propTypes = {
   intl: PropTypes.object,
 }
 
-export default injectIntl(withStyles(styles)(Projects))
+export default injectIntl(Projects)

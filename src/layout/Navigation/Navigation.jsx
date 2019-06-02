@@ -1,15 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withStyles, AppBar, Toolbar } from '@material-ui/core'
+import { AppBar, Toolbar } from '@material-ui/core'
 import { injectIntl } from 'react-intl'
 
 import LanguageSelect from '~components/LanguageSelect'
 import DesktopMenu from './DesktopMenu'
 import MobileMenu from './MobileMenu'
 
-import style from './Navigation.style'
+import useStyle from './Navigation.style'
 
-export function Navigation({ classes, intl }) {
+export function Navigation({ classes: overridingClasses, intl }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   const { formatMessage } = intl
   const routes = [
     {
@@ -59,4 +60,4 @@ Navigation.propTypes = {
   intl: PropTypes.object,
 }
 
-export default injectIntl(withStyles(style)(Navigation))
+export default injectIntl(Navigation)

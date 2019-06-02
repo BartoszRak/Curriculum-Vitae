@@ -1,4 +1,6 @@
-export default ({ breakpoints }) => ({
+import { makeStyles } from '@material-ui/core'
+
+export default makeStyles(({ breakpoints }) => ({
   root: {
     columnGap: 40,
     display: 'block',
@@ -16,4 +18,4 @@ export default ({ breakpoints }) => ({
       columnCount: 1,
     },
   },
-})
+}))

@@ -1,20 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: ProjectsList should render as expected 1`] = `
-<div>
+exports[`component: ProjectsList rendering match snapshot  1`] = `
+<div
+  className="makeStyles-root-1"
+>
   <ProjectTileMock
-    key="testName1"
+    key="1 tile test title"
     project={
       Object {
-        "description": "Test description1",
-        "tags": Array [
-          Object {
-            "name": "testTag",
-            "url": "testTagUrl",
-          },
-        ],
-        "title": "testName1",
-        "url": "https://testurl.com",
+        "description": "1 tile test description",
+        "isFavorite": false,
+        "tags": Array [],
+        "title": "1 tile test title",
+        "url": "http://1tiletesturl.com",
+      }
+    }
+  />
+  <ProjectTileMock
+    key="2 tile test title"
+    project={
+      Object {
+        "description": "2 tile test description",
+        "isFavorite": false,
+        "tags": Array [],
+        "title": "2 tile test title",
+        "url": "http://2tiletesturl.com",
       }
     }
   />

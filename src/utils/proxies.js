@@ -1,9 +1,6 @@
 /* eslint-disable */
-export const makeGetProxy = (obj, missingKeyHandler) =>
-  new Proxy(obj, {
-    get(target, name) {
-      return name in target ? target[name] : missingKeyHandler(target, name)
-    },
-  })
+export const createPropertyProxy = (obj = {}) => new Proxy(obj, {
+  get: (target, name) => target[name] || `${name}Mock`,
+})
 
-export default makeGetProxy
+export const PropertyProxy = createPropertyProxy()

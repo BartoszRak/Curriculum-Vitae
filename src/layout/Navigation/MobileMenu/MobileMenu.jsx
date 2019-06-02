@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import {
-  withStyles,
   IconButton,
   Modal,
   MenuList,
@@ -11,14 +10,16 @@ import MenuIcon from '@material-ui/icons/Menu'
 
 import { useScrollTo } from '~hooks'
 
-import style from './MobileMenu.style'
+import useStyle from './MobileMenu.style'
 
-export function MobileMenu({ classes, className, routes }) {
+export function MobileMenu({ classes: overridingClasses, className, routes }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   const [toggle, setToggle] = useState(false)
   const { scrollTo } = useScrollTo()
   return (
     <div className={className}>
       <IconButton
+        data-testid="mobile-menu-open-icon"
         onClick={() => {
           setToggle(!toggle)
         }}
@@ -32,6 +33,7 @@ export function MobileMenu({ classes, className, routes }) {
           }
         }}
         className={classes.dialog}
+        data-testid="mobile-menu-modal"
         disableAutoFocus
         onBackdropClick={() => setToggle(!toggle)}
         open={toggle}
@@ -66,4 +68,4 @@ MobileMenu.propTypes = {
   ).isRequired,
 }
 
-export default withStyles(style)(MobileMenu)
+export default MobileMenu

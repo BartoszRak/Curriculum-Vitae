@@ -1,24 +1,33 @@
 import React from 'react'
+import { cleanup } from '@testing-library/react'
 import { shallow } from 'enzyme'
 
 import { Workflow } from './Workflow'
+import { PropertyProxy } from '~utils/proxies'
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<Workflow {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+jest.unmock('@material-ui/core')
 
-describe('global: Workflow', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
+let props
+
+describe('component: Workflow', () => {
+  afterEach(cleanup)
+
+  beforeEach(() => {
+    props = {
+      classes: PropertyProxy,
+    }
   })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+  describe('rendering', () => {
+    test('render without crash', () => {
+      const wrapper = shallow(<Workflow {...props} />)
+
+      expect(wrapper).toBeTruthy()
+    })
+
+    test('match snapshot', () => {
+      const wrapper = shallow(<Workflow {...props} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
   })
 })

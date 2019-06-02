@@ -1,20 +1,23 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
-import { withStyles, Typography } from '@material-ui/core/'
+import { Typography } from '@material-ui/core/'
 import PropTypes from 'prop-types'
 
-import style from './Footer.style'
+import useStyle from './Footer.style'
 
-export const Footer = ({ classes }) => (
-  <footer className={classes.root}>
-    <Typography className={classes.text} variant="body2">
-      <FormattedMessage id="layout.footer.copyright" values={{ date: new Date().getFullYear() }} />
-    </Typography>
-  </footer>
-)
+export function Footer({ classes: overridingClasses }) {
+  const classes = { ...useStyle(), ...overridingClasses }
+  return (
+    <footer className={classes.root}>
+      <Typography className={classes.text} variant="body2">
+        <FormattedMessage id="layout.footer.copyright" values={{ date: new Date().getFullYear() }} />
+      </Typography>
+    </footer>
+  )
+}
 
 Footer.propTypes = {
   classes: PropTypes.object,
 }
 
-export default withStyles(style)(Footer)
+export default Footer

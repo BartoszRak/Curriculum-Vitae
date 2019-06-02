@@ -1,4 +1,6 @@
-export default ({ breakpoints, palette, spacing }) => ({
+import { makeStyles } from '@material-ui/core'
+
+export default makeStyles(({ breakpoints, palette, spacing }) => ({
   divider: {
     margin: spacing(2, 0),
   },
@@ -36,4 +38,4 @@ export default ({ breakpoints, palette, spacing }) => ({
       fontSize: '2rem',
     },
   },
-})
+}))

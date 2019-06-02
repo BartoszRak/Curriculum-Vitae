@@ -1,24 +1,26 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { withStyles, Select, MenuItem } from '@material-ui/core'
+import { Select, MenuItem } from '@material-ui/core'
 import { FormattedMessage } from 'react-intl'
 
 import LanguageContext from '~services/Internacionalization'
 
-import style from './LanguageSelect.style'
+import useStyle from './LanguageSelect.style'
 
-export function LanguageSelect({ classes }) {
+export function LanguageSelect() {
+  const classes = useStyle()
   return (
     <LanguageContext.Consumer>
       {({ language, setLanguage }) => (
         <div className={classes.root}>
           <Select
+            aria-label="Choose language"
             className={classes.select}
             classes={{
               root: classes.selectRoot,
               icon: classes.selectIcon,
               selectMenu: classes.selectMenu,
             }}
+            data-testid="language-select"
             MenuProps={{
               classes: {
                 paper: classes.menuPaper,
@@ -28,13 +30,13 @@ export function LanguageSelect({ classes }) {
             onChange={evt => {
               setLanguage(evt.target.value)
             }}
-            value={language}
+            value={language || 'en'}
             variant="standard"
           >
-            <MenuItem value="en">
+            <MenuItem id="language-item-en" value="en">
               <FormattedMessage id="components.languageSelect.languages.en" />
             </MenuItem>
-            <MenuItem value="pl">
+            <MenuItem id="language-item-pl" value="pl">
               <FormattedMessage id="components.languageSelect.languages.pl" />
             </MenuItem>
           </Select>
@@ -44,8 +46,4 @@ export function LanguageSelect({ classes }) {
   )
 }
 
-LanguageSelect.propTypes = {
-  classes: PropTypes.object,
-}
-
-export default withStyles(style)(LanguageSelect)
+export default LanguageSelect

@@ -1,27 +1,17 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render, cleanup } from '@testing-library/react'
 
 import { PreventInternetExplorer } from './PreventInternetExplorer'
 
-const initComponent = overrides => {
-  const mockProps = {
-    children: <div id="testChildren">Test children</div>,
-    classes: {},
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<PreventInternetExplorer {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+jest.unmock('@material-ui/core')
 
-describe('global: PreventInternetExplorer', () => {
+describe('component: PreventInternetExplorer', () => {
+  afterEach(cleanup)
+
   describe('rendering', () => {
-    it('renders without crashing', () => {
-      const { wrapper } = initComponent()
-      expect(wrapper).toBeTruthy()
-    })
+    test('match snapshot when loading', () => {
+      const wrapper = render(<PreventInternetExplorer />)
 
-    it('should render as expected', () => {
-      const { wrapper } = initComponent()
       expect(wrapper).toMatchSnapshot()
     })
   })

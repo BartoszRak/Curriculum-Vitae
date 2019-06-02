@@ -3,23 +3,26 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { LinearProgress } from '@material-ui/core'
 
-import withStylesAndProps from '~hocs/withStylesAndProps'
+import useStyleWithProps from './Loader.style'
 
-import style from './Loader.style'
-
-export function Loader({
-  classes, className, disable, fill, children,
-}) {
+export function Loader({ className, disabled, fill, children, size }) {
+  const classes = useStyleWithProps({ size })
   const barProps = {
+    'aria-hidden': true,
     classes: {
       root: classes.linearBar,
     },
+    role: 'progressbar',
   }
 
-  return disable ? (
+  return disabled ? (
     children
   ) : (
-    <div aria-busy className={classNames(classes.root, { [classes.fill]: fill }, className)} role="progressbar">
+    <div
+      aria-busy
+      aria-label="Loading content"
+      className={classNames(classes.root, { [classes.fill]: fill }, className)}
+    >
       <LinearProgress {...barProps} />
       <LinearProgress {...barProps} variant="query" />
       <LinearProgress {...barProps} />
@@ -30,9 +33,8 @@ export function Loader({
 
 Loader.propTypes = {
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
-  classes: PropTypes.object,
   className: PropTypes.string,
-  disable: PropTypes.bool,
+  disabled: PropTypes.bool,
   fill: PropTypes.bool,
   size: PropTypes.number,
 }
@@ -42,4 +44,4 @@ Loader.defaultProps = {
   size: 2,
 }
 
-export default withStylesAndProps(style)(Loader)
+export default Loader

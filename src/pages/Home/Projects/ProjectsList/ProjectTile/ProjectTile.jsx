@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import {
-  withStyles,
   Typography,
   Card,
   CardContent,
@@ -14,12 +13,13 @@ import { Favorite } from '@material-ui/icons'
 
 import { useFavoriteProjectsStorage } from '~hooks'
 
-import style from './ProjectTile.style'
+import useStyle from './ProjectTile.style'
 
 export function ProjectTile({
-  classes,
+  classes: overridingClasses,
   project: { description, title, url, tags = [], isFavorite },
 }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   const { toggleProject } = useFavoriteProjectsStorage()
   const [favorite, setFavorite] = useState(isFavorite)
 
@@ -55,11 +55,14 @@ export function ProjectTile({
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Button className={classes.hrefButton} color="primary">Details</Button>
+            <Button className={classes.hrefButton} color="primary">
+              Details
+            </Button>
           </a>
         </div>
         <IconButton
           className={classNames({ [classes.favoriteIconButton]: favorite })}
+          data-testid="project-tile-icon-button"
           onClick={() => {
             setFavorite(!favorite)
             toggleProject(url)
@@ -88,4 +91,4 @@ ProjectTile.propTypes = {
   }),
 }
 
-export default withStyles(style)(ProjectTile)
+export default ProjectTile

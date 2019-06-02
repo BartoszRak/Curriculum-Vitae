@@ -1,60 +1,242 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: ProjectTile should render as expected 1`] = `
-<CardMock>
-  <CardContentMock>
-    <TypographyMock
-      variant="h4"
-    >
-      Example title
-    </TypographyMock>
-    <TypographyMock
-      variant="body1"
-    >
-      Some example description
-    </TypographyMock>
+exports[`component: ProjectTile rendering match snapshot  1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
     <div>
-      <TypographyMock
-        key="testName1"
-        variant="h6"
+      <div
+        class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root makeStyles-root-8"
       >
-        testName1
-      </TypographyMock>
-      <TypographyMock
-        key="testName2"
-        variant="h6"
-      >
-        testName2
-      </TypographyMock>
-    </div>
-  </CardContentMock>
-  <CardActionsMock
-    classes={
-      Object {
-        "root": "undefined",
-      }
-    }
-  >
-    <div>
-      <a
-        aria-label="Open github repository of project"
-        href="http://testurl.com"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <ButtonMock
-          color="primary"
+        <div
+          class="MuiCardContent-root"
         >
-          Details
-        </ButtonMock>
-      </a>
+          <h4
+            class="MuiTypography-root MuiTypography-h4 makeStyles-title-11"
+          >
+            Test title
+          </h4>
+          <p
+            class="MuiTypography-root MuiTypography-body1 makeStyles-description-2"
+          >
+            Test description
+          </p>
+          <div
+            class="makeStyles-tags-10"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 makeStyles-tag-9"
+            >
+              Test tag name1
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 makeStyles-tag-9"
+            >
+              Test tag name2
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiCardActions-root makeStyles-actions-1 MuiCardActions-spacing"
+        >
+          <div>
+            <a
+              aria-label="Open github repository of project"
+              class="makeStyles-href-5"
+              href="http://testurl.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root makeStyles-hrefButton-6 MuiButton-textPrimary MuiButton-text"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Details
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </a>
+          </div>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root"
+            data-testid="project-tile-icon-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-icon-7"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
     </div>
-    <IconButtonMock
-      className="undefined"
-      onClick={[Function]}
+  </body>,
+  "container": <div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root makeStyles-root-8"
     >
-      <FavoriteMock />
-    </IconButtonMock>
-  </CardActionsMock>
-</CardMock>
+      <div
+        class="MuiCardContent-root"
+      >
+        <h4
+          class="MuiTypography-root MuiTypography-h4 makeStyles-title-11"
+        >
+          Test title
+        </h4>
+        <p
+          class="MuiTypography-root MuiTypography-body1 makeStyles-description-2"
+        >
+          Test description
+        </p>
+        <div
+          class="makeStyles-tags-10"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6 makeStyles-tag-9"
+          >
+            Test tag name1
+          </h6>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 makeStyles-tag-9"
+          >
+            Test tag name2
+          </h6>
+        </div>
+      </div>
+      <div
+        class="MuiCardActions-root makeStyles-actions-1 MuiCardActions-spacing"
+      >
+        <div>
+          <a
+            aria-label="Open github repository of project"
+            class="makeStyles-href-5"
+            href="http://testurl.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root makeStyles-hrefButton-6 MuiButton-textPrimary MuiButton-text"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Details
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root"
+          data-testid="project-tile-icon-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root makeStyles-icon-7"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
 `;

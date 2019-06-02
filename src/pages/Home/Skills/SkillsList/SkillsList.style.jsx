@@ -1,4 +1,6 @@
-export default ({ breakpoints, palette, spacing }) => ({
+import { makeStyles } from '@material-ui/core'
+
+export default makeStyles(({ breakpoints, palette, spacing }) => ({
   item: {
     marginBottom: spacing(1),
     marginRight: spacing(2),
@@ -27,4 +29,4 @@ export default ({ breakpoints, palette, spacing }) => ({
     color: palette.secondary.main,
     fontWeight: 'bold',
   },
-})
+}))

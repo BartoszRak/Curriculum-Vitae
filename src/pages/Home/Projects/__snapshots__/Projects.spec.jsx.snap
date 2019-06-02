@@ -1,16 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: Projects should render as expected 1`] = `
-<section>
-  <ContainerMock
+exports[`component: Projects rendering match snapshot 1`] = `
+<section
+  className="makeStyles-section-3"
+>
+  <WithStyles(ForwardRef(Container))
     classes={
       Object {
-        "root": undefined,
+        "root": "makeStyles-root-2",
       }
     }
     id="projects"
   >
-    <TypographyMock
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-title-4"
       color="secondary"
       variant="h1"
     >
@@ -20,16 +23,19 @@ exports[`global: Projects should render as expected 1`] = `
       />
       <span
         aria-hidden={true}
+        className="makeStyles-emoji-1"
       >
          
         😎
       </span>
-    </TypographyMock>
+    </WithStyles(ForwardRef(Typography))>
     <ProjectsListMock
       data={
         Array [
           Object {
-            "description": "pages.home.projects.projects.insectifyApi.description",
+            "description": Object {
+              "id": "pages.home.projects.projects.insectifyApi.description",
+            },
             "isFavorite": false,
             "tags": Array [
               Object {
@@ -45,11 +51,15 @@ exports[`global: Projects should render as expected 1`] = `
                 "url": "https://firebase.google.com/",
               },
             ],
-            "title": "pages.home.projects.projects.insectifyApi.title",
+            "title": Object {
+              "id": "pages.home.projects.projects.insectifyApi.title",
+            },
             "url": "https://github.com/BartoszRak/Insectify-api",
           },
           Object {
-            "description": "pages.home.projects.projects.reactAwesomeBoilerplate.description",
+            "description": Object {
+              "id": "pages.home.projects.projects.reactAwesomeBoilerplate.description",
+            },
             "isFavorite": false,
             "tags": Array [
               Object {
@@ -65,11 +75,15 @@ exports[`global: Projects should render as expected 1`] = `
                 "url": "https://github.com/rematch/rematch",
               },
             ],
-            "title": "pages.home.projects.projects.reactAwesomeBoilerplate.title",
+            "title": Object {
+              "id": "pages.home.projects.projects.reactAwesomeBoilerplate.title",
+            },
             "url": "https://github.com/BartoszRak/React-Awesome-Boilerplate",
           },
           Object {
-            "description": "pages.home.projects.projects.mx.description",
+            "description": Object {
+              "id": "pages.home.projects.projects.mx.description",
+            },
             "isFavorite": false,
             "tags": Array [
               Object {
@@ -77,12 +91,14 @@ exports[`global: Projects should render as expected 1`] = `
                 "url": "https://www.typescriptlang.org/",
               },
             ],
-            "title": "pages.home.projects.projects.mx.title",
+            "title": Object {
+              "id": "pages.home.projects.projects.mx.title",
+            },
             "url": "https://github.com/BartoszRak/Mx",
           },
         ]
       }
     />
-  </ContainerMock>
+  </WithStyles(ForwardRef(Container))>
 </section>
 `;

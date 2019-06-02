@@ -1,30 +1,51 @@
 import React from 'react'
+import { cleanup } from '@testing-library/react'
 import { shallow } from 'enzyme'
 
 import { Navigation } from './Navigation'
 
+jest.unmock('@material-ui/core')
+
 jest.mock('./MobileMenu', () => 'MobileMenuMock')
 jest.mock('./DesktopMenu', () => 'DesktopMenuMock')
+jest.mock('~components/LanguageSelect', () => 'LanguageSelectMock')
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-    intl: {
-      formatMessage: v => v.id,
-    },
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<Navigation {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+let props
 
-describe('global: Navigation', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
+describe('component: Navigation', () => {
+  afterEach(cleanup)
+
+  beforeEach(() => {
+    props = {
+      intl: {
+        formatMessage: jest.fn(),
+      },
+    }
   })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+  describe('rendering', () => {
+    test('render without crush', () => {
+      const wrapper = shallow(<Navigation {...props} />)
+
+      expect(wrapper).toBeTruthy()
+    })
+
+    test('match snapshot ', () => {
+      const wrapper = shallow(<Navigation {...props} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    test('render mobile and desktop menu', () => {
+      const wrapper = shallow(<Navigation {...props} />)
+
+      expect(wrapper.find('MobileMenuMock').length).toBe(1)
+      expect(wrapper.find('DesktopMenuMock').length).toBe(1)
+    })
+
+    test('render language select', () => {
+      const wrapper = shallow(<Navigation {...props} />)
+
+      expect(wrapper.find('LanguageSelectMock').length).toBe(1)
+    })
   })
 })
