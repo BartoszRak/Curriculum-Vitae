@@ -1,13 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: Layout should render as expected 1`] = `
+exports[`component: Layout rendering match snapshot 1`] = `
 <Fragment>
   <InjectIntl(Navigation) />
-  <div>
-    <GreetingMock />
+  <div
+    className="makeStyles-root-3"
+  >
+    <Greeting />
     <SwitchMock>
       <RouteMock
-        component="HomeMock"
+        component={[Function]}
         to="/"
       />
       <RedirectMock
@@ -15,12 +17,15 @@ exports[`global: Layout should render as expected 1`] = `
         to="/"
       />
     </SwitchMock>
-    <FooterMock />
+    <Footer />
   </div>
   <div
     aria-hidden={true}
+    className="makeStyles-bottomShadow-1"
   />
-  <aside>
+  <aside
+    className="makeStyles-information-2"
+  >
     <FormattedMessage
       id="layout.information.title"
       values={Object {}}

@@ -1,6 +1,7 @@
+import { makeStyles } from '@material-ui/core'
 import backgroundUrl from '~assets/images/landscape-mountains-nature-dark-blur.jpg'
 
-export default ({ palette }) => ({
+export default makeStyles(({ palette }) => ({
   backdrop: {
     background: `url(${backgroundUrl})`,
     backgroundAttachment: 'fixed',
@@ -19,4 +20,4 @@ export default ({ palette }) => ({
   list: {
     textShadow: '0 0 5px rgba(0, 0, 0, 0.4)',
   },
-})
+}))

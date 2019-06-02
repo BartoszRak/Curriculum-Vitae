@@ -1,4 +1,6 @@
-export default ({ breakpoints, spacing }) => ({
+import { makeStyles } from '@material-ui/core'
+
+export default makeStyles(({ breakpoints, spacing }) => ({
   actions: {
     marginRight: 50,
   },
@@ -27,4 +29,4 @@ export default ({ breakpoints, spacing }) => ({
     justifyContent: 'space-between',
     width: '100%',
   }
-})
+}))

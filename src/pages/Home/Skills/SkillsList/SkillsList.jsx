@@ -1,11 +1,12 @@
 import React from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import { withStyles, Typography } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 
-import style from './SkillsList.style'
+import useStyle from './SkillsList.style'
 
-export function SkillsList({ classes, className, data }) {
+export function SkillsList({ classes: overridingClasses, className, data }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   return (
     <div className={classNames(classes.root, className)}>
       {data.map(skill => (
@@ -13,7 +14,7 @@ export function SkillsList({ classes, className, data }) {
           {skill.name}
         </Typography>
       ))}
-      <Typography aria-hidden className={classNames(classes.sum, classes.item)} color="secondary" variant="h5">
+      <Typography aria-hidden className={classNames(classes.sum, classes.item)} color="secondary" data-testid="skills-list-summary" variant="h5">
         {data.length}
       </Typography>
     </div>
@@ -29,4 +30,4 @@ SkillsList.propTypes = {
   })),
 }
 
-export default withStyles(style)(SkillsList)
+export default SkillsList

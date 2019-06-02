@@ -1,24 +1,39 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render, cleanup } from '@testing-library/react'
 
 import { Greeting } from './Greeting'
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<Greeting {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+jest.unmock('@material-ui/core')
 
-describe('global: Greeting', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
-  })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+jest.mock('react-intl')
+
+describe('component: Greeting', () => {
+  afterEach(cleanup)
+
+  describe('rendering', () => {
+    test('render without crash ', () => {
+      const wrapper = render(<Greeting />)
+
+      expect(wrapper).toBeTruthy()
+    })
+
+    test('match snapshot ', () => {
+      const wrapper = render(<Greeting />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    describe('render all titles', () => {
+      test.each([
+        ['greeting-title'],
+        ['greeting-subtitle'],
+        ['greeting-subsubtitle']
+      ])('when specified title %s provided', title => {
+        const { getByTestId } = render(<Greeting />)
+        const titleEl = getByTestId(title)
+
+        expect(titleEl).toBeVisible()
+      })
+    })
   })
 })

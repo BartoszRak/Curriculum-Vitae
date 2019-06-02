@@ -1,4 +1,6 @@
-export default ({ spacing, palette }) => ({
+import { makeStyles } from '@material-ui/core'
+
+export default makeStyles(({ spacing, palette }) => ({
   actions: {
     borderBottom: '4px solid rgba(0, 0, 0, 0)',
     display: 'flex',
@@ -55,4 +57,4 @@ export default ({ spacing, palette }) => ({
     fontWeight: 'normal',
     paddingLeft: spacing(1.5),
   },
-})
+}))

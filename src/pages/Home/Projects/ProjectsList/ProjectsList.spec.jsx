@@ -1,37 +1,52 @@
 import React from 'react'
+import { cleanup } from '@testing-library/react'
 import { shallow } from 'enzyme'
 
 import { ProjectsList } from './ProjectsList'
 
+jest.unmock('@material-ui/core')
+jest.unmock('@material-ui/icons')
+
 jest.mock('./ProjectTile', () => 'ProjectTileMock')
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-    data: [
-      {
-        description: 'Test description1',
-        title: 'testName1',
-        tags: [{
-          name: 'testTag',
-          url: 'testTagUrl',
-        }],
-        url: 'https://testurl.com',
-      },
-    ]
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<ProjectsList {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+let data
 
-describe('global: ProjectsList', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
+describe('component: ProjectsList', () => {
+  afterEach(cleanup)
+
+  beforeEach(() => {
+    data = [{
+      description: '1 tile test description',
+      isFavorite: false,
+      tags: [],
+      title: '1 tile test title',
+      url: 'http://1tiletesturl.com',
+    }, {
+      description: '2 tile test description',
+      isFavorite: false,
+      tags: [],
+      title: '2 tile test title',
+      url: 'http://2tiletesturl.com',
+    }]
   })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+
+  describe('rendering', () => {
+    test('render without crush', () => {
+      const wrapper = shallow(<ProjectsList data={data} />)
+
+      expect(wrapper).toBeTruthy()
+    })
+
+    test('match snapshot ', () => {
+      const wrapper = shallow(<ProjectsList data={data} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    test('render valid number of tiles ', () => {
+      const wrapper = shallow(<ProjectsList data={data} />)
+
+      expect(wrapper.find('ProjectTileMock').length).toBe(data.length)
+    })
   })
 })

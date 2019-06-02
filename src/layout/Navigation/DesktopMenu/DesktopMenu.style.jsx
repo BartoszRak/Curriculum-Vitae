@@ -1,4 +1,6 @@
-export default ({ palette, spacing }) => ({
+import { makeStyles } from '@material-ui/core'
+
+export default makeStyles(({ palette, spacing }) => ({
   button: {
     '&:hover': {
       background: 'rgba(0, 0, 0, 0.05)',
@@ -13,4 +15,4 @@ export default ({ palette, spacing }) => ({
     fontWeight: 'normal',
     textShadow: '0 0 5px rgba(0, 0, 0, 0.8)',
   },
-})
+}))

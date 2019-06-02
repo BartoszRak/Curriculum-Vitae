@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withStyles } from '@material-ui/core'
 
 import ProjectTile from './ProjectTile'
 
-import style from './ProjectsList.style'
+import useStyle from './ProjectsList.style'
 
-export function ProjectsList({ classes, data }) {
+export function ProjectsList({ classes: overridingClasses, data }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   return (
     <div className={classes.root}>
       {data.map(project => {
@@ -37,4 +37,4 @@ ProjectsList.propTypes = {
   })),
 }
 
-export default withStyles(style)(ProjectsList)
+export default ProjectsList

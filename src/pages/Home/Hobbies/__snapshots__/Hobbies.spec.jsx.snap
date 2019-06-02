@@ -1,16 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`global: Hobbies should render as expected 1`] = `
-<section>
-  <ContainerMock
+exports[`component: Hobbies rendering match snapshot 1`] = `
+<section
+  className="makeStyles-section-3"
+>
+  <WithStyles(ForwardRef(Container))
     classes={
       Object {
-        "root": undefined,
+        "root": "makeStyles-root-2",
       }
     }
     id="hobbies"
   >
-    <TypographyMock
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-title-8"
       color="secondary"
       variant="h1"
     >
@@ -20,56 +23,69 @@ exports[`global: Hobbies should render as expected 1`] = `
       />
       <span
         aria-hidden={true}
+        className="makeStyles-emoji-1"
       >
          🙄
       </span>
-    </TypographyMock>
-    <div>
-      <article>
-        <TypographyMock
+    </WithStyles(ForwardRef(Typography))>
+    <div
+      className="makeStyles-tilesHolder-7"
+    >
+      <article
+        className="makeStyles-tile-4"
+      >
+        <WithStyles(ForwardRef(Typography))
+          className="makeStyles-title-8"
           variant="h2"
         >
           <FormattedMessage
             id="pages.home.hobbies.tiles.insects.title"
             values={Object {}}
           />
-        </TypographyMock>
-        <TypographyMock
+        </WithStyles(ForwardRef(Typography))>
+        <WithStyles(ForwardRef(Typography))
+          className="makeStyles-tileDescription-5"
           variant="body1"
         >
           <FormattedMessage
             id="pages.home.hobbies.tiles.insects.description"
             values={Object {}}
           />
-        </TypographyMock>
+        </WithStyles(ForwardRef(Typography))>
         <img
           alt="Assasing bug"
+          className="makeStyles-tileImage-6"
           src="assasin-bug.jpg"
         />
       </article>
-      <article>
-        <TypographyMock
+      <article
+        className="makeStyles-tile-4"
+      >
+        <WithStyles(ForwardRef(Typography))
+          className="makeStyles-title-8"
           variant="h2"
         >
           <FormattedMessage
             id="pages.home.hobbies.tiles.programming.title"
             values={Object {}}
           />
-        </TypographyMock>
-        <TypographyMock
+        </WithStyles(ForwardRef(Typography))>
+        <WithStyles(ForwardRef(Typography))
+          className="makeStyles-tileDescription-5"
           variant="body1"
         >
           <FormattedMessage
             id="pages.home.hobbies.tiles.programming.description"
             values={Object {}}
           />
-        </TypographyMock>
+        </WithStyles(ForwardRef(Typography))>
         <img
           alt="Coding"
+          className="makeStyles-tileImage-6"
           src="coding.jpg"
         />
       </article>
     </div>
-  </ContainerMock>
+  </WithStyles(ForwardRef(Container))>
 </section>
 `;

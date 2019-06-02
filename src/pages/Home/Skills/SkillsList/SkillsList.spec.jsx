@@ -1,34 +1,46 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render, cleanup } from '@testing-library/react'
 
 import { SkillsList } from './SkillsList'
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-    data: [{
-      advancement: 0,
-      name: 'testName1',
-    }, {
-      advancement: 1,
-      name: 'testName2',
-    }, {
-      advancement: 2,
-      name: 'testName3',
-    }],
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<SkillsList {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+jest.unmock('@material-ui/core')
 
-describe('global: SkillsList', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
+let data
+
+describe('component: SkillsList', () => {
+  afterEach(cleanup)
+
+  beforeEach(() => {
+    data = [{
+      advancement: 1,
+      name: '1 Test skill name',
+    }, {
+      advancement: 3,
+      name: '2 Test skill name',
+    }]
   })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+
+  describe('rendering', () => {
+    test('match snapshot ', () => {
+      const wrapper = render(<SkillsList data={data} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    test('render skills', () => {
+      const { getByText } = render(<SkillsList data={data} />)
+
+      data.forEach(skill => {
+        const skillEl = getByText(skill.name)
+        expect(skillEl).toBeVisible()
+      })
+    })
+
+    test('render valid summary', () => {
+      const { getByTestId } = render(<SkillsList data={data} />)
+      const skillSummaryEl = getByTestId('skills-list-summary')
+
+      expect(skillSummaryEl).toBeVisible()
+    })
   })
 })

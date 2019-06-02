@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withStyles, Button } from '@material-ui/core'
+import { Button } from '@material-ui/core'
 
 import { useScrollTo } from '~hooks'
 
-import style from './DesktopMenu.style'
+import useStyle from './DesktopMenu.style'
 
-export function DesktopMenu({ classes, className, routes }) {
+export function DesktopMenu({ classes: overridingClasses, className, routes }) {
+  const classes = { ...useStyle(), ...overridingClasses }
   const { scrollTo } = useScrollTo()
   return (
     <div aria-label="Navigate to" className={className} role="navigation">
@@ -36,4 +37,4 @@ DesktopMenu.propTypes = {
   })).isRequired,
 }
 
-export default withStyles(style)(DesktopMenu)
+export default DesktopMenu

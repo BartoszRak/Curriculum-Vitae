@@ -1,7 +1,10 @@
 import React from 'react'
+import { cleanup } from '@testing-library/react'
 import { shallow } from 'enzyme'
 
 import { Home } from './Home'
+
+jest.unmock('@material-ui/core')
 
 jest.mock('./Projects', () => 'ProjectsMock')
 jest.mock('./Bio', () => 'BioMock')
@@ -9,22 +12,20 @@ jest.mock('./Skills', () => 'SkillsMock')
 jest.mock('./Workflow', () => 'WorkflowMock')
 jest.mock('./Hobbies', () => 'HobbiesMock')
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<Home {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+describe('component: Home', () => {
+  afterEach(cleanup)
 
-describe('global: Home', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
-  })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+  describe('rendering', () => {
+    test('render without crash', () => {
+      const wrapper = shallow(<Home />)
+
+      expect(wrapper).toBeTruthy()
+    })
+
+    test('match snapshot', () => {
+      const wrapper = shallow(<Home />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
   })
 })

@@ -1,4 +1,6 @@
-export default ({ breakpoints }) => ({
+import { makeStyles } from '@material-ui/core'
+
+export default makeStyles(({ breakpoints }) => ({
   emoji: {
     fontSize: '2rem',
     [breakpoints.down('md')]: {
@@ -15,4 +17,4 @@ export default ({ breakpoints }) => ({
       fontSize: '2rem',
     },
   },
-})
+}))

@@ -1,6 +1,7 @@
+import { makeStyles } from '@material-ui/core'
 import backgroundUrl from '~assets/images/landscape-mountains-nature-dark.jpg'
 
-export default ({ breakpoints, palette, spacing }) => ({
+export default makeStyles(({ breakpoints, palette, spacing }) => ({
   avatar: {
     border: `2px solid ${palette.secondary.main}`,
     height: 250,
@@ -41,4 +42,4 @@ export default ({ breakpoints, palette, spacing }) => ({
       fontSize: '2.5rem',
     },
   },
-})
+}))

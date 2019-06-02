@@ -1,24 +1,26 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render, cleanup } from '@testing-library/react'
 
 import { Footer } from './Footer'
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<Footer {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+jest.unmock('@material-ui/core')
 
-describe('global: Footer', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
-  })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+jest.mock('react-intl')
+
+describe('component: Footer', () => {
+  afterEach(cleanup)
+
+  describe('rendering', () => {
+    test('render without crash ', () => {
+      const wrapper = render(<Footer />)
+
+      expect(wrapper).toBeTruthy()
+    })
+
+    test('match snapshot ', () => {
+      const wrapper = render(<Footer />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
   })
 })

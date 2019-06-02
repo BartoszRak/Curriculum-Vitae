@@ -1,43 +1,34 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render, cleanup } from '@testing-library/react'
 
 import { Loader } from './Loader'
 
-const initComponent = overrides => {
-  const mockProps = {
-    children: <div id="testChildren">Test children</div>,
-    classes: {},
-  }
-  const mockMethods = {}
-  const wrapper = shallow(<Loader {...mockProps} {...mockMethods} {...overrides} />)
-  return { mockProps, wrapper }
-}
+jest.unmock('@material-ui/core')
 
-describe('global: Loader', () => {
+describe('component: Loader', () => {
+  afterEach(cleanup)
+
   describe('rendering', () => {
-    it('renders without crashing', () => {
-      const { wrapper } = initComponent()
-      expect(wrapper).toBeTruthy()
-    })
+    test('match snapshot when loading', () => {
+      const wrapper = render(<Loader />)
 
-    it('should render as expected', () => {
-      const { wrapper } = initComponent()
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('should render as expected when not loading', () => {
-      const { wrapper } = initComponent({ disable: true })
+    test('match snapshot when not loading', () => {
+      const wrapper = render(<Loader disabled />)
+
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('should render children when loading disabled', () => {
-      const { wrapper } = initComponent({ disable: true })
-      expect(wrapper.find('#testChildren').length).toBe(1)
-    })
+    test('render all 4 bars', () => {
+      const { getAllByRole } = render(<Loader />)
+      const elArr = getAllByRole('progressbar')
 
-    it('should not render children when loading disabled', () => {
-      const { wrapper } = initComponent({ disable: false })
-      expect(wrapper.find('#testChildren').length).toBe(0)
+      elArr.forEach(el => {
+        expect(el).toBeVisible()
+      })
+      expect(elArr.length).toBe(4)
     })
   })
 })
