@@ -17,7 +17,7 @@ exports[`component: Layout rendering match snapshot 1`] = `
         to="/"
       />
     </SwitchMock>
-    <WithStyles(Footer) />
+    <Footer />
   </div>
   <div
     aria-hidden={true}
