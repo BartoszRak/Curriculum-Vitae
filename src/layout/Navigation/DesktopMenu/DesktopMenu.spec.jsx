@@ -1,36 +1,45 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { render, cleanup } from '@testing-library/react'
 
 import { DesktopMenu } from './DesktopMenu'
 
-const initComponent = overrides => {
-  const mockProps = {
-    classes: {},
-    routes: [
-      {
-        elementId: 'testElementId1',
-        name: 'testElementName1',
-      },
-      {
-        elementId: 'testElementId2',
-        name: 'testElementName2',
-      },
-    ],
-  }
-  const mockMethods = {}
-  const wrapper = shallow(
-    <DesktopMenu {...mockProps} {...mockMethods} {...overrides} />
-  )
-  return { mockProps, wrapper }
-}
+jest.unmock('@material-ui/core')
+jest.unmock('@material-ui/icons')
 
-describe('global: DesktopMenu', () => {
-  it('renders without crashing', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toBeTruthy()
+let routes
+
+describe('component: DesktopMenu', () => {
+  afterEach(cleanup)
+
+  beforeEach(() => {
+    routes = [{
+      elementId: '1 test element id',
+      name: '1 test name',
+    }, {
+      elementId: '2 test element id',
+      name: '2 test name',
+    }]
   })
-  it('should render as expected', () => {
-    const { wrapper } = initComponent()
-    expect(wrapper).toMatchSnapshot()
+  describe('rendering', () => {
+    test('render without crash ', () => {
+      const wrapper = render(<DesktopMenu routes={routes} />)
+
+      expect(wrapper).toBeTruthy()
+    })
+
+    test('match snapshot ', () => {
+      const wrapper = render(<DesktopMenu routes={routes} />)
+
+      expect(wrapper).toMatchSnapshot()
+    })
+
+    test('render routes when icon clicked', () => {
+      const { getByText } = render(<DesktopMenu routes={routes} />)
+
+      routes.forEach(route => {
+        const routeEl = getByText(route.name)
+        expect(routeEl).toBeVisible()
+      })
+    })
   })
 })
