@@ -39,7 +39,7 @@ exports[`component: Projects rendering match snapshot 1`] = `
             "isFavorite": false,
             "tags": Array [
               Object {
-                "name": "nestjs",
+                "name": "Nestjs",
                 "url": "https://nestjs.com/",
               },
               Object {
@@ -49,6 +49,10 @@ exports[`component: Projects rendering match snapshot 1`] = `
               Object {
                 "name": "Firebase",
                 "url": "https://firebase.google.com/",
+              },
+              Object {
+                "name": "GRaphQL",
+                "url": "https://graphql.org/",
               },
             ],
             "title": Object {

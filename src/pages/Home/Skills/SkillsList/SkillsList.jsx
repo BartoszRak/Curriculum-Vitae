@@ -10,11 +10,22 @@ export function SkillsList({ classes: overridingClasses, className, data }) {
   return (
     <div className={classNames(classes.root, className)}>
       {data.map(skill => (
-        <Typography className={classNames(classes.skill, classes.item)} color="secondary" key={skill.name} variant="h5">
+        <Typography
+          className={classNames(classes.skill, classes.item)}
+          color="secondary"
+          key={skill.name}
+          variant="h5"
+        >
           {skill.name}
         </Typography>
       ))}
-      <Typography aria-hidden className={classNames(classes.sum, classes.item)} color="secondary" data-testid="skills-list-summary" variant="h5">
+      <Typography
+        aria-hidden
+        className={classNames(classes.sum, classes.item)}
+        color="secondary"
+        data-testid="skills-list-summary"
+        variant="h5"
+      >
         {data.length}
       </Typography>
     </div>
@@ -24,10 +35,12 @@ export function SkillsList({ classes: overridingClasses, className, data }) {
 SkillsList.propTypes = {
   classes: PropTypes.object,
   className: PropTypes.string,
-  data: PropTypes.arrayOf(PropTypes.shape({
-    advancement: PropTypes.number,
-    name: PropTypes.string,
-  })),
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      advancement: PropTypes.number,
+      name: PropTypes.string,
+    })
+  ),
 }
 
 export default SkillsList
