@@ -15,45 +15,44 @@ export function Projects({ classes: overridingClasses, intl }) {
   const { getProjects } = useFavoriteProjectsStorage()
   const favoriteProjects = getProjects() || []
 
-  const projects = useMemo(() => {
-    return [
-      {
-        description: formatMessage({
-          id: 'pages.home.projects.projects.insectifyApi.description',
-        }),
-        tags: [
-          technologiesMap.nestjs,
-          technologiesMap.express,
-          technologiesMap.firebase,
-        ],
-        title: formatMessage({
-          id: 'pages.home.projects.projects.insectifyApi.title',
-        }),
-        url: 'https://github.com/BartoszRak/Insectify-api',
-      },
-      {
-        description: formatMessage({
-          id: 'pages.home.projects.projects.reactAwesomeBoilerplate.description',
-        }),
-        tags: [
-          technologiesMap.react,
-          technologiesMap.redux,
-          technologiesMap.rematch,
-        ],
-        title: formatMessage({
-          id: 'pages.home.projects.projects.reactAwesomeBoilerplate.title',
-        }),
-        url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
-      },
-      {
-        description: formatMessage({
-          id: 'pages.home.projects.projects.mx.description',
-        }),
-        tags: [technologiesMap.typescript],
-        title: formatMessage({ id: 'pages.home.projects.projects.mx.title' }),
-        url: 'https://github.com/BartoszRak/Mx',
-      },
-    ]
+  const projectsArray = [
+    {
+      description: formatMessage({
+        id: 'pages.home.projects.projects.insectifyApi.description',
+      }),
+      tags: [
+        technologiesMap.nestjs,
+        technologiesMap.express,
+        technologiesMap.firebase,
+        technologiesMap.graphql,
+      ],
+      title: formatMessage({
+        id: 'pages.home.projects.projects.insectifyApi.title',
+      }),
+      url: 'https://github.com/BartoszRak/Insectify-api',
+    },
+    {
+      description: formatMessage({
+        id: 'pages.home.projects.projects.reactAwesomeBoilerplate.description',
+      }),
+      tags: [technologiesMap.react, technologiesMap.redux, technologiesMap.rematch],
+      title: formatMessage({
+        id: 'pages.home.projects.projects.reactAwesomeBoilerplate.title',
+      }),
+      url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
+    },
+    {
+      description: formatMessage({
+        id: 'pages.home.projects.projects.mx.description',
+      }),
+      tags: [technologiesMap.typescript],
+      title: formatMessage({ id: 'pages.home.projects.projects.mx.title' }),
+      url: 'https://github.com/BartoszRak/Mx',
+    },
+  ]
+
+  const projects = useMemo(
+    () => projectsArray
       .map(rawProject => ({
         ...rawProject,
         isFavorite: Boolean(
@@ -63,8 +62,9 @@ export function Projects({ classes: overridingClasses, intl }) {
       .sort(a => {
         if (a.isFavorite) return -1
         return 1
-      })
-  }, [favoriteProjects])
+      }),
+    [favoriteProjects, projectsArray]
+  )
 
   return (
     <section className={classes.section}>

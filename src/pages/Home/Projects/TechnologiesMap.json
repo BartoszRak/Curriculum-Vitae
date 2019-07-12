@@ -20,12 +20,15 @@
     "url": "https://expressjs.com//"
   },
   "nestjs": {
-    "name": "nestjs",
+    "name": "Nestjs",
     "url": "https://nestjs.com/"
   },
   "firebase": {
     "name": "Firebase",
     "url": "https://firebase.google.com/"
+  },
+  "graphql": {
+    "name": "GRaphQL",
+    "url": "https://graphql.org/"
   }
-  
 }

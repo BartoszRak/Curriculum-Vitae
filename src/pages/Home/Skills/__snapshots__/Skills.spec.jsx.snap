@@ -48,11 +48,23 @@ exports[`component: Skills rendering match snapshot 1`] = `
           },
           Object {
             "advancement": 0,
+            "name": "Testing Library",
+          },
+          Object {
+            "advancement": 0,
             "name": "Javascript",
           },
           Object {
             "advancement": 0,
             "name": "Material UI",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Express",
+          },
+          Object {
+            "advancement": 0,
+            "name": "Nestjs",
           },
           Object {
             "advancement": 0,
@@ -137,15 +149,15 @@ exports[`component: Skills rendering match snapshot 1`] = `
           },
           Object {
             "advancement": 1,
-            "name": "Express.js",
+            "name": "Sinon",
+          },
+          Object {
+            "advancement": 1,
+            "name": "MongoDB",
           },
           Object {
             "advancement": 1,
             "name": "Next.js",
-          },
-          Object {
-            "advancement": 1,
-            "name": "Nestjs",
           },
           Object {
             "advancement": 1,
