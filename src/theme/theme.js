@@ -1,11 +1,18 @@
-import { blueGrey } from '@material-ui/core/colors'
+import { grey } from '@material-ui/core/colors'
 
 export default {
+  overrides: {
+    MuiButton: {
+      root: {
+        fontWeight: 'normal',
+      },
+    },
+  },
   palette: {
     primary: {
-      dark: blueGrey[700],
-      light: blueGrey[500],
-      main: blueGrey[600],
+      dark: grey[900],
+      light: grey[700],
+      main: grey[800],
     },
     secondary: {
       dark: '#eeeeee',
@@ -39,12 +46,5 @@ export default {
       fontSize: '0.9rem',
     },
     useNextVariants: true,
-  },
-  overrides: {
-    MuiButton: {
-      root: {
-        fontWeight: 'normal',
-      },
-    },
   },
 }
