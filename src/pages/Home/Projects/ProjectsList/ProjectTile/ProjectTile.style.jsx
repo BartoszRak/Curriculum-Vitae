@@ -21,6 +21,7 @@ export default makeStyles(({ spacing, palette }) => ({
     textDecoration: 'none',
   },
   hrefButton: {
+    borderRadius: spacing(1),
     textTransform: 'uppercase',
   },
   icon: {

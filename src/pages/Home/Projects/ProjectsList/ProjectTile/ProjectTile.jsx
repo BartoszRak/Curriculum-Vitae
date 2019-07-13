@@ -17,7 +17,9 @@ import useStyle from './ProjectTile.style'
 
 export function ProjectTile({
   classes: overridingClasses,
-  project: { description, title, url, tags = [], isFavorite },
+  project: {
+    description, title, url, tags = [], isFavorite,
+  },
 }) {
   const classes = { ...useStyle(), ...overridingClasses }
   const { toggleProject } = useFavoriteProjectsStorage()

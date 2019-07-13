@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core'
 
-export default makeStyles(({ breakpoints, spacing }) => ({
+export default makeStyles(({ breakpoints, spacing, palette }) => ({
   actions: {
     marginRight: 50,
   },
@@ -17,7 +17,7 @@ export default makeStyles(({ breakpoints, spacing }) => ({
     },
   },
   root: {
-    background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.10) 50%, rgba(0, 0, 0, 0)100%)',
+    background: palette.primary.main,
     boxShadow: 'none',
     margin: 0,
     padding: `${spacing(0.5)}px !important`,
@@ -28,5 +28,5 @@ export default makeStyles(({ breakpoints, spacing }) => ({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '100%',
-  }
+  },
 }))
