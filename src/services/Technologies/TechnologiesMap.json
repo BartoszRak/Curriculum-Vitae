@@ -30,5 +30,25 @@
   "graphql": {
     "name": "GRaphQL",
     "url": "https://graphql.org/"
+  },
+  "materialUi": {
+    "name": "Material UI",
+    "url": "https://material-ui.com/"
+  },
+  "immutable": {
+    "name": "Immutable",
+    "url": "https://github.com/immutable-js/immutable-js"
+  },
+  "recharts": {
+    "name": "Recharts",
+    "url": "http://recharts.org/"
+  },
+  "jest": {
+    "name": "Jest",
+    "url": "https://jestjs.io/"
+  },
+  "testingLibrary": {
+    "name": "Testing library",
+    "url": "https://testing-library.com/"
   }
 }

@@ -1,12 +1,10 @@
 import { makeStyles } from '@material-ui/core'
+import backgroundUrl from '~assets/images/landscape-mountains-nature-dark.jpg'
 
-export default makeStyles(({ breakpoints, palette, spacing }) => ({
+export default makeStyles(({ breakpoints, palette }) => ({
   bottomTriangle: {
     marginTop: '-1px',
-    transform: 'rotate(180deg) scaleX(-1)',
-  },
-  divider: {
-    margin: spacing(2, 0),
+    transform: 'rotate(180deg)',
   },
   emoji: {
     fontSize: '2rem',
@@ -14,37 +12,29 @@ export default makeStyles(({ breakpoints, palette, spacing }) => ({
       fontSize: '1.5rem',
     },
   },
-  image: {
-    width: '50%',
-    height: '50%',
-  },
-  imageHolder: {
-    display: 'flex',
-    justifyContent: 'center',
-    width: '100%',
-  },
   root: {
     width: '100%',
   },
   section: {},
   subtitle: {
-    borderLeft: `4px solid ${palette.primary.main}`,
-    marginBottom: spacing(1),
-    marginTop: spacing(3),
-    paddingLeft: spacing(2),
+    color: palette.primary.main,
+    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
     [breakpoints.down('md')]: {
       fontSize: '1.8rem',
     },
   },
   title: {
+    color: palette.primary.main,
     textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
     [breakpoints.down('md')]: {
       fontSize: '2rem',
     },
   },
   topTriangle: {
-    marginBottom: -1,
-    transform: 'scaleX(-1)',
+    background: `url(${backgroundUrl})`,
+    backgroundAttachment: 'fixed',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
   },
   triangle: {
     color: palette.secondary.main,

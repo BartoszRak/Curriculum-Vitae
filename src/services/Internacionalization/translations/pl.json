@@ -24,6 +24,7 @@
     },
     "navigation": {
       "items": {
+        "commercial": "Komercyjnie",
         "projects": "Projekty",
         "bio": "O mnie",
         "skills": "Umiejętności & technologie",
@@ -40,8 +41,27 @@
   },
   "pages": {
     "home": {
+      "commercial": {
+        "title": "Czego doświadczyłem?",
+        "subtitle": "Komercyjne projekty",
+        "projects": {
+          "learningManagementSystem": {
+            "title": "System Zarządzania Nauczaniem (LMS)",
+            "description": "System Zarządzania Nauczaniem zbudowany z konwencją storage'a opartego o połączenie reduxa i rematch'a. To właściwie panel administracyjny, który znacznie ułatwia zarządzanie zawartością i użytkownikami. Dodatkowo dostarcza analitykę z grupą grafów reprezentujących najważniejsze dane."
+          },
+          "quizzesManagementSystem": {
+            "title": "System Zarządzania Quizami",
+            "description": "System Zarządzania Quizami zbudowany dla quizowej aplikacji mobilnej. Dostarcza użytkownikowi, który jest wybrany do zarządzania quizami możliwość tworzenia, usuwania czy przypisywania quizów do grup. Quizy są tworzone przy pomocy 'kreatora quizów', który pozwala użytkownikowi stworzyć dokładnie taki kurs jakiego potrzebuje. Dodatkowo, aplikacja zapewnia łatwe zarządzania grupami i użytkownikami."
+          },
+          "loadTestingPlatform": {
+            "title": "Load Testing Platform",
+            "description": "Platforma dostarczająca możliwość testowania obciążeniowego aplikacji front-endowych i backendowych użytkownika. Cały panel wyświetla takie rzeczy jak konfiguracje, uruchomienia testów, projekty i tony dodatkowych i istotnych informacji jak % nieudanych testów czy grafy dla parametrów testów"
+          }
+        }
+      },
       "projects": {
         "title": "Co takiego stworzyłem?",
+        "subtitle": "Prywatne projekty",
         "projects": {
           "insectifyApi": {
             "title": "Insectify API",
@@ -119,6 +139,10 @@
           "insects": {
             "title": "Owady",
             "description": "O tak, tutaj duże zaskoczenie. Myślę, że owady to jest z najrzadszych hobby, ale jest bardzo uzależniające i świetne to uprawiania. W moim przypadku wszystko zaczęło się od jednego krocionoga, którego kupiłem siostrze w prezencie rok temu. Aktualnie ja i rodzeństwo posiadamy kilka pająków, karaczany, węża i pluskwiaki."
+          },
+          "birdeaters": {
+            "title": "Ptaszniki",
+            "description": "Kolejna niespodzianka. Mam i kocham ptaszniki tak samo jak owady (właściwie teraz chyba bardziej). Moje 2 ulubione zwierzaczki, które obecnie posiadam to: Marysia - która jako ptasznik olbrzymi dorośnie do 25cm (z nogami), oraz skarpetka, która dorosła osiągnie ukochane 30cm (z nogami)."
           }
         }
       }

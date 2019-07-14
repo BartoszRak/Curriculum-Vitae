@@ -1,162 +1,170 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`component: Bio rendering match snapshot 1`] = `
-<section
-  className="makeStyles-section-4"
->
-  <WithStyles(ForwardRef(Container))
-    classes={
-      Object {
-        "root": "makeStyles-root-3",
-      }
-    }
-    id="bio"
+<Fragment>
+  <TileTriangle
+    className="makeStyles-triangle-10"
+  />
+  <section
+    className="makeStyles-section-5"
   >
-    <WithStyles(ForwardRef(Typography))
-      className="makeStyles-title-8"
-      variant="h1"
+    <WithStyles(ForwardRef(Container))
+      classes={
+        Object {
+          "root": "makeStyles-root-4",
+        }
+      }
+      id="bio"
     >
-      <FormattedMessage
-        id="pages.home.bio.title"
-        values={Object {}}
-      />
-      <span
-        aria-hidden={true}
-        className="makeStyles-emoji-2"
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-title-9"
+        variant="h1"
       >
-         🤠
-      </span>
-    </WithStyles(ForwardRef(Typography))>
-    <div
-      className="makeStyles-tilesHolder-7"
-    >
-      <article
-        className="makeStyles-tile-6"
-      >
-        <WithStyles(ForwardRef(Typography))
-          className="makeStyles-subtitle-5"
-          variant="h2"
-        >
-          <FormattedMessage
-            id="pages.home.bio.tiles.0.title"
-            values={Object {}}
-          />
-        </WithStyles(ForwardRef(Typography))>
-        <WithStyles(ForwardRef(Divider))
-          className="makeStyles-divider-1"
+        <FormattedMessage
+          id="pages.home.bio.title"
+          values={Object {}}
         />
-        <WithStyles(ForwardRef(Typography))
-          variant="h4"
+        <span
+          aria-hidden={true}
+          className="makeStyles-emoji-3"
         >
-          <FormattedMessage
-            id="pages.home.bio.tiles.0.subtitle"
-            values={Object {}}
-          />
-        </WithStyles(ForwardRef(Typography))>
-        <br />
-        <WithStyles(ForwardRef(Typography))
-          variant="body1"
-        >
-          <FormattedMessage
-            id="pages.home.bio.tiles.0.paragraphs.0"
-            values={Object {}}
-          />
-        </WithStyles(ForwardRef(Typography))>
-        <br />
-        <WithStyles(ForwardRef(Typography))
-          variant="body1"
-        >
-          <FormattedMessage
-            id="pages.home.bio.tiles.0.paragraphs.1"
-            values={Object {}}
-          />
-        </WithStyles(ForwardRef(Typography))>
-      </article>
-      <article
-        className="makeStyles-tile-6"
+           🤠
+        </span>
+      </WithStyles(ForwardRef(Typography))>
+      <div
+        className="makeStyles-tilesHolder-8"
       >
-        <WithStyles(ForwardRef(Typography))
-          className="makeStyles-subtitle-5"
-          variant="h2"
+        <article
+          className="makeStyles-tile-7"
         >
-          <FormattedMessage
-            id="pages.home.bio.tiles.1.title"
-            values={Object {}}
+          <WithStyles(ForwardRef(Typography))
+            className="makeStyles-subtitle-6"
+            variant="h2"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.0.title"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+          <WithStyles(ForwardRef(Divider))
+            className="makeStyles-divider-2"
           />
-        </WithStyles(ForwardRef(Typography))>
-        <WithStyles(ForwardRef(Divider))
-          className="makeStyles-divider-1"
-        />
-        <WithStyles(ForwardRef(Typography))
-          variant="h4"
+          <WithStyles(ForwardRef(Typography))
+            variant="h4"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.0.subtitle"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+          <br />
+          <WithStyles(ForwardRef(Typography))
+            variant="body1"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.0.paragraphs.0"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+          <br />
+          <WithStyles(ForwardRef(Typography))
+            variant="body1"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.0.paragraphs.1"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+        </article>
+        <article
+          className="makeStyles-tile-7"
         >
-          <FormattedMessage
-            id="pages.home.bio.tiles.1.subtitle"
-            values={Object {}}
+          <WithStyles(ForwardRef(Typography))
+            className="makeStyles-subtitle-6"
+            variant="h2"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.1.title"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+          <WithStyles(ForwardRef(Divider))
+            className="makeStyles-divider-2"
           />
-        </WithStyles(ForwardRef(Typography))>
-        <br />
-        <WithStyles(ForwardRef(Typography))
-          variant="body1"
+          <WithStyles(ForwardRef(Typography))
+            variant="h4"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.1.subtitle"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+          <br />
+          <WithStyles(ForwardRef(Typography))
+            variant="body1"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.1.paragraphs.0"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+          <br />
+          <WithStyles(ForwardRef(Typography))
+            variant="body1"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.1.paragraphs.1"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+        </article>
+        <article
+          className="makeStyles-tile-7"
         >
-          <FormattedMessage
-            id="pages.home.bio.tiles.1.paragraphs.0"
-            values={Object {}}
+          <WithStyles(ForwardRef(Typography))
+            className="makeStyles-subtitle-6"
+            variant="h2"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.2.title"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+          <WithStyles(ForwardRef(Divider))
+            className="makeStyles-divider-2"
           />
-        </WithStyles(ForwardRef(Typography))>
-        <br />
-        <WithStyles(ForwardRef(Typography))
-          variant="body1"
-        >
-          <FormattedMessage
-            id="pages.home.bio.tiles.1.paragraphs.1"
-            values={Object {}}
-          />
-        </WithStyles(ForwardRef(Typography))>
-      </article>
-      <article
-        className="makeStyles-tile-6"
-      >
-        <WithStyles(ForwardRef(Typography))
-          className="makeStyles-subtitle-5"
-          variant="h2"
-        >
-          <FormattedMessage
-            id="pages.home.bio.tiles.2.title"
-            values={Object {}}
-          />
-        </WithStyles(ForwardRef(Typography))>
-        <WithStyles(ForwardRef(Divider))
-          className="makeStyles-divider-1"
-        />
-        <WithStyles(ForwardRef(Typography))
-          variant="h4"
-        >
-          <FormattedMessage
-            id="pages.home.bio.tiles.2.subtitle"
-            values={Object {}}
-          />
-        </WithStyles(ForwardRef(Typography))>
-        <br />
-        <WithStyles(ForwardRef(Typography))
-          variant="body1"
-        >
-          <FormattedMessage
-            id="pages.home.bio.tiles.2.paragraphs.0"
-            values={Object {}}
-          />
-        </WithStyles(ForwardRef(Typography))>
-        <br />
-        <WithStyles(ForwardRef(Typography))
-          variant="body1"
-        >
-          <FormattedMessage
-            id="pages.home.bio.tiles.2.paragraphs.1"
-            values={Object {}}
-          />
-        </WithStyles(ForwardRef(Typography))>
-      </article>
-    </div>
-  </WithStyles(ForwardRef(Container))>
-</section>
+          <WithStyles(ForwardRef(Typography))
+            variant="h4"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.2.subtitle"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+          <br />
+          <WithStyles(ForwardRef(Typography))
+            variant="body1"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.2.paragraphs.0"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+          <br />
+          <WithStyles(ForwardRef(Typography))
+            variant="body1"
+          >
+            <FormattedMessage
+              id="pages.home.bio.tiles.2.paragraphs.1"
+              values={Object {}}
+            />
+          </WithStyles(ForwardRef(Typography))>
+        </article>
+      </div>
+    </WithStyles(ForwardRef(Container))>
+  </section>
+  <TileTriangle
+    className="makeStyles-bottomTriangle-1 makeStyles-triangle-10"
+  />
+</Fragment>
 `;
