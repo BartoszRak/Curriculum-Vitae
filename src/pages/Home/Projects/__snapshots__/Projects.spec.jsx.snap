@@ -13,7 +13,7 @@ exports[`component: Projects rendering match snapshot 1`] = `
     id="projects"
   >
     <WithStyles(ForwardRef(Typography))
-      className="makeStyles-title-4"
+      className="makeStyles-title-5"
       color="secondary"
       variant="h1"
     >
@@ -28,6 +28,16 @@ exports[`component: Projects rendering match snapshot 1`] = `
          
         😎
       </span>
+    </WithStyles(ForwardRef(Typography))>
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-subtitle-4"
+      color="secondary"
+      variant="h2"
+    >
+      <FormattedMessage
+        id="pages.home.projects.subtitle"
+        values={Object {}}
+      />
     </WithStyles(ForwardRef(Typography))>
     <ProjectsListMock
       data={

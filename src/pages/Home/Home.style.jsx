@@ -25,6 +25,10 @@ export default makeStyles(({ palette, spacing }) => ({
   },
   root: {
     alignItems: 'stretch',
+    background: `url(${backgroundUrl})`,
+    backgroundAttachment: 'fixed',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
     display: 'flex',
     flexDirection: 'column',
   },

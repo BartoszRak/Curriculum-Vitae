@@ -5,6 +5,14 @@ exports[`component: Home rendering match snapshot 1`] = `
   className="makeStyles-root-5"
   role="main"
 >
+  <InjectIntl(Commercial)
+    classes={
+      Object {
+        "section": "makeStyles-holder-4 makeStyles-fairHolder-3",
+      }
+    }
+    key="Uuidv4Mock"
+  />
   <ProjectsMock
     classes={
       Object {

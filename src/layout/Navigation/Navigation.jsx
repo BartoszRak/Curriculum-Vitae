@@ -14,6 +14,10 @@ export function Navigation({ classes: overridingClasses, intl }) {
   const { formatMessage } = intl
   const routes = [
     {
+      elementId: '#commercial',
+      name: formatMessage({ id: 'layout.navigation.items.commercial' }),
+    },
+    {
       elementId: '#projects',
       name: formatMessage({ id: 'layout.navigation.items.projects' }),
     },

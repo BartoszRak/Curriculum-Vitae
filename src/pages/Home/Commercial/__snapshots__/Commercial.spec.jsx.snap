@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component: Commercial rendering match snapshot 1`] = `
+<Fragment>
+  <TileTriangle
+    className="makeStyles-triangle-8 makeStyles-topTriangle-7"
+  />
+  <section
+    className="makeStyles-section-4"
+  >
+    <WithStyles(ForwardRef(Container))
+      classes={
+        Object {
+          "root": "makeStyles-root-3",
+        }
+      }
+      id="commercial"
+    >
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-title-6"
+        color="secondary"
+        variant="h1"
+      >
+        <FormattedMessage
+          id="pages.home.commercial.title"
+          values={Object {}}
+        />
+        <span
+          aria-hidden={true}
+          className="makeStyles-emoji-2"
+        >
+           
+          🦸‍♂️
+        </span>
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-subtitle-5"
+        color="secondary"
+        variant="h2"
+      >
+        <FormattedMessage
+          id="pages.home.commercial.subtitle"
+          values={Object {}}
+        />
+      </WithStyles(ForwardRef(Typography))>
+      <ProjectsListMock
+        data={
+          Array [
+            Object {
+              "description": Object {
+                "id": "pages.home.commercial.projects.loadTestingPlatform.description",
+              },
+              "tags": Array [
+                Object {
+                  "name": "React",
+                  "url": "https://reactjs.org/",
+                },
+                Object {
+                  "name": "Material UI",
+                  "url": "https://material-ui.com/",
+                },
+                Object {
+                  "name": "GRaphQL",
+                  "url": "https://graphql.org/",
+                },
+                Object {
+                  "name": "Testing library",
+                  "url": "https://testing-library.com/",
+                },
+              ],
+              "title": Object {
+                "id": "pages.home.commercial.projects.loadTestingPlatform.title",
+              },
+            },
+            Object {
+              "description": Object {
+                "id": "pages.home.commercial.projects.quizzesManagementSystem.description",
+              },
+              "tags": Array [
+                Object {
+                  "name": "React",
+                  "url": "https://reactjs.org/",
+                },
+                Object {
+                  "name": "Redux",
+                  "url": "https://redux.js.org/",
+                },
+                Object {
+                  "name": "Rematch",
+                  "url": "https://github.com/rematch/rematch",
+                },
+                Object {
+                  "name": "Material UI",
+                  "url": "https://material-ui.com/",
+                },
+                Object {
+                  "name": "Firebase",
+                  "url": "https://firebase.google.com/",
+                },
+                Object {
+                  "name": "Jest",
+                  "url": "https://jestjs.io/",
+                },
+              ],
+              "title": Object {
+                "id": "pages.home.commercial.projects.quizzesManagementSystem.title",
+              },
+            },
+            Object {
+              "description": Object {
+                "id": "pages.home.commercial.projects.quizzesManagementSystem.description",
+              },
+              "tags": Array [
+                Object {
+                  "name": "React",
+                  "url": "https://reactjs.org/",
+                },
+                Object {
+                  "name": "Redux",
+                  "url": "https://redux.js.org/",
+                },
+                Object {
+                  "name": "Rematch",
+                  "url": "https://github.com/rematch/rematch",
+                },
+                Object {
+                  "name": "Material UI",
+                  "url": "https://material-ui.com/",
+                },
+                Object {
+                  "name": "Firebase",
+                  "url": "https://firebase.google.com/",
+                },
+                Object {
+                  "name": "Recharts",
+                  "url": "http://recharts.org/",
+                },
+                Object {
+                  "name": "Jest",
+                  "url": "https://jestjs.io/",
+                },
+              ],
+              "title": Object {
+                "id": "pages.home.commercial.projects.quizzesManagementSystem.title",
+              },
+            },
+            Object {
+              "description": Object {
+                "id": "pages.home.commercial.projects.learningManagementSystem.description",
+              },
+              "tags": Array [
+                Object {
+                  "name": "React",
+                  "url": "https://reactjs.org/",
+                },
+                Object {
+                  "name": "Redux",
+                  "url": "https://redux.js.org/",
+                },
+                Object {
+                  "name": "Rematch",
+                  "url": "https://github.com/rematch/rematch",
+                },
+                Object {
+                  "name": "Material UI",
+                  "url": "https://material-ui.com/",
+                },
+                Object {
+                  "name": "Immutable",
+                  "url": "https://github.com/immutable-js/immutable-js",
+                },
+              ],
+              "title": Object {
+                "id": "pages.home.commercial.projects.learningManagementSystem.title",
+              },
+            },
+          ]
+        }
+      />
+    </WithStyles(ForwardRef(Container))>
+  </section>
+  <TileTriangle
+    className="makeStyles-triangle-8 makeStyles-bottomTriangle-1"
+  />
+</Fragment>
+`;

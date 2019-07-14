@@ -24,6 +24,7 @@
     },
     "navigation": {
       "items": {
+        "commercial": "Commercial",
         "projects": "Projects",
         "bio": "About me",
         "skills": "My skills & technologies",
@@ -40,8 +41,27 @@
   },
   "pages": {
     "home": {
+      "commercial": {
+        "title": "What have I experienced?",
+        "subtitle": "Commercial projects",
+        "projects": {
+          "learningManagementSystem": {
+            "title": "Learning Management System",
+            "description": "Learning management system built as React app with store convention based on the redux & rematch. It is an administration panel that makes managing content, users, setting much easier. It additionally provides analytics with a couple of charts that represent the most important data."
+          },
+          "quizzesManagementSystem": {
+            "title": "Quizzes Management System",
+            "description": "Quizzes management system built for quizzes mobile application. It gives user which is chosen to manage quizzes possibility to create, assign to the group, delete. Quizzes are created by 'quiz wizard' which allows a user to make a quiz fully how it is needed. Additionally, the application provides user and group management system."
+          },
+          "loadTestingPlatform": {
+            "title": "Platforma Testów Obciążeniowych",
+            "description": "A platform that provides the ability to load test user's front-end/back-end application. The whole panel displays configurations, test executions, projects and tons of additional and important data such as % test fail ratio or graphs for test parameters."
+          }
+        }
+      },
       "projects": {
         "title": "What have I created?",
+        "subtitle": "Private projects",
         "projects": {
           "insectifyApi": {
             "title": "Insectify API",
@@ -119,6 +139,10 @@
           "insects": {
             "title": "Insects",
             "description": "Yeah, big surprise here. I think insects are one of the rarest hobbies but it is really addicting and awesome. I started with 1 millipede that I bought for my sister 1 year ago. Actually me and my siblings have few spiders, cockroaches, snake and assasing bugs."
+          },
+          "birdeaters": {
+            "title": "Birdeaters",
+            "description": "One surprise more. I have and I love birdeaters the same as insects (or actually more than).  My two favorite birdeaters that I actually own are: Marysia - which is Brazilian Salmon Pink Bird Eater and she is going to grow up to 25cm (with legs), and Skarpeta (sock) which is Burgundy Goliath Birdeater that is going to be 30cm big (with legs)."
           }
         }
       }
