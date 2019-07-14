@@ -25,7 +25,8 @@ exports[`component: Hobbies rendering match snapshot 1`] = `
         aria-hidden={true}
         className="makeStyles-emoji-1"
       >
-         🙄
+         
+        🙄
       </span>
     </WithStyles(ForwardRef(Typography))>
     <div
@@ -83,6 +84,33 @@ exports[`component: Hobbies rendering match snapshot 1`] = `
           alt="Coding"
           className="makeStyles-tileImage-6"
           src="coding.jpg"
+        />
+      </article>
+      <article
+        className="makeStyles-tile-4"
+      >
+        <WithStyles(ForwardRef(Typography))
+          className="makeStyles-title-8"
+          variant="h2"
+        >
+          <FormattedMessage
+            id="pages.home.hobbies.tiles.birdeaters.title"
+            values={Object {}}
+          />
+        </WithStyles(ForwardRef(Typography))>
+        <WithStyles(ForwardRef(Typography))
+          className="makeStyles-tileDescription-5"
+          variant="body1"
+        >
+          <FormattedMessage
+            id="pages.home.hobbies.tiles.birdeaters.description"
+            values={Object {}}
+          />
+        </WithStyles(ForwardRef(Typography))>
+        <img
+          alt="Coding"
+          className="makeStyles-tileImage-6"
+          src="lasiodora-parahybana.jpg"
         />
       </article>
     </div>

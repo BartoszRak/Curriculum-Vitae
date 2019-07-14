@@ -18,6 +18,10 @@ exports[`component: Navigation rendering match snapshot  1`] = `
         routes={
           Array [
             Object {
+              "elementId": "#commercial",
+              "name": undefined,
+            },
+            Object {
               "elementId": "#projects",
               "name": undefined,
             },
@@ -44,6 +48,10 @@ exports[`component: Navigation rendering match snapshot  1`] = `
         className="makeStyles-desktop-2"
         routes={
           Array [
+            Object {
+              "elementId": "#commercial",
+              "name": undefined,
+            },
             Object {
               "elementId": "#projects",
               "name": undefined,

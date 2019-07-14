@@ -42,7 +42,7 @@ export default makeStyles(({ breakpoints, palette, spacing }) => ({
   tilesHolder: {
     columnGap: 80,
     [breakpoints.up('md')]: {
-      columnCount: 2,
+      columnCount: 3,
     },
     [breakpoints.down('md')]: {
       columnCount: 1,

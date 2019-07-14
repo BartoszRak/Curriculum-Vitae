@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import { Typography, Container } from '@material-ui/core'
 import { injectIntl, FormattedMessage } from 'react-intl'
 
-import ProjectsList from './ProjectsList'
+import ProjectsList from '~components/ProjectsList'
 import { useFavoriteProjectsStorage } from '~hooks'
 
 import useStyle from './Projects.style'
-import technologiesMap from './TechnologiesMap.json'
+import technologiesMap from '~services/Technologies/TechnologiesMap.json'
 
 export function Projects({ classes: overridingClasses, intl }) {
   const classes = { ...useStyle(), ...overridingClasses }
@@ -75,6 +75,9 @@ export function Projects({ classes: overridingClasses, intl }) {
             {' '}
             😎
           </span>
+        </Typography>
+        <Typography className={classes.subtitle} color="secondary" variant="h2">
+          <FormattedMessage id="pages.home.projects.subtitle" />
         </Typography>
         <ProjectsList data={projects} />
       </Container>

@@ -1,79 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`component: Workflow rendering match snapshot 1`] = `
-<section
-  className="makeStyles-section-6"
->
-  <WithStyles(ForwardRef(Container))
-    classes={
-      Object {
-        "root": "makeStyles-root-5",
-      }
-    }
-    id="workflow"
+<Fragment>
+  <TileTriangle
+    className="makeStyles-triangle-11 makeStyles-topTriangle-10"
+  />
+  <section
+    className="makeStyles-section-7"
   >
-    <WithStyles(ForwardRef(Typography))
-      className="makeStyles-title-8"
-      variant="h1"
-    >
-      <FormattedMessage
-        id="pages.home.workflow.title"
-        values={Object {}}
-      />
-      <span
-        aria-hidden={true}
-        className="makeStyles-emoji-2"
-      >
-        🙌
-      </span>
-    </WithStyles(ForwardRef(Typography))>
-    <WithStyles(ForwardRef(Divider))
-      className="makeStyles-divider-1"
-    />
-    <WithStyles(ForwardRef(Typography))
-      className="makeStyles-subtitle-7"
-      variant="h3"
-    >
-      <FormattedMessage
-        id="pages.home.workflow.tiles.project.title"
-        values={Object {}}
-      />
-    </WithStyles(ForwardRef(Typography))>
-    <WithStyles(ForwardRef(Typography))
-      variant="body1"
-    >
-      <FormattedMessage
-        id="pages.home.workflow.tiles.project.description"
-        values={Object {}}
-      />
-    </WithStyles(ForwardRef(Typography))>
-    <WithStyles(ForwardRef(Typography))
-      className="makeStyles-subtitle-7"
-      variant="h3"
-    >
-      <FormattedMessage
-        id="pages.home.workflow.tiles.git.title"
-        values={Object {}}
-      />
-    </WithStyles(ForwardRef(Typography))>
-    <WithStyles(ForwardRef(Typography))
-      variant="body1"
-    >
-      <FormattedMessage
-        id="pages.home.workflow.tiles.git.description"
-        values={
-          Object {
-            "methodology": <a
-              href="https://pl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              git-flow
-            </a>,
-          }
+    <WithStyles(ForwardRef(Container))
+      classes={
+        Object {
+          "root": "makeStyles-root-6",
         }
+      }
+      id="workflow"
+    >
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-title-9"
+        variant="h1"
+      >
+        <FormattedMessage
+          id="pages.home.workflow.title"
+          values={Object {}}
+        />
+        <span
+          aria-hidden={true}
+          className="makeStyles-emoji-3"
+        >
+          🙌
+        </span>
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Divider))
+        className="makeStyles-divider-2"
       />
-    </WithStyles(ForwardRef(Typography))>
-  </WithStyles(ForwardRef(Container))>
-</section>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-subtitle-8"
+        variant="h3"
+      >
+        <FormattedMessage
+          id="pages.home.workflow.tiles.project.title"
+          values={Object {}}
+        />
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        variant="body1"
+      >
+        <FormattedMessage
+          id="pages.home.workflow.tiles.project.description"
+          values={Object {}}
+        />
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-subtitle-8"
+        variant="h3"
+      >
+        <FormattedMessage
+          id="pages.home.workflow.tiles.git.title"
+          values={Object {}}
+        />
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        variant="body1"
+      >
+        <FormattedMessage
+          id="pages.home.workflow.tiles.git.description"
+          values={
+            Object {
+              "methodology": <a
+                href="https://pl.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                git-flow
+              </a>,
+            }
+          }
+        />
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(Container))>
+  </section>
+  <TileTriangle
+    className="makeStyles-triangle-11 makeStyles-bottomTriangle-1"
+  />
+</Fragment>
 `;
