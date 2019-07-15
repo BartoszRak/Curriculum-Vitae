@@ -16,8 +16,8 @@ export function LanguageSelect() {
             aria-label="Choose language"
             className={classes.select}
             classes={{
-              root: classes.selectRoot,
               icon: classes.selectIcon,
+              root: classes.selectRoot,
               selectMenu: classes.selectMenu,
             }}
             data-testid="language-select"

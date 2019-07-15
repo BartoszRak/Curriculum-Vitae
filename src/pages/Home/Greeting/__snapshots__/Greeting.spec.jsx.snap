@@ -5,11 +5,56 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <header
-        class="makeStyles-root-40"
+      <section
+        class="makeStyles-section-49"
       >
         <div
-          class="MuiAvatar-root makeStyles-avatar-39"
+          class="MuiContainer-root makeStyles-root-48 MuiContainer-maxWidthLg"
+          id="projects"
+        >
+          <div
+            class="MuiAvatar-root makeStyles-avatar-47"
+          >
+            <img
+              alt="Author instagram picture"
+              class="MuiAvatar-img"
+              src="instagram-photo2.jpg"
+            />
+          </div>
+          <h1
+            class="MuiTypography-root MuiTypography-h1 MuiTypography-colorSecondary makeStyles-title-52"
+            data-testid="greeting-title"
+          >
+            Bartosz Rak
+          </h1>
+          <h2
+            class="MuiTypography-root MuiTypography-h2 MuiTypography-colorSecondary makeStyles-subtitle-51"
+            data-testid="greeting-subtitle"
+          >
+            <span
+              aria-hidden="true"
+            >
+              😁
+            </span>
+          </h2>
+          <h3
+            class="MuiTypography-root MuiTypography-h3 MuiTypography-colorSecondary makeStyles-subsubtitle-50"
+            data-testid="greeting-subsubtitle"
+          />
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="makeStyles-section-49"
+    >
+      <div
+        class="MuiContainer-root makeStyles-root-48 MuiContainer-maxWidthLg"
+        id="projects"
+      >
+        <div
+          class="MuiAvatar-root makeStyles-avatar-47"
         >
           <img
             alt="Author instagram picture"
@@ -18,13 +63,13 @@ Object {
           />
         </div>
         <h1
-          class="MuiTypography-root MuiTypography-h1 MuiTypography-colorSecondary makeStyles-title-43"
+          class="MuiTypography-root MuiTypography-h1 MuiTypography-colorSecondary makeStyles-title-52"
           data-testid="greeting-title"
         >
           Bartosz Rak
         </h1>
         <h2
-          class="MuiTypography-root MuiTypography-h2 MuiTypography-colorSecondary makeStyles-subtitle-42"
+          class="MuiTypography-root MuiTypography-h2 MuiTypography-colorSecondary makeStyles-subtitle-51"
           data-testid="greeting-subtitle"
         >
           <span
@@ -34,46 +79,11 @@ Object {
           </span>
         </h2>
         <h3
-          class="MuiTypography-root MuiTypography-h3 MuiTypography-colorSecondary makeStyles-subsubtitle-41"
+          class="MuiTypography-root MuiTypography-h3 MuiTypography-colorSecondary makeStyles-subsubtitle-50"
           data-testid="greeting-subsubtitle"
         />
-      </header>
-    </div>
-  </body>,
-  "container": <div>
-    <header
-      class="makeStyles-root-40"
-    >
-      <div
-        class="MuiAvatar-root makeStyles-avatar-39"
-      >
-        <img
-          alt="Author instagram picture"
-          class="MuiAvatar-img"
-          src="instagram-photo2.jpg"
-        />
       </div>
-      <h1
-        class="MuiTypography-root MuiTypography-h1 MuiTypography-colorSecondary makeStyles-title-43"
-        data-testid="greeting-title"
-      >
-        Bartosz Rak
-      </h1>
-      <h2
-        class="MuiTypography-root MuiTypography-h2 MuiTypography-colorSecondary makeStyles-subtitle-42"
-        data-testid="greeting-subtitle"
-      >
-        <span
-          aria-hidden="true"
-        >
-          😁
-        </span>
-      </h2>
-      <h3
-        class="MuiTypography-root MuiTypography-h3 MuiTypography-colorSecondary makeStyles-subsubtitle-41"
-        data-testid="greeting-subsubtitle"
-      />
-    </header>
+    </section>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

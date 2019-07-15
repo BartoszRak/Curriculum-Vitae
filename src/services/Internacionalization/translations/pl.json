@@ -18,10 +18,6 @@
     }
   },
   "layout": {
-    "greeting": {
-      "subtitle": "Entuzjasta front-endu",
-      "subsubtitle": "Aspriujący back-end developer"
-    },
     "navigation": {
       "items": {
         "commercial": "Komercyjnie",
@@ -41,6 +37,10 @@
   },
   "pages": {
     "home": {
+      "greeting": {
+        "subtitle": "Full-stack developer",
+        "subsubtitle": "Entuzjasta front-endu, fan back-endu"
+      },
       "commercial": {
         "title": "Czego doświadczyłem?",
         "subtitle": "Komercyjne projekty",
