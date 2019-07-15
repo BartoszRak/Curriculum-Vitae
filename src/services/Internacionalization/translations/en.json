@@ -18,10 +18,6 @@
     }
   },
   "layout": {
-    "greeting": {
-      "subtitle": "Front-end enthusiast",
-      "subsubtitle": "Aspiring back-end developer"
-    },
     "navigation": {
       "items": {
         "commercial": "Commercial",
@@ -41,6 +37,10 @@
   },
   "pages": {
     "home": {
+      "greeting": {
+        "subtitle": "Full-stack developer",
+        "subsubtitle": "Front-end enthusiast, back-end fan"
+      },
       "commercial": {
         "title": "What have I experienced?",
         "subtitle": "Commercial projects",

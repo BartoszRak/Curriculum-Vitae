@@ -8,10 +8,11 @@ import Skills from './Skills'
 import Workflow from './Workflow'
 import Hobbies from './Hobbies'
 import Commercial from './Commercial'
+import Greeting from './Greeting'
 
 import useStyle from './Home.style'
 
-const contentList = [Commercial, Projects, Bio, Skills, Workflow, Hobbies].map(obj => ({
+const contentList = [Greeting, Commercial, Projects, Bio, Skills, Workflow, Hobbies].map(obj => ({
   component: obj,
   id: uuidv4(),
 }))
@@ -26,8 +27,8 @@ export function Home() {
           <Component
             classes={{
               section: classNames(classes.holder, {
-                [classes.fairHolder]: index % 2 === 0,
-                [classes.backgroundHolder]: index % 2 !== 0,
+                [classes.fairHolder]: index % 2 !== 0,
+                [classes.backgroundHolder]: index % 2 === 0,
               }),
             }}
             key={id}
