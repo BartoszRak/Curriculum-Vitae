@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/core'
 
 export default makeStyles(({ breakpoints, palette, spacing }) => ({
   bottomTriangle: {
-    transform: 'rotate(180deg)',
     marginTop: '-1px',
+    transform: 'rotate(180deg)',
   },
   divider: {
     margin: spacing(2, 0),

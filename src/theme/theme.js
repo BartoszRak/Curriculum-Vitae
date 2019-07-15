@@ -19,6 +19,11 @@ export default {
       light: '#ffffff',
       main: '#fafafa',
     },
+    success: {
+      dark: '#1faa00',
+      light: '#9cff57',
+      main: '#64dd17',
+    },
     type: 'light',
   },
   typography: {

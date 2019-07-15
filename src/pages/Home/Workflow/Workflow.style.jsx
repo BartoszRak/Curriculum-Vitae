@@ -15,8 +15,8 @@ export default makeStyles(({ breakpoints, palette, spacing }) => ({
     },
   },
   image: {
-    width: '50%',
     height: '50%',
+    width: '50%',
   },
   imageHolder: {
     display: 'flex',
