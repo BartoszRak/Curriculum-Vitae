@@ -22,13 +22,13 @@ Object {
             />
           </div>
           <h1
-            class="MuiTypography-root MuiTypography-h1 MuiTypography-colorSecondary makeStyles-title-52"
+            class="MuiTypography-root makeStyles-title-52 MuiTypography-h1 MuiTypography-colorSecondary"
             data-testid="greeting-title"
           >
             Bartosz Rak
           </h1>
           <h2
-            class="MuiTypography-root MuiTypography-h2 MuiTypography-colorSecondary makeStyles-subtitle-51"
+            class="MuiTypography-root makeStyles-subtitle-51 MuiTypography-h2 MuiTypography-colorSecondary"
             data-testid="greeting-subtitle"
           >
             <span
@@ -38,7 +38,7 @@ Object {
             </span>
           </h2>
           <h3
-            class="MuiTypography-root MuiTypography-h3 MuiTypography-colorSecondary makeStyles-subsubtitle-50"
+            class="MuiTypography-root makeStyles-subsubtitle-50 MuiTypography-h3 MuiTypography-colorSecondary"
             data-testid="greeting-subsubtitle"
           />
         </div>
@@ -63,13 +63,13 @@ Object {
           />
         </div>
         <h1
-          class="MuiTypography-root MuiTypography-h1 MuiTypography-colorSecondary makeStyles-title-52"
+          class="MuiTypography-root makeStyles-title-52 MuiTypography-h1 MuiTypography-colorSecondary"
           data-testid="greeting-title"
         >
           Bartosz Rak
         </h1>
         <h2
-          class="MuiTypography-root MuiTypography-h2 MuiTypography-colorSecondary makeStyles-subtitle-51"
+          class="MuiTypography-root makeStyles-subtitle-51 MuiTypography-h2 MuiTypography-colorSecondary"
           data-testid="greeting-subtitle"
         >
           <span
@@ -79,7 +79,7 @@ Object {
           </span>
         </h2>
         <h3
-          class="MuiTypography-root MuiTypography-h3 MuiTypography-colorSecondary makeStyles-subsubtitle-50"
+          class="MuiTypography-root makeStyles-subsubtitle-50 MuiTypography-h3 MuiTypography-colorSecondary"
           data-testid="greeting-subsubtitle"
         />
       </div>

@@ -11,5 +11,5 @@ export default makeStyles(({ spacing, palette }) => ({
   tileArrow: {
     color: palette.secondary.main,
     marginBottom: -2,
-  }
+  },
 }))

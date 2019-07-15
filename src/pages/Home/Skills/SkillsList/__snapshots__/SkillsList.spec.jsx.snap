@@ -9,18 +9,18 @@ Object {
         class="makeStyles-root-2"
       >
         <h5
-          class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-skill-3 makeStyles-item-1"
+          class="MuiTypography-root makeStyles-skill-3 makeStyles-item-1 MuiTypography-h5 MuiTypography-colorSecondary"
         >
           1 Test skill name
         </h5>
         <h5
-          class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-skill-3 makeStyles-item-1"
+          class="MuiTypography-root makeStyles-skill-3 makeStyles-item-1 MuiTypography-h5 MuiTypography-colorSecondary"
         >
           2 Test skill name
         </h5>
         <h5
           aria-hidden="true"
-          class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-sum-4 makeStyles-item-1"
+          class="MuiTypography-root makeStyles-sum-4 makeStyles-item-1 MuiTypography-h5 MuiTypography-colorSecondary"
           data-testid="skills-list-summary"
         >
           2
@@ -33,18 +33,18 @@ Object {
       class="makeStyles-root-2"
     >
       <h5
-        class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-skill-3 makeStyles-item-1"
+        class="MuiTypography-root makeStyles-skill-3 makeStyles-item-1 MuiTypography-h5 MuiTypography-colorSecondary"
       >
         1 Test skill name
       </h5>
       <h5
-        class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-skill-3 makeStyles-item-1"
+        class="MuiTypography-root makeStyles-skill-3 makeStyles-item-1 MuiTypography-h5 MuiTypography-colorSecondary"
       >
         2 Test skill name
       </h5>
       <h5
         aria-hidden="true"
-        class="MuiTypography-root MuiTypography-h5 MuiTypography-colorSecondary makeStyles-sum-4 makeStyles-item-1"
+        class="MuiTypography-root makeStyles-sum-4 makeStyles-item-1 MuiTypography-h5 MuiTypography-colorSecondary"
         data-testid="skills-list-summary"
       >
         2

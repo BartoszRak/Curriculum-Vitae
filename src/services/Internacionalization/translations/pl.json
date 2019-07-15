@@ -54,7 +54,7 @@
             "description": "System Zarządzania Quizami zbudowany dla quizowej aplikacji mobilnej. Dostarcza użytkownikowi, który jest wybrany do zarządzania quizami możliwość tworzenia, usuwania czy przypisywania quizów do grup. Quizy są tworzone przy pomocy 'kreatora quizów', który pozwala użytkownikowi stworzyć dokładnie taki kurs jakiego potrzebuje. Dodatkowo, aplikacja zapewnia łatwe zarządzania grupami i użytkownikami."
           },
           "loadTestingPlatform": {
-            "title": "Load Testing Platform",
+            "title": "Platforma Testów Obciążeniowych",
             "description": "Platforma dostarczająca możliwość testowania obciążeniowego aplikacji front-endowych i backendowych użytkownika. Cały panel wyświetla takie rzeczy jak konfiguracje, uruchomienia testów, projekty i tony dodatkowych i istotnych informacji jak % nieudanych testów czy grafy dla parametrów testów"
           }
         }

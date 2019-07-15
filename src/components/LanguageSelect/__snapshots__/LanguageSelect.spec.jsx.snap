@@ -14,53 +14,9 @@ Object {
           data-testid="language-select"
         >
           <div
-            class="MuiSelect-root makeStyles-selectRoot-6"
-          >
-            <div
-              aria-haspopup="true"
-              aria-pressed="false"
-              class="MuiSelect-select MuiSelect-selectMenu makeStyles-selectMenu-5 MuiInputBase-input MuiInput-input"
-              id="select-Language"
-              role="button"
-              tabindex="0"
-            />
-            <input
-              name="Language"
-              type="hidden"
-              value="en"
-            />
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSelect-icon makeStyles-selectIcon-4"
-              focusable="false"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M7 10l5 5 5-5z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="makeStyles-root-2"
-    >
-      <div
-        aria-label="Choose language"
-        class="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-select-3"
-        data-testid="language-select"
-      >
-        <div
-          class="MuiSelect-root makeStyles-selectRoot-6"
-        >
-          <div
             aria-haspopup="true"
             aria-pressed="false"
-            class="MuiSelect-select MuiSelect-selectMenu makeStyles-selectMenu-5 MuiInputBase-input MuiInput-input"
+            class="MuiSelect-root makeStyles-selectRoot-6 MuiSelect-select MuiSelect-selectMenu makeStyles-selectMenu-5 MuiInputBase-input MuiInput-input MuiInputBase-inputSelect"
             id="select-Language"
             role="button"
             tabindex="0"
@@ -82,6 +38,42 @@ Object {
             />
           </svg>
         </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="makeStyles-root-2"
+    >
+      <div
+        aria-label="Choose language"
+        class="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-select-3"
+        data-testid="language-select"
+      >
+        <div
+          aria-haspopup="true"
+          aria-pressed="false"
+          class="MuiSelect-root makeStyles-selectRoot-6 MuiSelect-select MuiSelect-selectMenu makeStyles-selectMenu-5 MuiInputBase-input MuiInput-input MuiInputBase-inputSelect"
+          id="select-Language"
+          role="button"
+          tabindex="0"
+        />
+        <input
+          name="Language"
+          type="hidden"
+          value="en"
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSelect-icon makeStyles-selectIcon-4"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
       </div>
     </div>
   </div>,

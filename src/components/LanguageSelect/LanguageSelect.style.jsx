@@ -32,6 +32,6 @@ export default makeStyles(({ palette, spacing }) => ({
     borderRadius: 100,
     color: palette.primary.main,
     fontSize: '0.9rem',
-    padding: spacing(0.8, 4, 0.8, 2),
+    padding: spacing(0.5, 5, 0.5, 2),
   },
 }))

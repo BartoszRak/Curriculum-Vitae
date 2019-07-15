@@ -8,7 +8,7 @@ function TileTriangle(props) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <path d="M270 0L539.334 106.5H0.666107L270 0Z" fill="white" />
+      <path d="M270 0L539.334 106.5H0.666107L270 0Z" fill="currentColor" />
     </svg>
   )
 }
