@@ -1,13 +1,7 @@
 import { makeStyles } from '@material-ui/core'
-import backgroundUrl from '~assets/images/landscape-mountains-nature-dark-blur.jpg'
 
 export default makeStyles(({ palette, spacing }) => ({
-  backgroundHolder: {
-    background: `url(${backgroundUrl})`,
-    backgroundAttachment: 'fixed',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-  },
+  backgroundHolder: {},
   divider: {
     background: palette.secondary.main,
     height: spacing(2.5),
@@ -25,10 +19,6 @@ export default makeStyles(({ palette, spacing }) => ({
   },
   root: {
     alignItems: 'stretch',
-    background: `url(${backgroundUrl})`,
-    backgroundAttachment: 'fixed',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
     display: 'flex',
     flexDirection: 'column',
   },

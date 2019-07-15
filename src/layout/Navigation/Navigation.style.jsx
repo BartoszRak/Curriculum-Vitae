@@ -17,7 +17,7 @@ export default makeStyles(({ breakpoints, spacing, palette }) => ({
     },
   },
   root: {
-    background: palette.primary.main,
+    background: palette.primary.dark,
     boxShadow: 'none',
     margin: 0,
     padding: `${spacing(0.5)}px !important`,
