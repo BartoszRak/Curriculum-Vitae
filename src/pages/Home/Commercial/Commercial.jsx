@@ -39,23 +39,6 @@ export function Commercial({ classes: overridingClasses, intl }) {
         technologiesMap.rematch,
         technologiesMap.materialUi,
         technologiesMap.firebase,
-        technologiesMap.recharts,
-        technologiesMap.jest,
-      ],
-      title: formatMessage({
-        id: 'pages.home.commercial.projects.quizzesManagementSystem.title',
-      }),
-    },
-    {
-      description: formatMessage({
-        id: 'pages.home.commercial.projects.quizzesManagementSystem.description',
-      }),
-      tags: [
-        technologiesMap.react,
-        technologiesMap.redux,
-        technologiesMap.rematch,
-        technologiesMap.materialUi,
-        technologiesMap.firebase,
         technologiesMap.jest,
       ],
       title: formatMessage({

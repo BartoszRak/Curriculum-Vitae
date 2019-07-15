@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl'
 import { Typography, Avatar } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
-import avatarUrl from '~assets/images/instagram-photo.jpg'
+import avatarUrl from '~assets/images/instagram-photo2.jpg'
 
 import useStyle from './Greeting.style'
 
