@@ -61,7 +61,7 @@ exports[`component: Projects rendering match snapshot 1`] = `
                 "url": "https://firebase.google.com/",
               },
               Object {
-                "name": "GRaphQL",
+                "name": "GraphQL",
                 "url": "https://graphql.org/",
               },
             ],

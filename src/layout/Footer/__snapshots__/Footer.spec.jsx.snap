@@ -13,14 +13,14 @@ Object {
       >
         <path
           d="M270 0L539.334 106.5H0.666107L270 0Z"
-          fill="white"
+          fill="currentColor"
         />
       </svg>
       <footer
         class="makeStyles-root-34"
       >
         <p
-          class="MuiTypography-root MuiTypography-body2 makeStyles-text-35"
+          class="MuiTypography-root makeStyles-text-35 MuiTypography-body2"
         />
       </footer>
     </div>
@@ -34,14 +34,14 @@ Object {
     >
       <path
         d="M270 0L539.334 106.5H0.666107L270 0Z"
-        fill="white"
+        fill="currentColor"
       />
     </svg>
     <footer
       class="makeStyles-root-34"
     >
       <p
-        class="MuiTypography-root MuiTypography-body2 makeStyles-text-35"
+        class="MuiTypography-root makeStyles-text-35 MuiTypography-body2"
       />
     </footer>
   </div>,

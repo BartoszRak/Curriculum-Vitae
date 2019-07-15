@@ -60,7 +60,7 @@ exports[`component: Commercial rendering match snapshot 1`] = `
                   "url": "https://material-ui.com/",
                 },
                 Object {
-                  "name": "GRaphQL",
+                  "name": "GraphQL",
                   "url": "https://graphql.org/",
                 },
                 Object {

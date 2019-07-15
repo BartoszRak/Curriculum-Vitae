@@ -54,7 +54,7 @@
             "description": "Quizzes management system built for quizzes mobile application. It gives user which is chosen to manage quizzes possibility to create, assign to the group, delete. Quizzes are created by 'quiz wizard' which allows a user to make a quiz fully how it is needed. Additionally, the application provides user and group management system."
           },
           "loadTestingPlatform": {
-            "title": "Platforma Testów Obciążeniowych",
+            "title": "Load Testing Platform",
             "description": "A platform that provides the ability to load test user's front-end/back-end application. The whole panel displays configurations, test executions, projects and tons of additional and important data such as % test fail ratio or graphs for test parameters."
           }
         }
