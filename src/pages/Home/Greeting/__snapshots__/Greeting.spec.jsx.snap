@@ -10,7 +10,7 @@ Object {
       >
         <div
           class="MuiContainer-root makeStyles-root-48 MuiContainer-maxWidthLg"
-          id="projects"
+          id="greeting"
         >
           <div
             class="MuiAvatar-root makeStyles-avatar-47"
@@ -51,7 +51,7 @@ Object {
     >
       <div
         class="MuiContainer-root makeStyles-root-48 MuiContainer-maxWidthLg"
-        id="projects"
+        id="greeting"
       >
         <div
           class="MuiAvatar-root makeStyles-avatar-47"
