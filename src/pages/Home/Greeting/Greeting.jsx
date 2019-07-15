@@ -11,7 +11,7 @@ export function Greeting({ classes: overridingClasses }) {
   const classes = { ...useStyle(), ...overridingClasses }
   return (
     <section className={classes.section}>
-      <Container classes={{ root: classes.root }} id="projects">
+      <Container classes={{ root: classes.root }} id="greeting">
         <Avatar
           alt="Author instagram picture"
           className={classes.avatar}
