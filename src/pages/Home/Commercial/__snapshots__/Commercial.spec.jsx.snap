@@ -3,7 +3,7 @@
 exports[`component: Commercial rendering match snapshot 1`] = `
 <Fragment>
   <TileTriangle
-    className="makeStyles-triangle-8 makeStyles-topTriangle-7"
+    className="makeStyles-triangle-7"
   />
   <section
     className="makeStyles-section-4"
@@ -142,7 +142,7 @@ exports[`component: Commercial rendering match snapshot 1`] = `
     </WithStyles(ForwardRef(Container))>
   </section>
   <TileTriangle
-    className="makeStyles-triangle-8 makeStyles-bottomTriangle-1"
+    className="makeStyles-triangle-7 makeStyles-bottomTriangle-1"
   />
 </Fragment>
 `;

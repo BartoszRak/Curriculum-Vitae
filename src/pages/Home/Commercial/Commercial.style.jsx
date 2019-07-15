@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core'
-import backgroundUrl from '~assets/images/landscape-mountains-nature-dark.jpg'
 
 export default makeStyles(({ breakpoints, palette }) => ({
   bottomTriangle: {
@@ -29,12 +28,6 @@ export default makeStyles(({ breakpoints, palette }) => ({
     [breakpoints.down('md')]: {
       fontSize: '2rem',
     },
-  },
-  topTriangle: {
-    background: `url(${backgroundUrl})`,
-    backgroundAttachment: 'fixed',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
   },
   triangle: {
     color: palette.secondary.main,
