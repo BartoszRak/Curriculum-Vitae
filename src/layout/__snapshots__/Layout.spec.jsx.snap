@@ -6,7 +6,6 @@ exports[`component: Layout rendering match snapshot 1`] = `
   <div
     className="makeStyles-root-3"
   >
-    <Greeting />
     <SwitchMock>
       <RouteMock
         component={[Function]}

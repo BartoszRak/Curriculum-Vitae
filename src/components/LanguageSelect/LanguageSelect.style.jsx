@@ -15,6 +15,7 @@ export default makeStyles(({ palette, spacing }) => ({
     '&:before': {
       display: 'none',
     },
+    background: 'none',
   },
   selectIcon: {
     color: palette.primary.main,
@@ -22,7 +23,8 @@ export default makeStyles(({ palette, spacing }) => ({
   },
   selectMenu: {
     '&:focus': {
-      background: 'none',
+      background: palette.secondary.main,
+      borderRadius: 100,
     },
   },
   selectRoot: {
@@ -30,6 +32,6 @@ export default makeStyles(({ palette, spacing }) => ({
     borderRadius: 100,
     color: palette.primary.main,
     fontSize: '0.9rem',
-    padding: spacing(0, 2),
+    padding: spacing(0.8, 4, 0.8, 2),
   },
 }))

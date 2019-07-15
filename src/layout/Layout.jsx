@@ -5,7 +5,6 @@ import { FormattedMessage } from 'react-intl'
 
 import Footer from './Footer'
 import Navigation from './Navigation'
-import Greeting from './Greeting'
 
 import Home from '~pages/Home'
 
@@ -17,7 +16,6 @@ export function Layout({ classes: overridingClasses }) {
     <React.Fragment>
       <Navigation />
       <div className={classes.root}>
-        <Greeting />
         <Switch>
           <Route component={Home} to="/" />
           <Redirect from="*" to="/" />

@@ -11,9 +11,10 @@ export default makeStyles(({ breakpoints, palette, spacing }) => ({
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'column',
-    height: '100vh',
     justifyContent: 'center',
+    width: '100%',
   },
+  section: {},
   subsubtitle: {
     fontWeight: 'lighter',
     marginTop: spacing(0.5),

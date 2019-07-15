@@ -5,6 +5,14 @@ exports[`component: Home rendering match snapshot 1`] = `
   className="makeStyles-root-5"
   role="main"
 >
+  <Greeting
+    classes={
+      Object {
+        "section": "makeStyles-holder-4 makeStyles-backgroundHolder-1",
+      }
+    }
+    key="Uuidv4Mock"
+  />
   <InjectIntl(Commercial)
     classes={
       Object {
