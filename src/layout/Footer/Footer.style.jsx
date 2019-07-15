@@ -8,4 +8,8 @@ export default makeStyles(({ spacing, palette }) => ({
   text: {
     textAlign: 'center',
   },
+  tileArrow: {
+    color: palette.secondary.main,
+    marginBottom: -2,
+  }
 }))

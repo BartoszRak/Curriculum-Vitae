@@ -108,44 +108,6 @@ exports[`component: Commercial rendering match snapshot 1`] = `
             },
             Object {
               "description": Object {
-                "id": "pages.home.commercial.projects.quizzesManagementSystem.description",
-              },
-              "tags": Array [
-                Object {
-                  "name": "React",
-                  "url": "https://reactjs.org/",
-                },
-                Object {
-                  "name": "Redux",
-                  "url": "https://redux.js.org/",
-                },
-                Object {
-                  "name": "Rematch",
-                  "url": "https://github.com/rematch/rematch",
-                },
-                Object {
-                  "name": "Material UI",
-                  "url": "https://material-ui.com/",
-                },
-                Object {
-                  "name": "Firebase",
-                  "url": "https://firebase.google.com/",
-                },
-                Object {
-                  "name": "Recharts",
-                  "url": "http://recharts.org/",
-                },
-                Object {
-                  "name": "Jest",
-                  "url": "https://jestjs.io/",
-                },
-              ],
-              "title": Object {
-                "id": "pages.home.commercial.projects.quizzesManagementSystem.title",
-              },
-            },
-            Object {
-              "description": Object {
                 "id": "pages.home.commercial.projects.learningManagementSystem.description",
               },
               "tags": Array [

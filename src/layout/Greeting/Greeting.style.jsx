@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core'
-import backgroundUrl from '~assets/images/landscape-mountains-nature-dark.jpg'
 
 export default makeStyles(({ breakpoints, palette, spacing }) => ({
   avatar: {
@@ -10,10 +9,6 @@ export default makeStyles(({ breakpoints, palette, spacing }) => ({
   },
   root: {
     alignItems: 'center',
-    background: `url(${backgroundUrl})`,
-    backgroundAttachment: 'fixed',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
     display: 'flex',
     flexDirection: 'column',
     height: '100vh',

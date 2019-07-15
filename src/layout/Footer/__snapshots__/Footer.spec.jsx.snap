@@ -5,21 +5,43 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      <svg
+        class="makeStyles-tileArrow-36"
+        fill="none"
+        viewBox="0 0 540 107"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M270 0L539.334 106.5H0.666107L270 0Z"
+          fill="white"
+        />
+      </svg>
       <footer
-        class="makeStyles-root-33"
+        class="makeStyles-root-34"
       >
         <p
-          class="MuiTypography-root MuiTypography-body2 makeStyles-text-34"
+          class="MuiTypography-root MuiTypography-body2 makeStyles-text-35"
         />
       </footer>
     </div>
   </body>,
   "container": <div>
+    <svg
+      class="makeStyles-tileArrow-36"
+      fill="none"
+      viewBox="0 0 540 107"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M270 0L539.334 106.5H0.666107L270 0Z"
+        fill="white"
+      />
+    </svg>
     <footer
-      class="makeStyles-root-33"
+      class="makeStyles-root-34"
     >
       <p
-        class="MuiTypography-root MuiTypography-body2 makeStyles-text-34"
+        class="MuiTypography-root MuiTypography-body2 makeStyles-text-35"
       />
     </footer>
   </div>,
