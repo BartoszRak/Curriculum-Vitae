@@ -21,6 +21,7 @@ describe('component: ProjectsList', () => {
       tags: [],
       title: '1 tile test title',
       url: 'http://1tiletesturl.com',
+      warning: 'sample warning',
     }, {
       description: '2 tile test description',
       isFavorite: false,

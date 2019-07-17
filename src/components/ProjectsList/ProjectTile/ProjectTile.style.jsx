@@ -5,9 +5,11 @@ export default makeStyles(({ spacing, palette }) => ({
     borderBottom: '4px solid rgba(0, 0, 0, 0)',
     display: 'flex',
     flexDirection: 'row',
+    flexWrap: 'wrap',
     justifyContent: 'space-between',
   },
   description: {
+    fontSize: '1.1rem',
     fontWeight: 'normal',
     marginTop: spacing(1),
   },
@@ -37,10 +39,11 @@ export default makeStyles(({ spacing, palette }) => ({
     background: palette.primary.main,
     borderRadius: spacing(2),
     color: palette.primary.contrastText,
+    fontSize: '0.9rem',
     fontWeight: 'normal',
     marginBottom: spacing(1),
     marginRight: spacing(2),
-    padding: spacing(0, 1.5),
+    padding: spacing(0.5, 1.5),
   },
   tags: {
     display: 'flex',
@@ -50,8 +53,23 @@ export default makeStyles(({ spacing, palette }) => ({
   },
   title: {
     borderLeft: `4px solid ${palette.primary.main}`,
+    fontSize: '1.3rem',
     fontWeight: 'normal',
     paddingLeft: spacing(1.5),
+  },
+  warning: {
+    marginTop: spacing(1.5),
+    width: '100%',
+  },
+  warningDescription: {
+    color: palette.error.dark,
+    fontSize: '0.9rem',
+    marginTop: spacing(0.5),
+  },
+  warningTitle: {
+    color: palette.error.dark,
+    fontSize: '1rem',
+    fontWeight: 'bold',
   },
   wrapper: {
     breakInside: 'avoid',

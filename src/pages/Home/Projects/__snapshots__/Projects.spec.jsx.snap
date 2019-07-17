@@ -69,6 +69,7 @@ exports[`component: Projects rendering match snapshot 1`] = `
               "id": "pages.home.projects.projects.insectifyApi.title",
             },
             "url": "https://github.com/BartoszRak/Insectify-api",
+            "warning": "",
           },
           Object {
             "description": Object {
@@ -93,6 +94,9 @@ exports[`component: Projects rendering match snapshot 1`] = `
               "id": "pages.home.projects.projects.reactAwesomeBoilerplate.title",
             },
             "url": "https://github.com/BartoszRak/React-Awesome-Boilerplate",
+            "warning": Object {
+              "id": "pages.home.projects.projects.reactAwesomeBoilerplate.warning",
+            },
           },
           Object {
             "description": Object {
@@ -109,6 +113,7 @@ exports[`component: Projects rendering match snapshot 1`] = `
               "id": "pages.home.projects.projects.mx.title",
             },
             "url": "https://github.com/BartoszRak/Mx",
+            "warning": "",
           },
         ]
       }

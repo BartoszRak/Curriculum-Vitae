@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="makeStyles-wrapper-12"
+        class="makeStyles-wrapper-15"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-root-8 MuiPaper-rounded"
@@ -14,11 +14,11 @@ Object {
           <div
             class="MuiCardContent-root"
           >
-            <h4
-              class="MuiTypography-root makeStyles-title-11 MuiTypography-h4"
+            <h1
+              class="MuiTypography-root makeStyles-title-11 MuiTypography-h1"
             >
               Test title
-            </h4>
+            </h1>
             <p
               class="MuiTypography-root makeStyles-description-2 MuiTypography-body1"
             >
@@ -27,16 +27,16 @@ Object {
             <div
               class="makeStyles-tags-10"
             >
-              <h6
-                class="MuiTypography-root makeStyles-tag-9 MuiTypography-h6"
+              <h2
+                class="MuiTypography-root makeStyles-tag-9 MuiTypography-h2"
               >
                 Test tag name1
-              </h6>
-              <h6
-                class="MuiTypography-root makeStyles-tag-9 MuiTypography-h6"
+              </h2>
+              <h2
+                class="MuiTypography-root makeStyles-tag-9 MuiTypography-h2"
               >
                 Test tag name2
-              </h6>
+              </h2>
             </div>
           </div>
           <div
@@ -98,7 +98,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="makeStyles-wrapper-12"
+      class="makeStyles-wrapper-15"
     >
       <div
         class="MuiPaper-root MuiPaper-elevation1 MuiCard-root makeStyles-root-8 MuiPaper-rounded"
@@ -106,11 +106,11 @@ Object {
         <div
           class="MuiCardContent-root"
         >
-          <h4
-            class="MuiTypography-root makeStyles-title-11 MuiTypography-h4"
+          <h1
+            class="MuiTypography-root makeStyles-title-11 MuiTypography-h1"
           >
             Test title
-          </h4>
+          </h1>
           <p
             class="MuiTypography-root makeStyles-description-2 MuiTypography-body1"
           >
@@ -119,16 +119,16 @@ Object {
           <div
             class="makeStyles-tags-10"
           >
-            <h6
-              class="MuiTypography-root makeStyles-tag-9 MuiTypography-h6"
+            <h2
+              class="MuiTypography-root makeStyles-tag-9 MuiTypography-h2"
             >
               Test tag name1
-            </h6>
-            <h6
-              class="MuiTypography-root makeStyles-tag-9 MuiTypography-h6"
+            </h2>
+            <h2
+              class="MuiTypography-root makeStyles-tag-9 MuiTypography-h2"
             >
               Test tag name2
-            </h6>
+            </h2>
           </div>
         </div>
         <div
