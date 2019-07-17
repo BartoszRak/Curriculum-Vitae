@@ -10,7 +10,7 @@ export function ProjectsList({ classes: overridingClasses, data }) {
   return (
     <div className={classes.root}>
       {data.map(project => (
-        <ProjectTile key={project.title} project={project} />
+        <ProjectTile key={project.title} {...project} />
       ))}
     </div>
   )
@@ -30,6 +30,7 @@ ProjectsList.propTypes = {
       ),
       title: PropTypes.string.isRequired,
       url: PropTypes.string,
+      warning: PropTypes.string,
     })
   ),
 }

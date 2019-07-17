@@ -15,6 +15,11 @@
         "* You see this warning because whole website or component should not be used on Internet Explorer.",
         "** Going unsecure may be dangerous, also component or website can behave improperly."
       ]
+    },
+    "projectsList": {
+      "projectTile": {
+        "warningTitle": "Attention"
+      }
     }
   },
   "layout": {
@@ -69,7 +74,8 @@
           },
           "reactAwesomeBoilerplate": {
             "title": "React Awesome Boilerplate",
-            "description": "Carefully designed react boilerplate repositorium that gives you fast and smooth start!"
+            "description": "Carefully designed react boilerplate repositorium that gives you fast and smooth start!",
+            "warning": "This project is outdated, it will be archived soon. If you are looking for a good React template, look into the Curriculum Vitae project - an application that you are using right now."
           },
           "mx": {
             "title": "Mx",

@@ -30,6 +30,7 @@ export function Projects({ classes: overridingClasses, intl }) {
         id: 'pages.home.projects.projects.insectifyApi.title',
       }),
       url: 'https://github.com/BartoszRak/Insectify-api',
+      warning: '',
     },
     {
       description: formatMessage({
@@ -40,6 +41,9 @@ export function Projects({ classes: overridingClasses, intl }) {
         id: 'pages.home.projects.projects.reactAwesomeBoilerplate.title',
       }),
       url: 'https://github.com/BartoszRak/React-Awesome-Boilerplate',
+      warning: formatMessage({
+        id: 'pages.home.projects.projects.reactAwesomeBoilerplate.warning',
+      }),
     },
     {
       description: formatMessage({
@@ -48,6 +52,7 @@ export function Projects({ classes: overridingClasses, intl }) {
       tags: [technologiesMap.typescript],
       title: formatMessage({ id: 'pages.home.projects.projects.mx.title' }),
       url: 'https://github.com/BartoszRak/Mx',
+      warning: '',
     },
   ]
 
