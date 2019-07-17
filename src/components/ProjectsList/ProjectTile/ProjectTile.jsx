@@ -9,6 +9,7 @@ import {
   IconButton,
   Button,
 } from '@material-ui/core'
+import { FormattedMessage } from 'react-intl'
 import { Favorite } from '@material-ui/icons'
 
 import { useFavoriteProjectsStorage } from '~hooks'
@@ -17,9 +18,12 @@ import useStyle from './ProjectTile.style'
 
 export function ProjectTile({
   classes: overridingClasses,
-  project: {
-    description, title, url, tags = [], isFavorite,
-  },
+  description,
+  title,
+  url,
+  tags = [],
+  isFavorite,
+  warning,
 }) {
   const classes = { ...useStyle(), ...overridingClasses }
   const { toggleProject } = useFavoriteProjectsStorage()
@@ -29,7 +33,7 @@ export function ProjectTile({
     <div className={classes.wrapper}>
       <Card className={classes.root}>
         <CardContent>
-          <Typography className={classes.title} variant="h4">
+          <Typography className={classes.title} variant="h1">
             {title}
           </Typography>
           <Typography className={classes.description} variant="body1">
@@ -37,7 +41,7 @@ export function ProjectTile({
           </Typography>
           <div className={classes.tags}>
             {tags.map(tag => (
-              <Typography className={classes.tag} key={tag.name} variant="h6">
+              <Typography className={classes.tag} key={tag.name} variant="h2">
                 {tag.name}
               </Typography>
             ))}
@@ -77,6 +81,16 @@ export function ProjectTile({
               <Favorite className={classes.icon} />
             </IconButton>
           )}
+          {Boolean(warning) && (
+            <div className={classes.warning}>
+              <Typography className={classes.warningTitle} variant="h3">
+                <FormattedMessage id="components.projectsList.projectTile.warningTitle" />
+              </Typography>
+              <Typography className={classes.warningDescription} variant="body1">
+                {warning}
+              </Typography>
+            </div>
+          )}
         </CardActions>
       </Card>
     </div>
@@ -85,18 +99,17 @@ export function ProjectTile({
 
 ProjectTile.propTypes = {
   classes: PropTypes.object,
-  project: PropTypes.shape({
-    description: PropTypes.string,
-    isFavorite: PropTypes.bool,
-    tags: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string,
-        url: PropTypes.string,
-      })
-    ),
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string,
-  }),
+  description: PropTypes.string,
+  isFavorite: PropTypes.bool,
+  tags: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      url: PropTypes.string,
+    })
+  ),
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string,
+  warning: PropTypes.string,
 }
 
 export default ProjectTile

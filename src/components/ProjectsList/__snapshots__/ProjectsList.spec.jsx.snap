@@ -5,28 +5,21 @@ exports[`component: ProjectsList rendering match snapshot  1`] = `
   className="makeStyles-root-1"
 >
   <ProjectTileMock
+    description="1 tile test description"
+    isFavorite={false}
     key="1 tile test title"
-    project={
-      Object {
-        "description": "1 tile test description",
-        "isFavorite": false,
-        "tags": Array [],
-        "title": "1 tile test title",
-        "url": "http://1tiletesturl.com",
-      }
-    }
+    tags={Array []}
+    title="1 tile test title"
+    url="http://1tiletesturl.com"
+    warning="sample warning"
   />
   <ProjectTileMock
+    description="2 tile test description"
+    isFavorite={false}
     key="2 tile test title"
-    project={
-      Object {
-        "description": "2 tile test description",
-        "isFavorite": false,
-        "tags": Array [],
-        "title": "2 tile test title",
-        "url": "http://2tiletesturl.com",
-      }
-    }
+    tags={Array []}
+    title="2 tile test title"
+    url="http://2tiletesturl.com"
   />
 </div>
 `;

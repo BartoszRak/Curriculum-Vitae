@@ -5,6 +5,7 @@ import { ProjectTile } from './ProjectTile'
 
 jest.unmock('@material-ui/core')
 jest.unmock('@material-ui/icons')
+jest.mock('react-intl')
 
 let project
 
@@ -24,18 +25,19 @@ describe('component: ProjectTile', () => {
       }],
       title: 'Test title',
       url: 'http://testurl.com',
+      warning: '',
     }
   })
 
   describe('rendering', () => {
     test('match snapshot ', () => {
-      const wrapper = render(<ProjectTile project={project} />)
+      const wrapper = render(<ProjectTile {...project} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     test('render title and description ', () => {
-      const { getByText } = render(<ProjectTile project={project} />)
+      const { getByText } = render(<ProjectTile {...project} />)
 
       const titleEl = getByText(project.title)
       const descriptionEl = getByText(project.description)
@@ -45,7 +47,7 @@ describe('component: ProjectTile', () => {
     })
 
     test('render valid url ', () => {
-      const { getByText } = render(<ProjectTile project={project} />)
+      const { getByText } = render(<ProjectTile {...project} />)
 
       const hrefEl = getByText('Details').parentNode.parentNode
 
@@ -54,7 +56,7 @@ describe('component: ProjectTile', () => {
 
     test('render active icon when project is favorite', () => {
       project.isFavorite = true
-      const { getByTestId } = render(<ProjectTile project={project} />)
+      const { getByTestId } = render(<ProjectTile {...project} />)
 
       const iconButtonEl = getByTestId('project-tile-icon-button')
       expect(iconButtonEl.className).toContain('favoriteIconButton')
@@ -62,12 +64,20 @@ describe('component: ProjectTile', () => {
 
     test('render tags', () => {
       project.isFavorite = true
-      const { getByText } = render(<ProjectTile project={project} />)
+      const { getByText } = render(<ProjectTile {...project} />)
 
       project.tags.forEach(tag => {
         const tagEl = getByText(tag.name)
         expect(tagEl).toBeVisible()
       })
+    })
+
+    test('render warning if provided', () => {
+      project.warning = 'Test warning'
+      const { getByText } = render(<ProjectTile {...project} />)
+
+      const warningEl = getByText('Test warning')
+      expect(warningEl).toBeTruthy()
     })
   })
 })

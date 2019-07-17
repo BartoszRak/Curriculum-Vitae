@@ -15,6 +15,11 @@
         "* Widzisz to ostrzeżenie, ponieważ cała aplikacja lub komponent nie powinien być używany z Internet Explorerem.",
         "** Kontynuowanie może być niebezpieczne, dodatkowo komponent lub aplikacja mogą zachować się nieprzewidzianie."
       ]
+    },
+    "projectsList": {
+      "projectTile": {
+        "warningTitle": "Uwaga"
+      }
     }
   },
   "layout": {
@@ -69,7 +74,8 @@
           },
           "reactAwesomeBoilerplate": {
             "title": "React Awesome Boilerplate",
-            "description": "Starannie zaprojektowany starter projektu opartego o Reacta, dający łatwy i szybki start!"
+            "description": "Starannie zaprojektowany starter projektu opartego o Reacta, dający łatwy i szybki start!",
+            "warning": "Ten projekt jest nieaktualny, zostanie wkrótce zarchiwizowany. Dobrym szablonem Reactowym, może być projekt Curriculum Vitate - aplikacja z której właśnie korzystacie."
           },
           "mx": {
             "title": "Mx",
