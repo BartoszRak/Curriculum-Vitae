@@ -1,4 +1,8 @@
 {
+  "reactIntl": {
+    "name": "React Intl",
+    "url": "https://github.com/formatjs/react-intl"
+  },
   "react": {
     "name": "React",
     "url": "https://reactjs.org/"
