@@ -68,6 +68,10 @@
         "title": "Co takiego stworzyłem?",
         "subtitle": "Prywatne projekty",
         "projects": {
+          "onlineVisitCard": {
+            "title": "Online Visit Card",
+            "description": "Projekt na którym się obenie znajdujesz. Moja strona, która funkcjonuje w roli wizytówki online. Możesz tu znaleźć wszystkie potrzebne informacje o mnie. Stale wspieram ten projekt i aktualizuję go na bieżąco."
+          },
           "insectifyApi": {
             "title": "Insectify API",
             "description": "Aplikacja serwerowa udostępniająca możliwości sklepu internetowego."

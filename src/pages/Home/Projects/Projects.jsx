@@ -18,6 +18,21 @@ export function Projects({ classes: overridingClasses, intl }) {
   const projectsArray = [
     {
       description: formatMessage({
+        id: 'pages.home.projects.projects.onlineVisitCard.description',
+      }),
+      tags: [
+        technologiesMap.react,
+        technologiesMap.materialUi,
+        technologiesMap.reactIntl,
+      ],
+      title: formatMessage({
+        id: 'pages.home.projects.projects.onlineVisitCard.title',
+      }),
+      url: 'https://github.com/BartoszRak/Curriculum-Vitae',
+      warning: '',
+    },
+    {
+      description: formatMessage({
         id: 'pages.home.projects.projects.insectifyApi.description',
       }),
       tags: [

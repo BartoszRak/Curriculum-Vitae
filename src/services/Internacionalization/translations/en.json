@@ -68,6 +68,10 @@
         "title": "What have I created?",
         "subtitle": "Private projects",
         "projects": {
+          "onlineVisitCard": {
+            "title": "Online Visit Card",
+            "description": "The project that you are on. My website that is used as my online visit card. You cand find every needed information about me here. I am supporting and updating this project 'daily'."
+          },
           "insectifyApi": {
             "title": "Insectify API",
             "description": "Server application that abilities to use web shop."
