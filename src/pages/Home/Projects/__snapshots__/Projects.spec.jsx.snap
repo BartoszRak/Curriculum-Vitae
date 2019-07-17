@@ -44,6 +44,31 @@ exports[`component: Projects rendering match snapshot 1`] = `
         Array [
           Object {
             "description": Object {
+              "id": "pages.home.projects.projects.onlineVisitCard.description",
+            },
+            "isFavorite": false,
+            "tags": Array [
+              Object {
+                "name": "React",
+                "url": "https://reactjs.org/",
+              },
+              Object {
+                "name": "Material UI",
+                "url": "https://material-ui.com/",
+              },
+              Object {
+                "name": "React Intl",
+                "url": "https://github.com/formatjs/react-intl",
+              },
+            ],
+            "title": Object {
+              "id": "pages.home.projects.projects.onlineVisitCard.title",
+            },
+            "url": "https://github.com/BartoszRak/Curriculum-Vitae",
+            "warning": "",
+          },
+          Object {
+            "description": Object {
               "id": "pages.home.projects.projects.insectifyApi.description",
             },
             "isFavorite": false,
