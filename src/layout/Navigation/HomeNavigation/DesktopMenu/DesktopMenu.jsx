@@ -31,10 +31,12 @@ export function DesktopMenu({ classes: overridingClasses, className, routes }) {
 DesktopMenu.propTypes = {
   classes: PropTypes.object,
   className: PropTypes.string,
-  routes: PropTypes.arrayOf(PropTypes.shape({
-    elementId: PropTypes.string,
-    name: PropTypes.string,
-  })).isRequired,
+  routes: PropTypes.arrayOf(
+    PropTypes.shape({
+      elementId: PropTypes.string,
+      name: PropTypes.string,
+    })
+  ).isRequired,
 }
 
 export default DesktopMenu

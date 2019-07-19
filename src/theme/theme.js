@@ -1,5 +1,3 @@
-import { grey } from '@material-ui/core/colors'
-
 export default {
   overrides: {
     MuiButton: {
@@ -10,9 +8,9 @@ export default {
   },
   palette: {
     primary: {
-      dark: grey[900],
-      light: grey[700],
-      main: grey[800],
+      dark: '#111111',
+      light: '#222222',
+      main: '#1f1f1f',
     },
     secondary: {
       dark: '#eeeeee',
