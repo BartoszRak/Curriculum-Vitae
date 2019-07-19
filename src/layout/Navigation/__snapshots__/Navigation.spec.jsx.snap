@@ -4,81 +4,17 @@ exports[`component: Navigation rendering match snapshot  1`] = `
 <WithStyles(ForwardRef(AppBar))
   classes={
     Object {
-      "root": "makeStyles-root-4",
+      "root": "makeStyles-root-2",
     }
   }
   position="fixed"
 >
-  <WithStyles(ForwardRef(Toolbar))
-    className="makeStyles-toolbar-5"
-  >
-    <div>
-      <MobileMenuMock
-        className="makeStyles-mobile-3"
-        routes={
-          Array [
-            Object {
-              "elementId": "#commercial",
-              "name": undefined,
-            },
-            Object {
-              "elementId": "#projects",
-              "name": undefined,
-            },
-            Object {
-              "elementId": "#bio",
-              "name": undefined,
-            },
-            Object {
-              "elementId": "#skills",
-              "name": undefined,
-            },
-            Object {
-              "elementId": "#workflow",
-              "name": undefined,
-            },
-            Object {
-              "elementId": "#hobbies",
-              "name": undefined,
-            },
-          ]
-        }
-      />
-      <DesktopMenuMock
-        className="makeStyles-desktop-2"
-        routes={
-          Array [
-            Object {
-              "elementId": "#commercial",
-              "name": undefined,
-            },
-            Object {
-              "elementId": "#projects",
-              "name": undefined,
-            },
-            Object {
-              "elementId": "#bio",
-              "name": undefined,
-            },
-            Object {
-              "elementId": "#skills",
-              "name": undefined,
-            },
-            Object {
-              "elementId": "#workflow",
-              "name": undefined,
-            },
-            Object {
-              "elementId": "#hobbies",
-              "name": undefined,
-            },
-          ]
-        }
-      />
-    </div>
-    <div>
-      <LanguageSelectMock />
-    </div>
-  </WithStyles(ForwardRef(Toolbar))>
+  <MainTopbarMock />
+  <SwitchMock>
+    <RouteMock
+      component="HomeNavigationMock"
+      path="/"
+    />
+  </SwitchMock>
 </WithStyles(ForwardRef(AppBar))>
 `;

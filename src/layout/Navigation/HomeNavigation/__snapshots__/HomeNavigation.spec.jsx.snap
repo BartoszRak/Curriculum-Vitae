@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component: HomeNavigation rendering match snapshot  1`] = `
+<WithStyles(ForwardRef(Toolbar))
+  className="makeStyles-toolbar-3"
+>
+  <div>
+    <MobileMenuMock
+      className="makeStyles-mobile-2"
+      routes={
+        Array [
+          Object {
+            "elementId": "#commercial",
+            "name": undefined,
+          },
+          Object {
+            "elementId": "#projects",
+            "name": undefined,
+          },
+          Object {
+            "elementId": "#bio",
+            "name": undefined,
+          },
+          Object {
+            "elementId": "#skills",
+            "name": undefined,
+          },
+          Object {
+            "elementId": "#workflow",
+            "name": undefined,
+          },
+          Object {
+            "elementId": "#hobbies",
+            "name": undefined,
+          },
+        ]
+      }
+    />
+    <DesktopMenuMock
+      className="makeStyles-desktop-1"
+      routes={
+        Array [
+          Object {
+            "elementId": "#commercial",
+            "name": undefined,
+          },
+          Object {
+            "elementId": "#projects",
+            "name": undefined,
+          },
+          Object {
+            "elementId": "#bio",
+            "name": undefined,
+          },
+          Object {
+            "elementId": "#skills",
+            "name": undefined,
+          },
+          Object {
+            "elementId": "#workflow",
+            "name": undefined,
+          },
+          Object {
+            "elementId": "#hobbies",
+            "name": undefined,
+          },
+        ]
+      }
+    />
+  </div>
+</WithStyles(ForwardRef(Toolbar))>
+`;
