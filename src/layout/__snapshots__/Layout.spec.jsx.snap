@@ -2,7 +2,7 @@
 
 exports[`component: Layout rendering match snapshot 1`] = `
 <Fragment>
-  <InjectIntl(Navigation) />
+  <Navigation />
   <div
     className="makeStyles-root-3"
   >
