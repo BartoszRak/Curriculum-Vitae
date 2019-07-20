@@ -1,21 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`component: DesktopMenu rendering match snapshot  1`] = `
+exports[`component: Menu rendering match snapshot  1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
+        class="makeStyles-root-40"
+      >
+        <div
+          aria-label="Navigate to"
+          class="makeStyles-buttonsHolder-39"
+          role="navigation"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root makeStyles-button-37 MuiButton-text MuiButton-textSecondary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label makeStyles-buttonLabel-38"
+            >
+              1 test name
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root makeStyles-button-37 MuiButton-text MuiButton-textSecondary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label makeStyles-buttonLabel-38"
+            >
+              2 test name
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="makeStyles-root-40"
+    >
+      <div
         aria-label="Navigate to"
+        class="makeStyles-buttonsHolder-39"
         role="navigation"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root makeStyles-button-33 MuiButton-text MuiButton-textSecondary"
+          class="MuiButtonBase-root MuiButton-root makeStyles-button-37 MuiButton-text MuiButton-textSecondary"
           tabindex="0"
           type="button"
         >
           <span
-            class="MuiButton-label makeStyles-buttonLabel-34"
+            class="MuiButton-label makeStyles-buttonLabel-38"
           >
             1 test name
           </span>
@@ -24,12 +69,12 @@ Object {
           />
         </button>
         <button
-          class="MuiButtonBase-root MuiButton-root makeStyles-button-33 MuiButton-text MuiButton-textSecondary"
+          class="MuiButtonBase-root MuiButton-root makeStyles-button-37 MuiButton-text MuiButton-textSecondary"
           tabindex="0"
           type="button"
         >
           <span
-            class="MuiButton-label makeStyles-buttonLabel-34"
+            class="MuiButton-label makeStyles-buttonLabel-38"
           >
             2 test name
           </span>
@@ -38,41 +83,6 @@ Object {
           />
         </button>
       </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      aria-label="Navigate to"
-      role="navigation"
-    >
-      <button
-        class="MuiButtonBase-root MuiButton-root makeStyles-button-33 MuiButton-text MuiButton-textSecondary"
-        tabindex="0"
-        type="button"
-      >
-        <span
-          class="MuiButton-label makeStyles-buttonLabel-34"
-        >
-          1 test name
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
-      <button
-        class="MuiButtonBase-root MuiButton-root makeStyles-button-33 MuiButton-text MuiButton-textSecondary"
-        tabindex="0"
-        type="button"
-      >
-        <span
-          class="MuiButton-label makeStyles-buttonLabel-34"
-        >
-          2 test name
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
     </div>
   </div>,
   "debug": [Function],

@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import { Toolbar } from '@material-ui/core'
 import { injectIntl } from 'react-intl'
 
-import MobileMenu from './MobileMenu'
-import DesktopMenu from './DesktopMenu'
+import Menu from './Menu'
 
-import useStyle from './HomeNavigation.style'
+import useStyle from './HomeTopbar.style'
 
-export function HomeNavigation({ classes: overridingClasses, intl }) {
+export function HomeTopbar({ classes: overridingClasses, intl }) {
   const classes = { ...useStyle(), ...overridingClasses }
   const { formatMessage } = intl
+
   const routes = [
     {
       elementId: '#commercial',
@@ -40,17 +40,14 @@ export function HomeNavigation({ classes: overridingClasses, intl }) {
 
   return (
     <Toolbar className={classes.toolbar}>
-      <div>
-        <MobileMenu className={classes.mobile} routes={routes} />
-        <DesktopMenu className={classes.desktop} routes={routes} />
-      </div>
+      <Menu routes={routes} />
     </Toolbar>
   )
 }
 
-HomeNavigation.propTypes = {
+HomeTopbar.propTypes = {
   classes: PropTypes.object,
   intl: PropTypes.object,
 }
 
-export default injectIntl(HomeNavigation)
+export default injectIntl(HomeTopbar)
