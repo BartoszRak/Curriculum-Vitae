@@ -25,7 +25,6 @@ export default makeStyles(({ breakpoints, palette, spacing }) => ({
     color: palette.secondary.light,
     fontSize: '1rem',
     fontWeight: 'normal',
-    textShadow: '0 0 5px rgba(0, 0, 0, 0.8)',
     [breakpoints.down('md')]: {
       fontSize: '1.2rem',
     },
