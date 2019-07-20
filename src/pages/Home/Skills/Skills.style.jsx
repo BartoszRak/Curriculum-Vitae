@@ -18,10 +18,8 @@ export default makeStyles(({ breakpoints, spacing, palette }) => ({
     borderLeft: `4px solid ${palette.secondary.main}`,
     marginTop: 50,
     paddingLeft: spacing(2),
-    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
   },
   title: {
-    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
     [breakpoints.down('md')]: {
       fontSize: '2rem',
     },
