@@ -1,14 +1,14 @@
 import React from 'react'
-import { render, cleanup, fireEvent } from '@testing-library/react'
+import { render, cleanup } from '@testing-library/react'
 
-import { MobileMenu } from './MobileMenu'
+import { Menu } from './Menu'
 
 jest.unmock('@material-ui/core')
 jest.unmock('@material-ui/icons')
 
 let routes
 
-describe('component: MobileMenu', () => {
+describe('component: Menu', () => {
   afterEach(cleanup)
 
   beforeEach(() => {
@@ -22,25 +22,19 @@ describe('component: MobileMenu', () => {
   })
   describe('rendering', () => {
     test('render without crash ', () => {
-      const wrapper = render(<MobileMenu routes={routes} />)
+      const wrapper = render(<Menu routes={routes} />)
 
       expect(wrapper).toBeTruthy()
     })
 
     test('match snapshot ', () => {
-      const wrapper = render(<MobileMenu routes={routes} />)
+      const wrapper = render(<Menu routes={routes} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
-    test('render routes when icon clicked', () => {
-      const { getByText, getByTestId } = render(<MobileMenu routes={routes} />)
-      const openButtonEl = getByTestId('mobile-menu-open-icon')
-
-      fireEvent.click(openButtonEl)
-
-      const modalEl = getByTestId('mobile-menu-modal')
-      expect(modalEl).toBeVisible()
+    test('render routesd', () => {
+      const { getByText } = render(<Menu routes={routes} />)
 
       routes.forEach(route => {
         const routeEl = getByText(route.name)
