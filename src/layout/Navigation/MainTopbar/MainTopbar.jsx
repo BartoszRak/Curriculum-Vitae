@@ -11,7 +11,7 @@ export function MainTopbar({ classes: overridingClasses }) {
   return (
     <Toolbar className={classes.root}>
       <div>
-        <Typography variant="h1" className={classes.title}>
+        <Typography className={classes.title} variant="h1">
           Bartosz Rak
         </Typography>
       </div>

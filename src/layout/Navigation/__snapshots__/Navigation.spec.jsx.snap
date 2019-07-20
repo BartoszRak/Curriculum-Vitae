@@ -12,7 +12,7 @@ exports[`component: Navigation rendering match snapshot  1`] = `
   <MainTopbarMock />
   <SwitchMock>
     <RouteMock
-      component="HomeNavigationMock"
+      component="HomeTopbarMock"
       path="/"
     />
   </SwitchMock>
