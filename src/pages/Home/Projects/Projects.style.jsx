@@ -12,13 +12,11 @@ export default makeStyles(({ breakpoints }) => ({
   },
   section: {},
   subtitle: {
-    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
     [breakpoints.down('md')]: {
       fontSize: '1.8rem',
     },
   },
   title: {
-    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
     [breakpoints.down('md')]: {
       fontSize: '2rem',
     },

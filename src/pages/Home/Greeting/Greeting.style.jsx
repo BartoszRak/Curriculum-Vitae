@@ -19,21 +19,18 @@ export default makeStyles(({ breakpoints, palette, spacing }) => ({
     fontWeight: 'lighter',
     marginTop: spacing(0.5),
     textAlign: 'center',
-    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
     [breakpoints.down('sm')]: {
       fontSize: '1.2rem',
     },
   },
   subtitle: {
     textAlign: 'center',
-    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
     [breakpoints.down('sm')]: {
       fontSize: '1.6rem',
     },
   },
   title: {
     textAlign: 'center',
-    textShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
     [breakpoints.down('sm')]: {
       fontSize: '2.5rem',
     },
