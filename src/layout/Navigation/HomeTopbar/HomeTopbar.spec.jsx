@@ -6,7 +6,7 @@ import { HomeTopbar } from './HomeTopbar'
 
 jest.unmock('@material-ui/core')
 
-jest.mock('./Menu', () => 'MenuMock')
+jest.mock('~components/ResponsiveMenu', () => 'ResponsiveMenuMock')
 
 let props
 
@@ -36,7 +36,7 @@ describe('component: HomeTopbar', () => {
     test('render menu', () => {
       const wrapper = shallow(<HomeTopbar {...props} />)
 
-      expect(wrapper.find('MenuMock').length).toBe(1)
+      expect(wrapper.find('ResponsiveMenuMock').length).toBe(1)
     })
   })
 })

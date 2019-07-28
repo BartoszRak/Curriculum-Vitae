@@ -7,6 +7,9 @@ export default {
     },
   },
   palette: {
+    action: {
+      chosen: 'rgba(255, 255, 255, 0.07)',
+    },
     primary: {
       dark: '#111111',
       light: '#222222',

@@ -1,25 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`component: Menu rendering match snapshot  1`] = `
+exports[`component: ResponsiveMenu rendering match snapshot  1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="makeStyles-root-40"
+        class="makeStyles-root-45"
       >
         <div
           aria-label="Navigate to"
-          class="makeStyles-buttonsHolder-39"
+          class="makeStyles-buttonsHolder-44"
           role="navigation"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root makeStyles-button-37 MuiButton-text MuiButton-textSecondary"
+            class="MuiButtonBase-root MuiButton-root makeStyles-button-42 MuiButton-text MuiButton-textSecondary"
+            role="button"
             tabindex="0"
             type="button"
           >
             <span
-              class="MuiButton-label makeStyles-buttonLabel-38"
+              class="MuiButton-label makeStyles-buttonLabel-43"
             >
               1 test name
             </span>
@@ -28,12 +29,13 @@ Object {
             />
           </button>
           <button
-            class="MuiButtonBase-root MuiButton-root makeStyles-button-37 MuiButton-text MuiButton-textSecondary"
+            class="MuiButtonBase-root MuiButton-root makeStyles-button-42 MuiButton-text MuiButton-textSecondary"
+            role="button"
             tabindex="0"
             type="button"
           >
             <span
-              class="MuiButton-label makeStyles-buttonLabel-38"
+              class="MuiButton-label makeStyles-buttonLabel-43"
             >
               2 test name
             </span>
@@ -47,20 +49,21 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="makeStyles-root-40"
+      class="makeStyles-root-45"
     >
       <div
         aria-label="Navigate to"
-        class="makeStyles-buttonsHolder-39"
+        class="makeStyles-buttonsHolder-44"
         role="navigation"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root makeStyles-button-37 MuiButton-text MuiButton-textSecondary"
+          class="MuiButtonBase-root MuiButton-root makeStyles-button-42 MuiButton-text MuiButton-textSecondary"
+          role="button"
           tabindex="0"
           type="button"
         >
           <span
-            class="MuiButton-label makeStyles-buttonLabel-38"
+            class="MuiButton-label makeStyles-buttonLabel-43"
           >
             1 test name
           </span>
@@ -69,12 +72,13 @@ Object {
           />
         </button>
         <button
-          class="MuiButtonBase-root MuiButton-root makeStyles-button-37 MuiButton-text MuiButton-textSecondary"
+          class="MuiButtonBase-root MuiButton-root makeStyles-button-42 MuiButton-text MuiButton-textSecondary"
+          role="button"
           tabindex="0"
           type="button"
         >
           <span
-            class="MuiButton-label makeStyles-buttonLabel-38"
+            class="MuiButton-label makeStyles-buttonLabel-43"
           >
             2 test name
           </span>
