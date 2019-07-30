@@ -4,32 +4,50 @@ exports[`component: HomeTopbar rendering match snapshot  1`] = `
 <WithStyles(ForwardRef(Toolbar))
   className="makeStyles-toolbar-1"
 >
-  <MenuMock
-    routes={
+  <ResponsiveMenuMock
+    items={
       Array [
         Object {
-          "elementId": "#commercial",
+          "active": false,
           "name": undefined,
+          "props": Object {
+            "onClick": [Function],
+          },
         },
         Object {
-          "elementId": "#projects",
+          "active": false,
           "name": undefined,
+          "props": Object {
+            "onClick": [Function],
+          },
         },
         Object {
-          "elementId": "#bio",
+          "active": false,
           "name": undefined,
+          "props": Object {
+            "onClick": [Function],
+          },
         },
         Object {
-          "elementId": "#skills",
+          "active": false,
           "name": undefined,
+          "props": Object {
+            "onClick": [Function],
+          },
         },
         Object {
-          "elementId": "#workflow",
+          "active": false,
           "name": undefined,
+          "props": Object {
+            "onClick": [Function],
+          },
         },
         Object {
-          "elementId": "#hobbies",
+          "active": false,
           "name": undefined,
+          "props": Object {
+            "onClick": [Function],
+          },
         },
       ]
     }

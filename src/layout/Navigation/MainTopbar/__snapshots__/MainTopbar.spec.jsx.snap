@@ -2,16 +2,33 @@
 
 exports[`component: MainTopbar rendering match snapshot  1`] = `
 <WithStyles(ForwardRef(Toolbar))
-  className="makeStyles-root-1"
+  className="makeStyles-root-2"
 >
-  <div>
-    <WithStyles(ForwardRef(Typography))
-      className="makeStyles-title-2"
-      variant="h1"
-    >
-      Bartosz Rak
-    </WithStyles(ForwardRef(Typography))>
-  </div>
+  <WithStyles(ForwardRef(Typography))
+    className="makeStyles-title-3"
+    variant="h1"
+  >
+    Bartosz Rak
+  </WithStyles(ForwardRef(Typography))>
+  <ResponsiveMenu
+    className="makeStyles-menu-1"
+    items={
+      Array [
+        Object {
+          "name": undefined,
+          "props": Object {
+            "href": "/",
+          },
+        },
+        Object {
+          "name": undefined,
+          "props": Object {
+            "href": "/offer",
+          },
+        },
+      ]
+    }
+  />
   <div>
     <LanguageSelectMock />
   </div>

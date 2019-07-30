@@ -24,13 +24,21 @@
   },
   "layout": {
     "navigation": {
-      "items": {
-        "commercial": "Komercyjnie",
-        "projects": "Projekty",
-        "bio": "O mnie",
-        "skills": "Umiejętności & technologie",
-        "workflow": "Jak pracuje?",
-        "passions": "Moje pasje"
+      "homeTopbar": {
+        "items": {
+          "commercial": "Komercyjnie",
+          "projects": "Projekty",
+          "bio": "O mnie",
+          "skills": "Umiejętności & technologie",
+          "workflow": "Jak pracuje?",
+          "hobbies": "Moje pasje"
+        }
+      },
+      "mainTopbar": {
+        "items": {
+          "me": "Ja",
+          "offer": "Oferta" 
+        }
       }
     },
     "information": {

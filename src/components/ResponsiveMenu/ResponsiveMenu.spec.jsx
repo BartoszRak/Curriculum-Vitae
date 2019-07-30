@@ -1,14 +1,14 @@
 import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 
-import { Menu } from './Menu'
+import { ResponsiveMenu } from './ResponsiveMenu'
 
 jest.unmock('@material-ui/core')
 jest.unmock('@material-ui/icons')
 
 let routes
 
-describe('component: Menu', () => {
+describe('component: ResponsiveMenu', () => {
   afterEach(cleanup)
 
   beforeEach(() => {
@@ -22,19 +22,19 @@ describe('component: Menu', () => {
   })
   describe('rendering', () => {
     test('render without crash ', () => {
-      const wrapper = render(<Menu routes={routes} />)
+      const wrapper = render(<ResponsiveMenu items={routes} />)
 
       expect(wrapper).toBeTruthy()
     })
 
     test('match snapshot ', () => {
-      const wrapper = render(<Menu routes={routes} />)
+      const wrapper = render(<ResponsiveMenu items={routes} />)
 
       expect(wrapper).toMatchSnapshot()
     })
 
     test('render routesd', () => {
-      const { getByText } = render(<Menu routes={routes} />)
+      const { getByText } = render(<ResponsiveMenu items={routes} />)
 
       routes.forEach(route => {
         const routeEl = getByText(route.name)

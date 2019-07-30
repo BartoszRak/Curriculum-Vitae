@@ -1,56 +1,55 @@
 import React, { useState } from 'react'
-import classNames from 'classnames'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 import {
-  Button, IconButton, useTheme, useMediaQuery
+  useTheme, useMediaQuery, Typography,
 } from '@material-ui/core'
 import MenuOpenIcon from '@material-ui/icons/Menu'
 import MenuCloseIcon from '@material-ui/icons/Close'
 
-import { useScrollTo } from '~hooks'
+import Button from '~components/Button'
 
-import useStyle from './Menu.style'
+import useStyle from './ResponsiveMenu.style'
 
-export function Menu({ classes: overridingClasses, className, routes }) {
+export function ResponsiveMenu({ classes: overridingClasses, items, className }) {
   const classes = { ...useStyle(), ...overridingClasses }
-  const { scrollTo } = useScrollTo()
   const [toggle, setToggle] = useState(false)
   const theme = useTheme()
   const matchDimensions = useMediaQuery(theme.breakpoints.down('md'))
+  const activeItem = items.find(item => Boolean(item.active))
 
   return (
-    <div className={classes.root}>
+    <div className={classNames(classes.root, className)}>
       {matchDimensions && (
         <div className={classes.actions}>
-          <IconButton
+          <Button
+            className={classes.actionButton}
             data-testid="mobile-menu-open-icon"
+            icon={() => (!toggle ? <MenuOpenIcon color="secondary" /> : <MenuCloseIcon color="secondary" />)}
             onClick={() => {
               setToggle(!toggle)
             }}
           >
-            {!toggle ? (
-              <MenuOpenIcon color="secondary" />
-            ) : (
-              <MenuCloseIcon color="secondary" />
-            )}
-          </IconButton>
+            {Boolean(activeItem) && <Typography className={classes.actionText}>{activeItem.name}</Typography>}
+          </Button>
         </div>
       )}
       {(!matchDimensions || toggle) && (
         <div
           aria-label="Navigate to"
-          className={classNames(className, classes.buttonsHolder)}
+          className={classes.buttonsHolder}
           role="navigation"
         >
-          {routes.map(route => (
+          {items.map(route => (
             <Button
+              active={route.active}
               classes={{
                 label: classes.buttonLabel,
                 root: classes.button,
               }}
               color="secondary"
               key={route.name}
-              onClick={() => scrollTo(route.elementId)}
+              {...route.props}
             >
               {route.name}
             </Button>
@@ -61,10 +60,10 @@ export function Menu({ classes: overridingClasses, className, routes }) {
   )
 }
 
-Menu.propTypes = {
-  classes: PropTypes.object,
+ResponsiveMenu.propTypes = {
   className: PropTypes.string,
-  routes: PropTypes.arrayOf(
+  classes: PropTypes.object,
+  items: PropTypes.arrayOf(
     PropTypes.shape({
       elementId: PropTypes.string,
       name: PropTypes.string,
@@ -72,4 +71,4 @@ Menu.propTypes = {
   ).isRequired,
 }
 
-export default Menu
+export default ResponsiveMenu

@@ -7,6 +7,7 @@ import Footer from './Footer'
 import Navigation from './Navigation'
 
 import Home from '~pages/Home'
+import Offer from '~pages/Offer'
 
 import useStyle from './Layout.style'
 
@@ -17,7 +18,8 @@ export function Layout({ classes: overridingClasses }) {
       <Navigation />
       <div className={classes.root}>
         <Switch>
-          <Route component={Home} to="/" />
+          <Route component={Offer} path="/offer" />
+          <Route component={Home} exact path="/" />
           <Redirect from="*" to="/" />
         </Switch>
         <Footer />

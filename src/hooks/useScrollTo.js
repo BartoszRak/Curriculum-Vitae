@@ -1,20 +1,17 @@
 import { useCallback } from 'react'
 import anime from 'animejs'
 
-function useScrollTo() {
-  const scrollTo = useCallback(identifier => {
-    const scrollElement = window.document.scrollingElement
-      || window.document.body
-      || window.document.documentElement
-    const element = window.document.querySelector(identifier)
+import { getElementPosition, getScrollingElement } from '~utils/utils'
 
-    if (!element) return
+function useScrollTo(moveBy = 0) {
+  const scrollTo = useCallback(element => {
+    const scrollElement = getScrollingElement()
+    const elementPosition = getElementPosition(element)
 
-    const boundingRect = element.getBoundingClientRect()
     anime({
       duration: 500,
       easing: 'easeInOutQuad',
-      scrollTop: boundingRect.top + window.pageYOffset,
+      scrollTop: elementPosition.x + moveBy,
       targets: scrollElement,
     })
   }, [])

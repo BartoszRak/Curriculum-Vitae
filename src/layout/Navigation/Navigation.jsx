@@ -20,7 +20,7 @@ export function Navigation({ classes: overridingClasses }) {
     >
       <MainTopbar />
       <Switch>
-        <Route component={HomeTopbar} path="/" />
+        <Route component={HomeTopbar} exact path="/" />
       </Switch>
     </AppBar>
   )
