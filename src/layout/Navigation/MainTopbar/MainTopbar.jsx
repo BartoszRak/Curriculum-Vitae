@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { matchPath, withRouter } from 'react-router-dom'
-import { Toolbar, Typography, useTheme, useMediaQuery } from '@material-ui/core'
+import {
+  Toolbar, Typography, useTheme, useMediaQuery,
+} from '@material-ui/core'
 import { injectIntl } from 'react-intl'
 
 import LanguageSelect from '~components/LanguageSelect'
@@ -9,7 +10,7 @@ import ResponsiveMenu from '~components/ResponsiveMenu'
 
 import useStyle from './MainTopbar.style'
 
-export function MainTopbar({ classes: overridingClasses, intl, ...props }) {
+export function MainTopbar({ classes: overridingClasses, intl }) {
   const classes = { ...useStyle(), ...overridingClasses }
   const { formatMessage } = intl
   const theme = useTheme()
@@ -29,9 +30,6 @@ export function MainTopbar({ classes: overridingClasses, intl, ...props }) {
       },
     },
   ]
-
-  //console.log(matchPath('/href'))
-  //console.log(props)
 
   return (
     <Toolbar className={classes.root}>
@@ -53,4 +51,4 @@ MainTopbar.propTypes = {
   intl: PropTypes.object,
 }
 
-export default withRouter(injectIntl(MainTopbar))
+export default injectIntl(MainTopbar)
