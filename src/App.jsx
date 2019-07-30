@@ -38,6 +38,7 @@ export function App() {
 
   return (
     <BrowserRouter>
+      <React.Fragment>
       <LanguageContext.Provider
         value={{
           language,
@@ -64,6 +65,7 @@ export function App() {
           )}
         </LanguageContext.Consumer>
       </LanguageContext.Provider>
+      </React.Fragment>
     </BrowserRouter>
   )
 }

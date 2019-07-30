@@ -1,6 +1,13 @@
 import { makeStyles } from '@material-ui/core'
 
 export default makeStyles(({ breakpoints, palette, spacing }) => ({
+  actionButton: {
+    color: palette.primary.contrastText,
+  },
+  actionText: {
+    marginLeft: spacing(1),
+    borderBottom: `1px solid ${palette.primary.contrastText}`,
+  },
   actions: {
     alignItems: 'center',
     display: 'flex',
@@ -38,6 +45,7 @@ export default makeStyles(({ breakpoints, palette, spacing }) => ({
       flex: '1 1 auto',
       flexDirection: 'column',
       justifyContent: 'center',
+      padding: spacing(1, 0),
     },
   },
   root: {

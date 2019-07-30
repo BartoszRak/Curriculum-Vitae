@@ -9,7 +9,12 @@ exports[`component: Layout rendering match snapshot 1`] = `
     <SwitchMock>
       <RouteMock
         component={[Function]}
-        to="/"
+        path="/offer"
+      />
+      <RouteMock
+        component={[Function]}
+        exact={true}
+        path="/"
       />
       <RedirectMock
         from="*"

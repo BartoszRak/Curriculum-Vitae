@@ -3,44 +3,31 @@ import PropTypes from 'prop-types'
 import { Toolbar } from '@material-ui/core'
 import { injectIntl } from 'react-intl'
 
-import Menu from './Menu'
+import ResponsiveMenu from '~components/ResponsiveMenu'
+import { useScrollTo } from '~hooks'
 
 import useStyle from './HomeTopbar.style'
 
 export function HomeTopbar({ classes: overridingClasses, intl }) {
   const classes = { ...useStyle(), ...overridingClasses }
   const { formatMessage } = intl
+  const { scrollTo } = useScrollTo(-300)
+  const itemNames = ['commercial', 'projects', 'bio', 'skills', 'workflow', 'hobbies']
 
-  const routes = [
-    {
-      elementId: '#commercial',
-      name: formatMessage({ id: 'layout.navigation.items.commercial' }),
+  const items = itemNames.map(itemName => ({
+    active: false,
+    name: formatMessage({ id: `layout.navigation.homeTopbar.items.${itemName}` }),
+    props: {
+      onClick: () => {
+        const el = document.querySelector(`#${itemName}`)
+        scrollTo(el)
+      },
     },
-    {
-      elementId: '#projects',
-      name: formatMessage({ id: 'layout.navigation.items.projects' }),
-    },
-    {
-      elementId: '#bio',
-      name: formatMessage({ id: 'layout.navigation.items.bio' }),
-    },
-    {
-      elementId: '#skills',
-      name: formatMessage({ id: 'layout.navigation.items.skills' }),
-    },
-    {
-      elementId: '#workflow',
-      name: formatMessage({ id: 'layout.navigation.items.workflow' }),
-    },
-    {
-      elementId: '#hobbies',
-      name: formatMessage({ id: 'layout.navigation.items.passions' }),
-    },
-  ]
+  }))
 
   return (
     <Toolbar className={classes.toolbar}>
-      <Menu routes={routes} />
+      <ResponsiveMenu items={items} />
     </Toolbar>
   )
 }
