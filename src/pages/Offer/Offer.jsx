@@ -5,7 +5,7 @@ import useStyle from './Offer.style'
 
 export function Offer({ classes: overridingClasses }) {
   const classes = { ...useStyle(), ...overridingClasses }
-  return <div>offer</div>
+  return <div className={classes.root}>offer</div>
 }
 
 Offer.propTypes = {
