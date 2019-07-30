@@ -1,20 +1,30 @@
 import { useEffect, useState } from 'react'
 import { getElementPosition } from '~utils/utils'
 
+const getElements = names => {
+  return names.map(name => document.querySelector(`#${name}`))
+}
+
+const getElementsWithGeometry = elements => {
+  return elements.map((el, index) => {
+    const positions = getElementPosition(el) || {}
+    const isLast = Boolean(index + 1 === elements.length)
+    return {
+      element: el,
+      end: !isLast ? getElementPosition(elements[index + 1]).x : Infinity,
+      start: positions.x,
+    }
+  })
+}
+
 export default function useScrollRangeHighlighting(names) {
-  const [activeElement, setActiveElement] = useState(names[0])
+  const initElements = getElements(names)
+  const initElementsWithGeometry = getElementsWithGeometry(initElements)
+  const [activeElement, setActiveElement] = useState(initElementsWithGeometry[0])
 
   const scrollEffect = () => {
-    const elements = names.map(name => document.querySelector(`#${name}`))
-    const elementsWithGeometry = elements.map((el, index) => {
-      const positions = getElementPosition(el) || {}
-      const isLast = Boolean(index + 1 === elements.length)
-      return {
-        element: el,
-        end: !isLast ? getElementPosition(elements[index + 1]).x : Infinity,
-        start: positions.x,
-      }
-    })
+    const elements = getElements(names)
+    const elementsWithGeometry = getElementsWithGeometry(elements)
     const activeEl =
       elementsWithGeometry.find(obj => {
         const viewPoint = window.scrollY + window.innerHeight / 2

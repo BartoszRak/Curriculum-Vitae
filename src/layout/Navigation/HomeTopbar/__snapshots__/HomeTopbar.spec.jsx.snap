@@ -8,44 +8,44 @@ exports[`component: HomeTopbar rendering match snapshot  1`] = `
     items={
       Array [
         Object {
+          "active": false,
           "name": undefined,
           "props": Object {
-            "active": false,
             "onClick": [Function],
           },
         },
         Object {
+          "active": false,
           "name": undefined,
           "props": Object {
-            "active": false,
             "onClick": [Function],
           },
         },
         Object {
+          "active": false,
           "name": undefined,
           "props": Object {
-            "active": false,
             "onClick": [Function],
           },
         },
         Object {
+          "active": false,
           "name": undefined,
           "props": Object {
-            "active": false,
             "onClick": [Function],
           },
         },
         Object {
+          "active": false,
           "name": undefined,
           "props": Object {
-            "active": false,
             "onClick": [Function],
           },
         },
         Object {
+          "active": false,
           "name": undefined,
           "props": Object {
-            "active": false,
             "onClick": [Function],
           },
         },

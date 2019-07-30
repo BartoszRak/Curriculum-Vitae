@@ -14,11 +14,11 @@ export function HomeTopbar({ classes: overridingClasses, intl }) {
   const { scrollTo } = useScrollTo(-300)
   const itemNames = ['commercial', 'projects', 'bio', 'skills', 'workflow', 'hobbies']
 
-  const { activeElement } = useScrollRangeHighlighting(itemNames)
+  //const { activeElement } = useScrollRangeHighlighting(itemNames)
   const items = itemNames.map(itemName => ({
+    active: false, //Boolean(activeElement.id === itemName),
     name: formatMessage({ id: `layout.navigation.homeTopbar.items.${itemName}` }),
     props: {
-      active: Boolean(activeElement.id === itemName),
       onClick: () => {
         const el = document.querySelector(`#${itemName}`)
         scrollTo(el)
