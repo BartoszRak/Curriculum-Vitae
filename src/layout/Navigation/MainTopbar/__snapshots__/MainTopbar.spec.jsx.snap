@@ -15,12 +15,14 @@ exports[`component: MainTopbar rendering match snapshot  1`] = `
     items={
       Array [
         Object {
+          "active": false,
           "name": undefined,
           "props": Object {
             "href": "/",
           },
         },
         Object {
+          "active": false,
           "name": undefined,
           "props": Object {
             "href": "/offer",

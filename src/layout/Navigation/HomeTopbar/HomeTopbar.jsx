@@ -4,7 +4,7 @@ import { Toolbar } from '@material-ui/core'
 import { injectIntl } from 'react-intl'
 
 import ResponsiveMenu from '~components/ResponsiveMenu'
-import { useScrollTo } from '~hooks'
+import { useScrollTo, useScrollRangeHighlighting } from '~hooks'
 
 import useStyle from './HomeTopbar.style'
 
@@ -13,9 +13,10 @@ export function HomeTopbar({ classes: overridingClasses, intl }) {
   const { formatMessage } = intl
   const { scrollTo } = useScrollTo(-300)
   const itemNames = ['commercial', 'projects', 'bio', 'skills', 'workflow', 'hobbies']
+  const { activeElement } = useScrollRangeHighlighting(itemNames)
 
-  const items = itemNames.map(itemName => ({
-    active: false,
+  const items = itemNames.map((itemName, index) => ({
+    active: Boolean(activeElement.id === itemName) || Boolean(!activeElement.id && index === 0),
     name: formatMessage({ id: `layout.navigation.homeTopbar.items.${itemName}` }),
     props: {
       onClick: () => {
