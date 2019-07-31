@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { withRouter, matchPath } from 'react-router-dom'
 import {
   Toolbar, Typography, useTheme, useMediaQuery,
 } from '@material-ui/core'
@@ -10,7 +11,7 @@ import ResponsiveMenu from '~components/ResponsiveMenu'
 
 import useStyle from './MainTopbar.style'
 
-export function MainTopbar({ classes: overridingClasses, intl }) {
+export function MainTopbar({ classes: overridingClasses, intl, location }) {
   const classes = { ...useStyle(), ...overridingClasses }
   const { formatMessage } = intl
   const theme = useTheme()
@@ -18,12 +19,19 @@ export function MainTopbar({ classes: overridingClasses, intl }) {
 
   const items = [
     {
+      active: Boolean(matchPath('/', {
+        exact: true,
+        path: location.pathname,
+      })),
       name: formatMessage({ id: 'layout.navigation.mainTopbar.items.me' }),
       props: {
         href: '/',
       },
     },
     {
+      active: Boolean(matchPath('/offer', {
+        path: location.pathname,
+      })),
       name: formatMessage({ id: 'layout.navigation.mainTopbar.items.offer' }),
       props: {
         href: '/offer',
@@ -49,6 +57,7 @@ export function MainTopbar({ classes: overridingClasses, intl }) {
 MainTopbar.propTypes = {
   classes: PropTypes.object,
   intl: PropTypes.object,
+  location: PropTypes.object,
 }
 
-export default injectIntl(MainTopbar)
+export default withRouter(injectIntl(MainTopbar))
