@@ -6,6 +6,10 @@ import { MainTopbar } from './MainTopbar'
 
 jest.unmock('@material-ui/core')
 
+jest.mock('react-router-dom', () => ({
+  matchPath: jest.fn(),
+  withRouter: jest.fn(),
+}))
 jest.mock('~components/LanguageSelect', () => 'LanguageSelectMock')
 
 let props
@@ -17,6 +21,9 @@ describe('component: MainTopbar', () => {
     props = {
       intl: {
         formatMessage: jest.fn(),
+      },
+      location: {
+        pathname: 'mockedPathname',
       },
     }
   })

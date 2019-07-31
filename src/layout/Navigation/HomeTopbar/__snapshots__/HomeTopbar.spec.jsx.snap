@@ -8,7 +8,7 @@ exports[`component: HomeTopbar rendering match snapshot  1`] = `
     items={
       Array [
         Object {
-          "active": false,
+          "active": true,
           "name": undefined,
           "props": Object {
             "onClick": [Function],
