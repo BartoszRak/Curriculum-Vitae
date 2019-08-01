@@ -19,19 +19,24 @@ export function MainTopbar({ classes: overridingClasses, intl, location }) {
 
   const items = [
     {
-      active: Boolean(matchPath('/', {
-        exact: true,
-        path: location.pathname,
-      })),
+      active: Boolean(
+        matchPath('/', {
+          exact: true,
+          path: location.pathname,
+        })
+      ),
       name: formatMessage({ id: 'layout.navigation.mainTopbar.items.me' }),
       props: {
         href: '/',
       },
     },
     {
-      active: Boolean(matchPath('/offer', {
-        path: location.pathname,
-      })),
+      active: Boolean(
+        matchPath('/offer', {
+          exact: true,
+          path: location.pathname,
+        })
+      ),
       name: formatMessage({ id: 'layout.navigation.mainTopbar.items.offer' }),
       props: {
         href: '/offer',
