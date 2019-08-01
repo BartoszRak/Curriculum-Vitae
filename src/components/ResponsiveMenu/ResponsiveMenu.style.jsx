@@ -24,8 +24,8 @@ export default makeStyles(({ breakpoints, palette, spacing }) => ({
     marginRight: spacing(4),
     padding: spacing(0.5, 2),
     [breakpoints.down('md')]: {
-      margin: 0,
-      padding: spacing(1.5, 2),
+      margin: spacing(0.5, 0),
+      padding: spacing(1, 2),
     },
   },
   buttonLabel: {

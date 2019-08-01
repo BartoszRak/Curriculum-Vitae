@@ -5,6 +5,8 @@ export default makeStyles(({ breakpoints, palette, spacing }) => ({
     [breakpoints.down('md')]: {
       width: '100%',
     },
+    marginBottom: spacing(1),
+    marginTop: spacing(1),
   },
   root: {
     background: palette.primary.dark,
